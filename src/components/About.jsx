@@ -7,20 +7,20 @@ const About = () => {
 
   return (
     <section id="about" className="w-full">
-      <div className="grid lg:grid-cols-2">
+      <div className="flex flex-col lg:flex-row">
         {/* Left Side - Image */}
-        <div className="relative h-[400px] lg:h-auto bg-gray-100">
+        <div className="relative h-100 lg:h-auto bg-gray-100 lg:basis-[45%] lg:flex-none">
           <img
             src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=900&fit=crop"
             alt="Ellie planning"
             className="w-full h-full object-cover"
           />
           {/* Overlay elements to simulate whiteboard/planning aesthetic */}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/10" />
+          <div className="absolute inset-0 bg-linear-to-r from-transparent to-white/10" />
         </div>
 
         {/* Right Side - Content */}
-        <div className="bg-[#3D1D4E] px-8 md:px-12 lg:px-16 py-16 lg:py-24 flex flex-col justify-center">
+        <div className="bg-[#3D1D4E] px-8 md:px-12 lg:px-16 py-16 lg:py-24 flex flex-col justify-center lg:basis-[55%]">
           <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-serif text-white leading-tight mb-6">
             Hey there, I'm Ellie — Marketing & Mindset Coach, International Speaker & Entrepreneur.
           </h2>
@@ -59,9 +59,16 @@ const About = () => {
             </h3>
             <ul className="space-y-3">
               {highlights.map((item, index) => (
-                <li key={index} className="flex items-center gap-3 text-gray-300 text-sm">
-                  <span className="text-white">+</span>
-                  {item}
+                <li key={index} className="flex items-start gap-3 text-white/80 text-sm">
+                  <span className="mt-1 shrink-0 text-white">
+                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 3l1.6 6.2L20 12l-6.4 2.8L12 21l-1.6-6.2L4 12l6.4-2.8L12 3z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                  <span className="leading-relaxed">{item}</span>
                 </li>
               ))}
             </ul>
