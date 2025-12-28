@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section className="relative w-full min-h-screen lg:h-screen overflow-hidden">
       {/* Background gradient */}
       <div
         className="absolute inset-0"
@@ -13,9 +13,9 @@ const Hero = () => {
       />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 h-full">
-        <div className="flex flex-col lg:flex-row lg:items-center h-full pt-16">
+        <div className="flex flex-col lg:flex-row lg:items-center min-h-screen lg:h-full pt-24 lg:pt-16 pb-8 lg:pb-0">
           {/* Left Content */}
-          <div className="z-10 pt-12 lg:pt-0 lg:basis-1/2 lg:pr-8">
+          <div className="z-10 lg:pt-0 lg:basis-1/2 lg:pr-8">
             {/* Tag */}
             <div className="flex items-center gap-2 mb-5">
               <span className="text-[#3D1D4E] text-sm">✦</span>
@@ -39,7 +39,7 @@ const Hero = () => {
             {/* CTA Button */}
             <Link
               to="/programs"
-              className="inline-flex items-center gap-2 bg-[#3D1D4E] text-white pl-5 pr-1.5 py-1.5 rounded-full text-sm font-medium hover:bg-[#2D1538] transition-colors mb-16 lg:mb-24"
+              className="inline-flex items-center gap-2 bg-[#3D1D4E] text-white pl-5 pr-1.5 py-1.5 rounded-full text-sm font-medium hover:bg-[#2D1538] transition-colors mb-8 lg:mb-24"
             >
               Start Learning Now
               <span className="w-7 h-7 bg-white rounded-full flex items-center justify-center">
@@ -60,7 +60,7 @@ const Hero = () => {
             </Link>
 
             {/* Trust Badge */}
-            <div className="flex items-center gap-4 pb-12 lg:pb-16">
+            <div className="flex items-center gap-4 pb-8 lg:pb-16">
               {/* Avatar Stack */}
               <div className="flex -space-x-2">
                 <div className="w-9 h-9 rounded-full border-2 border-white bg-gray-300 overflow-hidden">
@@ -114,7 +114,44 @@ const Hero = () => {
           </div>
 
           {/* Right Content - Hero Image */}
-          <div className="relative lg:basis-1/2 lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 flex items-end justify-center lg:justify-end">
+          {/* Mobile Image - Shows in content flow */}
+          <div className="relative lg:hidden mt-8 flex justify-center">
+            <div className="relative w-64 sm:w-72">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop"
+                alt="Billeady Saliu"
+                className="w-full h-auto object-cover object-top rounded-lg"
+                style={{
+                  maskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)',
+                  WebkitMaskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)',
+                }}
+              />
+              {/* Floating Phone Mockup - Mobile */}
+              <div className="absolute bottom-8 -left-4 bg-white p-1 rounded-lg shadow-xl">
+                <div className="relative w-16 h-20 bg-gray-100 rounded-md overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=300&fit=crop"
+                    alt="Video thumbnail"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-6 h-6 bg-white/95 rounded-full flex items-center justify-center shadow-md">
+                      <svg
+                        className="w-2.5 h-2.5 text-[#3D1D4E] ml-0.5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Image - Absolute positioned */}
+          <div className="hidden lg:flex relative lg:basis-1/2 lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 items-end justify-center lg:justify-end">
             {/* Main Image - Woman */}
             <div className="relative">
               <img
