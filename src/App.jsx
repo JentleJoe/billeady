@@ -1,6 +1,5 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import LogoBar from './components/LogoBar'
 import About from './components/About'
 import PodcastForm from './components/PodcastForm'
 import Solution from './components/Solution'
@@ -14,7 +13,6 @@ function App() {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
-      <LogoBar />
       <About />
       <PodcastForm />
       <Solution />
