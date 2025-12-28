@@ -5,10 +5,10 @@ const PodcastForm = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-3">
-            The Free Private Podcast Series
+            Free High Ticket Closing Training
           </h2>
           <p className="text-gray-500 text-sm max-w-2xl mx-auto">
-            Breaking down the business model behind my most scalable offer – and how you can build yours.
+            Get instant access to my free training on how to close high ticket clients — the exact framework I use to close premium deals.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ const PodcastForm = () => {
                   type="submit"
                   className="inline-flex items-center gap-3 bg-[#3D1D4E] text-white pl-6 pr-3 py-3 rounded-full text-sm font-medium hover:bg-[#2D1538] transition-colors mt-3"
                 >
-                  Gimme The Link
+                  Get Free Access
                   <span className="w-7 h-7 bg-white rounded-full flex items-center justify-center">
                     <svg
                       className="w-4 h-4 text-[#3D1D4E]"
@@ -99,7 +99,7 @@ const PodcastForm = () => {
             <div className="relative h-72 md:h-auto">
               <img
                 src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=600&h=500&fit=crop"
-                alt="Happy family with baby and dog"
+                alt="High ticket closing training"
                 className="w-full h-full object-cover"
               />
               {/* Play Button Overlay */}

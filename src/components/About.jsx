@@ -1,8 +1,8 @@
 const About = () => {
   const highlights = [
-    'Multi-Six Figure Business in < 2 Years',
-    '200+ Clients Served Globally',
-    'Featured International Speaker',
+    'Closed Millions in High Ticket Sales',
+    '500+ Students Trained Globally',
+    'From Zero to Success — Twice',
   ]
 
   return (
@@ -12,7 +12,7 @@ const About = () => {
         <div className="relative h-100 lg:h-auto bg-gray-100 lg:basis-[45%] lg:flex-none">
           <img
             src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=900&fit=crop"
-            alt="Ellie planning"
+            alt="Billeady coaching session"
             className="w-full h-full object-cover"
           />
           {/* Overlay elements to simulate whiteboard/planning aesthetic */}
@@ -22,11 +22,11 @@ const About = () => {
         {/* Right Side - Content */}
         <div className="bg-[#3D1D4E] px-8 md:px-12 lg:px-16 py-16 lg:py-24 flex flex-col justify-center lg:basis-[55%]">
           <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-semibold text-white leading-tight mb-6">
-            Hey there, I'm Ellie — Marketing & Mindset Coach, International Speaker & Entrepreneur.
+            Hey, I'm Billeady Saliu — High Ticket Closer, Coach & Business Consultant.
           </h2>
 
           <p className="text-gray-300 text-base mb-8">
-            From corporate escapee to multi-six-figure business coach helping women scale with ease.
+            In 2022, I lost over ₦60 Million and hit rock bottom. But I didn't stay there. I rebuilt from scratch, mastered the art of closing high ticket clients, and now I teach others to do the same.
           </p>
 
           {/* CTA Button */}
@@ -34,7 +34,7 @@ const About = () => {
             href="#"
             className="inline-flex items-center gap-2 bg-transparent text-white px-6 py-3 rounded-full text-sm font-medium border border-white hover:bg-white hover:text-[#3D1D4E] transition-colors w-fit mb-10"
           >
-            Learn About My Method
+            Learn My Story
             <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center group-hover:bg-[#3D1D4E]">
               <svg
                 className="w-3 h-3 text-[#3D1D4E]"
@@ -55,7 +55,7 @@ const About = () => {
           {/* Why Learn Section */}
           <div>
             <h3 className="text-white text-sm font-medium mb-4">
-              Why Learn From Ellie?:
+              Why Learn From Billeady?:
             </h3>
             <ul className="space-y-3">
               {highlights.map((item, index) => (

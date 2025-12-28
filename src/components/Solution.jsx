@@ -6,8 +6,8 @@ const Solution = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
       ),
-      title: 'Revenue Rollercoaster',
-      description: 'Unpredictable income, no recurring stability.',
+      title: 'Struggling to Close Deals',
+      description: 'Losing prospects at the final stage of the sale.',
     },
     {
       icon: (
@@ -15,8 +15,8 @@ const Solution = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
       ),
-      title: 'Revenue Rollercoaster',
-      description: 'Unpredictable income, no recurring stability.',
+      title: 'Cold DMs Not Converting',
+      description: 'Sending messages but getting no responses.',
     },
     {
       icon: (
@@ -24,8 +24,8 @@ const Solution = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      title: 'Revenue Rollercoaster',
-      description: 'Unpredictable income, no recurring stability.',
+      title: 'Inconsistent Income',
+      description: 'No predictable system for landing clients.',
     },
   ]
 
@@ -45,7 +45,7 @@ const Solution = () => {
               <div className="px-7 pt-7 pb-5">
                 <h3 className="text-xl font-semibold text-gray-900">The Solution</h3>
                 <p className="text-gray-600 text-xs leading-relaxed mt-3 max-w-md">
-                  The <span className="font-semibold">Swift Marketing Method™</span> helps you build, fill, and scale your business sustainably — so you can serve at your highest potential.
+                  The <span className="font-semibold">Billeady Closing System™</span> teaches you how to close high ticket clients consistently, run effective cold outreach, and build a profitable business.
                 </p>
                 <div className="h-px bg-gray-200 mt-5" />
 
@@ -55,7 +55,7 @@ const Solution = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                     </svg>
                   </span>
-                  <span className="text-xs text-gray-600">Proven. Sustainable. Scalable.</span>
+                  <span className="text-xs text-gray-600">Proven. Battle-tested. Results-driven.</span>
                 </div>
               </div>
 
@@ -74,12 +74,12 @@ const Solution = () => {
           {/* Right: Heading + Rows */}
           <div className="pt-1">
             <h2 className="text-4xl md:text-5xl font-semibold text-white leading-tight">
-              Feeling Stuck in Your
+              Struggling to Close
               <br />
-              Business Growth?
+              High Ticket Clients?
             </h2>
             <p className="text-white/70 text-sm mt-5 max-w-md">
-              Breaking down the business model behind my most scalable offer – and how you can build yours.
+              Most people fail at closing because they lack the right framework. Learn the exact system I use to close premium deals consistently.
             </p>
 
             <div className="mt-9 space-y-4">

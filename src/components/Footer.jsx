@@ -2,12 +2,12 @@ const Footer = () => {
   const navLinks = [
     { name: 'Home', href: '#' },
     { name: 'About', href: '#about' },
-    { name: 'Work With Ellie', href: '#work' },
+    { name: 'Programs', href: '#programs' },
   ]
 
   const navLinks2 = [
-    { name: 'Podcast', href: '#podcast' },
-    { name: 'Result', href: '#result' },
+    { name: 'Results', href: '#results' },
+    { name: 'Book', href: '#book' },
     { name: 'Contact', href: '#contact' },
   ]
 
@@ -19,7 +19,7 @@ const Footer = () => {
           {/* Logo & Social */}
           <div>
             <a href="#" className="text-2xl font-medium text-gray-900 mb-4 block">
-              ellie swift
+              billeady
             </a>
             <div className="flex items-center gap-3 mt-4">
               {/* Instagram */}
@@ -96,7 +96,7 @@ const Footer = () => {
           {/* Newsletter */}
           <div>
             <p className="text-gray-900 font-medium text-sm leading-relaxed mb-4">
-              Get exclusive insights to<br />scale your business<br />with ease.
+              Get exclusive insights on<br />closing high ticket clients<br />with confidence.
             </p>
             <form className="flex items-center">
               <input

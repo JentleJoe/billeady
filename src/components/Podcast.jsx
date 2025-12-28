@@ -16,13 +16,12 @@ const Podcast = () => {
         >
           <div className="max-w-4xl mx-auto px-6 md:px-12 pt-14 md:pt-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-3">
-              Shine Online with Ellie
+              Building from Dust Again
               <br />
-              Swift Podcast
+              — The Book
             </h2>
             <p className="text-white/70 text-xs md:text-sm max-w-2xl mx-auto leading-relaxed">
-              Discover a mix of inspirational stories and practical business strategies — as Ellie and global online
-              business leaders share how to grow with clarity, confidence, and ease.
+              Coming 2026 — My story of losing ₦60M+, hitting rock bottom, and rebuilding from scratch. A raw, honest guide for anyone who's ever had to start over.
             </p>
           </div>
         </div>

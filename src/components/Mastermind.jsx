@@ -1,30 +1,30 @@
 const Mastermind = () => {
   const programs = [
     {
-      title: 'Mastermind Program',
-      description: 'Join a community of ambitious entrepreneurs scaling their businesses together.',
+      title: 'High Ticket Closing Mastery',
+      description: 'Master the psychology and techniques to close premium clients consistently.',
       features: [
-        { text: 'Monthly group coaching', col: 1 },
-        { text: 'Resource library', col: 2 },
-        { text: 'Private community', col: 1 },
+        { text: 'Closing frameworks', col: 1 },
+        { text: 'Objection handling', col: 2 },
+        { text: 'Sales psychology', col: 1 },
       ],
     },
     {
-      title: '1:1 Coaching',
-      description: 'Join a community of ambitious entrepreneurs scaling their businesses together.',
+      title: 'Cold DM Blueprint',
+      description: 'Learn how to run effective cold outreach that converts strangers into clients.',
       features: [
-        { text: 'Weekly 1:1 calls', col: 1 },
-        { text: 'Custom strategy', col: 2 },
-        { text: 'Direct access', col: 1 },
+        { text: 'DM scripts & templates', col: 1 },
+        { text: 'Lead qualification', col: 2 },
+        { text: 'Conversion tactics', col: 1 },
       ],
     },
     {
-      title: 'Free Podcast & Resources',
-      description: 'Join a community of ambitious entrepreneurs scaling their businesses together.',
+      title: 'Realtor Client Acquisition',
+      description: 'Specialized training for realtors to land high-value property clients.',
       features: [
-        { text: 'Weekly podcast', col: 1 },
-        { text: 'Free trainings', col: 2 },
-        { text: 'Business templates', col: 1 },
+        { text: 'Realtor strategies', col: 1 },
+        { text: 'Client nurturing', col: 2 },
+        { text: 'Deal closing', col: 1 },
       ],
     },
   ]
@@ -53,12 +53,12 @@ const Mastermind = () => {
           {/* Header */}
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white italic leading-tight">
-              The Swift Marketing
+              Billeady's Signature
               <br />
-              Mastermind
+              Programs
             </h2>
             <p className="text-white/75 text-sm md:text-base max-w-md lg:justify-self-end">
-              No matter where you're at on your journey, my signature programs will help you create more freedom, impact, and income.
+              Whether you're starting out or scaling up, my programs will help you close more deals, land premium clients, and build lasting wealth.
             </p>
           </div>
 

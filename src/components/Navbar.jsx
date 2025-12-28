@@ -6,9 +6,9 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', href: '#', active: true },
     { name: 'About', href: '#about' },
-    { name: 'Work With Ellie', href: '#work' },
-    { name: 'Podcast', href: '#podcast' },
-    { name: 'Result', href: '#result' },
+    { name: 'Programs', href: '#programs' },
+    { name: 'Results', href: '#results' },
+    { name: 'Book', href: '#book' },
     { name: 'Contact', href: '#contact' },
   ]
 
@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="text-2xl font-medium text-[#3D1D4E]">
-          ellie swift
+          billeady
         </a>
 
         {/* Desktop Navigation */}
@@ -42,7 +42,7 @@ const Navbar = () => {
           href="#"
           className="hidden md:flex items-center gap-2 bg-[#3D1D4E] text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#2D1538] transition-colors"
         >
-          Free Podcast
+          Free Training
           <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center">
             <svg
               className="w-3 h-3 text-[#3D1D4E]"

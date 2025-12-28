@@ -17,21 +17,21 @@ const Hero = () => {
             {/* Tag */}
             <div className="flex items-center gap-2 mb-5">
               <span className="text-[#3D1D4E] text-sm">✦</span>
-              <span className="text-xs text-gray-600">For Coaches & Creatives</span>
+              <span className="text-xs text-gray-600">High Ticket Closer & Business Consultant</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-[3.25rem] font-semibold text-gray-900 leading-[1.15] mb-5">
-              It's Your Time to Build an
+              Master the Art of
               <br />
-              Intentional & Abundant
+              Closing High Ticket
               <br />
-              Online Business.
+              Clients with Confidence.
             </h1>
 
             {/* Subtext */}
             <p className="text-gray-500 text-sm mb-7 max-w-md">
-              A proven business model to scale your coaching or creative business without burnout.
+              Learn proven strategies to close premium clients, run effective cold DMs, and build a thriving business.
             </p>
 
             {/* CTA Button */}
@@ -39,7 +39,7 @@ const Hero = () => {
               href="#"
               className="inline-flex items-center gap-2 bg-[#3D1D4E] text-white pl-5 pr-1.5 py-1.5 rounded-full text-sm font-medium hover:bg-[#2D1538] transition-colors mb-16 lg:mb-24"
             >
-              Get Access Now
+              Start Learning Now
               <span className="w-7 h-7 bg-white rounded-full flex items-center justify-center">
                 <svg
                   className="w-3.5 h-3.5 text-[#3D1D4E]"
@@ -102,10 +102,10 @@ const Hero = () => {
                   >
                     <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                   </svg>
-                  <span className="text-sm text-gray-800 ml-1.5 font-medium">(2.3K Reviews)</span>
+                  <span className="text-sm text-gray-800 ml-1.5 font-medium">(500+ Students)</span>
                 </div>
                 <p className="text-xs text-gray-500 mt-0.5">
-                  Trusted by 200+ coaches & creatives worldwide
+                  Trusted by closers & entrepreneurs worldwide
                 </p>
               </div>
             </div>
@@ -117,7 +117,7 @@ const Hero = () => {
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop"
-                alt="Ellie Swift"
+                alt="Billeady Saliu"
                 className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-cover object-top"
                 style={{
                   maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)',
