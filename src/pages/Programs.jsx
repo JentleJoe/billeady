@@ -245,6 +245,153 @@ const Programs = () => {
         </div>
       </section>
 
+      {/* Premium 1-on-1 Coaching Section */}
+      <section className="w-full py-20 md:py-28 relative overflow-hidden">
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              'linear-gradient(135deg, #2A1036 0%, #3D1D4E 50%, #2A1036 100%)',
+          }}
+        />
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-white/5 rounded-full translate-x-1/3 translate-y-1/3" />
+
+        <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div>
+              <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full mb-6">
+                <span className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" />
+                <span className="text-xs text-white font-medium uppercase tracking-wider">Premium Offering</span>
+              </div>
+
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6">
+                1-on-1 Cold DM
+                <br />
+                <span className="text-yellow-400">Coaching Program</span>
+              </h2>
+
+              <p className="text-white/80 text-lg mb-8 leading-relaxed">
+                Get personalized, hands-on coaching directly from Billeady. This exclusive program is for serious individuals who want accelerated results through direct mentorship and real-time feedback on their outreach strategies.
+              </p>
+
+              <div className="space-y-4 mb-8">
+                {[
+                  'Personal strategy calls with Billeady',
+                  'Real-time DM review and optimization',
+                  'Custom outreach scripts for your niche',
+                  'Direct WhatsApp access for support',
+                  'Done-with-you prospect list building',
+                  'Weekly accountability check-ins',
+                ].map((item, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <span className="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center shrink-0">
+                      <svg className="w-3.5 h-3.5 text-[#2A1036]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </span>
+                    <span className="text-white/90">{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex items-center gap-4 mb-8">
+                <div>
+                  <div className="text-sm text-white/60 mb-1">Investment</div>
+                  <div className="text-3xl font-bold text-white">₦500,000</div>
+                  <div className="text-xs text-white/50">4-week intensive program</div>
+                </div>
+                <div className="h-12 w-px bg-white/20" />
+                <div>
+                  <div className="text-sm text-white/60 mb-1">Limited Spots</div>
+                  <div className="text-xl font-semibold text-yellow-400">Only 5 slots/month</div>
+                  <div className="text-xs text-white/50">Application required</div>
+                </div>
+              </div>
+
+              <a
+                href="https://wa.me/2348000000000?text=Hi%20Billeady,%20I'm%20interested%20in%20the%201-on-1%20Cold%20DM%20Coaching%20Program"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-yellow-400 text-[#2A1036] px-8 py-4 rounded-full text-sm font-bold hover:bg-yellow-300 transition-colors"
+              >
+                Apply for 1-on-1 Coaching
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            </div>
+
+            {/* Right Content - Feature Card */}
+            <div className="bg-white rounded-lg overflow-hidden shadow-2xl">
+              <div className="bg-[#3D1D4E] px-6 py-4">
+                <h3 className="text-white font-semibold text-lg">What Makes This Different</h3>
+              </div>
+              <div className="p-6 space-y-6">
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 bg-[#3D1D4E]/10 rounded-lg flex items-center justify-center shrink-0">
+                    <svg className="w-6 h-6 text-[#3D1D4E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Personalized Attention</h4>
+                    <p className="text-sm text-gray-600">No group calls. Just you and Billeady working on YOUR specific business and challenges.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 bg-[#3D1D4E]/10 rounded-lg flex items-center justify-center shrink-0">
+                    <svg className="w-6 h-6 text-[#3D1D4E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Proven System</h4>
+                    <p className="text-sm text-gray-600">The exact DM frameworks that have helped students close ₦50M+ in deals.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 bg-[#3D1D4E]/10 rounded-lg flex items-center justify-center shrink-0">
+                    <svg className="w-6 h-6 text-[#3D1D4E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Fast Results</h4>
+                    <p className="text-sm text-gray-600">Most students land their first client within the first 2 weeks of the program.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-12 h-12 bg-[#3D1D4E]/10 rounded-lg flex items-center justify-center shrink-0">
+                    <svg className="w-6 h-6 text-[#3D1D4E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Direct Access</h4>
+                    <p className="text-sm text-gray-600">WhatsApp support means you get answers and feedback within hours, not days.</p>
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-gray-100">
+                  <div className="flex items-center gap-3 text-sm text-gray-500">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                    <span>Application required • Serious applicants only</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Bonuses Section */}
       <section className="w-full py-20 md:py-28 bg-[#3D1D4E]">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
