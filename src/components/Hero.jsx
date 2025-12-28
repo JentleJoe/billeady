@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const Hero = () => {
   return (
     <section className="relative w-full h-screen overflow-hidden">
@@ -35,8 +37,8 @@ const Hero = () => {
             </p>
 
             {/* CTA Button */}
-            <a
-              href="#"
+            <Link
+              to="/programs"
               className="inline-flex items-center gap-2 bg-[#3D1D4E] text-white pl-5 pr-1.5 py-1.5 rounded-full text-sm font-medium hover:bg-[#2D1538] transition-colors mb-16 lg:mb-24"
             >
               Start Learning Now
@@ -55,7 +57,7 @@ const Hero = () => {
                   />
                 </svg>
               </span>
-            </a>
+            </Link>
 
             {/* Trust Badge */}
             <div className="flex items-center gap-4 pb-12 lg:pb-16">

@@ -1,46 +1,55 @@
 import { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const location = useLocation()
 
   const navLinks = [
-    { name: 'Home', href: '#', active: true },
-    { name: 'About', href: '#about' },
-    { name: 'Programs', href: '#programs' },
-    { name: 'Results', href: '#results' },
-    { name: 'Book', href: '#book' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'Closing Services', href: '/high-ticket-closing' },
+    { name: 'Coaching', href: '/coaching' },
+    { name: 'Consulting', href: '/consulting' },
+    { name: 'Programs', href: '/programs' },
+    { name: 'Book', href: '/book' },
   ]
 
+  const isActive = (href) => {
+    if (href === '/') {
+      return location.pathname === '/'
+    }
+    return location.pathname.startsWith(href)
+  }
+
   return (
-    <nav className="absolute top-0 left-0 right-0 z-50 py-4 px-6 md:px-12 lg:px-20 bg-white">
+    <nav className="fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-12 lg:px-20 bg-white shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="text-2xl font-medium text-[#3D1D4E]">
+        <Link to="/" className="text-2xl font-medium text-[#3D1D4E]">
           billeady
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               className={`text-sm font-medium transition-colors ${
-                link.active
-                  ? 'text-gray-900 border-b-2 border-gray-900 pb-1'
-                  : 'text-gray-700 hover:text-gray-900'
+                isActive(link.href)
+                  ? 'text-[#3D1D4E] border-b-2 border-[#3D1D4E] pb-1'
+                  : 'text-gray-700 hover:text-[#3D1D4E]'
               }`}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
         </div>
 
         {/* CTA Button */}
-        <a
-          href="#"
-          className="hidden md:flex items-center gap-2 bg-[#3D1D4E] text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#2D1538] transition-colors"
+        <Link
+          to="/programs"
+          className="hidden lg:flex items-center gap-2 bg-[#3D1D4E] text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#2D1538] transition-colors"
         >
           Free Training
           <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center">
@@ -58,11 +67,11 @@ const Navbar = () => {
               />
             </svg>
           </span>
-        </a>
+        </Link>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-900"
+          className="lg:hidden text-gray-900"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg
@@ -92,24 +101,26 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden mt-4 pb-4">
+        <div className="lg:hidden mt-4 pb-4 bg-white">
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
+                onClick={() => setIsMenuOpen(false)}
                 className={`text-sm font-medium ${
-                  link.active ? 'text-gray-900' : 'text-gray-700'
+                  isActive(link.href) ? 'text-[#3D1D4E]' : 'text-gray-700'
                 }`}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#"
+            <Link
+              to="/programs"
+              onClick={() => setIsMenuOpen(false)}
               className="flex items-center gap-2 bg-[#3D1D4E] text-white px-5 py-2.5 rounded-full text-sm font-medium w-fit"
             >
-              Free Podcast
+              Free Training
               <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center">
                 <svg
                   className="w-3 h-3 text-[#3D1D4E]"
@@ -125,7 +136,7 @@ const Navbar = () => {
                   />
                 </svg>
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       )}

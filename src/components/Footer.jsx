@@ -1,14 +1,16 @@
+import { Link } from 'react-router-dom'
+
 const Footer = () => {
   const navLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'About', href: '#about' },
-    { name: 'Programs', href: '#programs' },
+    { name: 'Home', href: '/' },
+    { name: 'Closing Services', href: '/high-ticket-closing' },
+    { name: 'Coaching', href: '/coaching' },
   ]
 
   const navLinks2 = [
-    { name: 'Results', href: '#results' },
-    { name: 'Book', href: '#book' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Consulting', href: '/consulting' },
+    { name: 'Programs', href: '/programs' },
+    { name: 'Book', href: '/book' },
   ]
 
   return (
@@ -18,9 +20,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Logo & Social */}
           <div>
-            <a href="#" className="text-2xl font-medium text-gray-900 mb-4 block">
+            <Link to="/" className="text-2xl font-medium text-gray-900 mb-4 block">
               billeady
-            </a>
+            </Link>
             <div className="flex items-center gap-3 mt-4">
               {/* Instagram */}
               <a
@@ -66,12 +68,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {navLinks.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-gray-600 text-sm hover:text-gray-900 transition-colors"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -82,12 +84,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {navLinks2.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-gray-600 text-sm hover:text-gray-900 transition-colors"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
