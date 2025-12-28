@@ -21,7 +21,7 @@ const Hero = () => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-[3.25rem] font-serif text-gray-900 leading-[1.15] mb-5">
+            <h1 className="text-4xl md:text-5xl lg:text-[3.25rem] font-semibold text-gray-900 leading-[1.15] mb-5">
               It's Your Time to Build an
               <br />
               Intentional & Abundant

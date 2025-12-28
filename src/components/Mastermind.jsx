@@ -52,7 +52,7 @@ const Mastermind = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pt-20 md:pt-24 pb-14 md:pb-16">
           {/* Header */}
           <div className="grid lg:grid-cols-2 gap-10 items-center">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white italic leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white italic leading-tight">
               The Swift Marketing
               <br />
               Mastermind

@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Logo & Social */}
           <div>
-            <a href="#" className="text-2xl font-serif text-gray-900 mb-4 block">
+            <a href="#" className="text-2xl font-medium text-gray-900 mb-4 block">
               ellie swift
             </a>
             <div className="flex items-center gap-3 mt-4">

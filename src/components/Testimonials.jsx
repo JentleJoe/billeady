@@ -114,7 +114,7 @@ const Testimonials = () => {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-10">
           <div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 mb-2">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-2">
               Here's what they have to say
             </h2>
             <p className="text-gray-500 text-sm">

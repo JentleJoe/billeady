@@ -21,7 +21,7 @@ const About = () => {
 
         {/* Right Side - Content */}
         <div className="bg-[#3D1D4E] px-8 md:px-12 lg:px-16 py-16 lg:py-24 flex flex-col justify-center lg:basis-[55%]">
-          <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-serif text-white leading-tight mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-semibold text-white leading-tight mb-6">
             Hey there, I'm Ellie — Marketing & Mindset Coach, International Speaker & Entrepreneur.
           </h2>
 

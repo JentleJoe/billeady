@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="absolute top-0 left-0 right-0 z-50 py-4 px-6 md:px-12 lg:px-20 bg-white">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="text-2xl font-serif text-[#3D1D4E]">
+        <a href="#" className="text-2xl font-medium text-[#3D1D4E]">
           ellie swift
         </a>
 

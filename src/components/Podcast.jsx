@@ -15,7 +15,7 @@ const Podcast = () => {
           }}
         >
           <div className="max-w-4xl mx-auto px-6 md:px-12 pt-14 md:pt-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white leading-tight mb-3">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-3">
               Shine Online with Ellie
               <br />
               Swift Podcast

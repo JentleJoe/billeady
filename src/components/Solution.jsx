@@ -73,7 +73,7 @@ const Solution = () => {
 
           {/* Right: Heading + Rows */}
           <div className="pt-1">
-            <h2 className="text-4xl md:text-5xl font-serif text-white leading-tight">
+            <h2 className="text-4xl md:text-5xl font-semibold text-white leading-tight">
               Feeling Stuck in Your
               <br />
               Business Growth?
