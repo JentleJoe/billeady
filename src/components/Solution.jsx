@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const Solution = () => {
   const painPoints = [
     {
@@ -8,6 +10,7 @@ const Solution = () => {
       ),
       title: 'Struggling to Close Deals',
       description: 'Losing prospects at the final stage of the sale.',
+      link: '/high-ticket-closing',
     },
     {
       icon: (
@@ -17,6 +20,7 @@ const Solution = () => {
       ),
       title: 'Cold DMs Not Converting',
       description: 'Sending messages but getting no responses.',
+      link: '/coaching',
     },
     {
       icon: (
@@ -26,6 +30,7 @@ const Solution = () => {
       ),
       title: 'Inconsistent Income',
       description: 'No predictable system for landing clients.',
+      link: '/consulting',
     },
   ]
 
@@ -84,9 +89,10 @@ const Solution = () => {
 
             <div className="mt-9 space-y-4">
               {painPoints.map((point, index) => (
-                <div
+                <Link
                   key={index}
-                  className="bg-white border border-black/10 rounded-sm px-5 py-4 flex items-center justify-between"
+                  to={point.link}
+                  className="bg-white border border-black/10 rounded-sm px-5 py-4 flex items-center justify-between hover:border-[#3D1D4E]/30 hover:shadow-md transition-all group"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 border border-[#3D1D4E]/40 rounded-sm flex items-center justify-center text-[#3D1D4E]">
@@ -98,12 +104,12 @@ const Solution = () => {
                     </div>
                   </div>
 
-                  <div className="text-gray-800">
+                  <div className="text-gray-800 group-hover:translate-x-1 transition-transform">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
