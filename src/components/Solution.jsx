@@ -30,81 +30,82 @@ const Solution = () => {
   ]
 
   return (
-    <section className="w-full">
-      <div className="grid lg:grid-cols-2">
-        {/* Left Side - Dark Purple with Solution Card */}
-        <div className="bg-[#3D1D4E] p-6 md:p-8 lg:p-10">
-          {/* Solution Card */}
-          <div className="bg-white rounded-lg overflow-hidden max-w-sm">
-            {/* Card Header */}
-            <div className="p-5">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                The Solution
-              </h3>
-              <p className="text-gray-600 text-xs leading-relaxed mb-3">
-                The <span className="font-semibold italic">Swift Marketing Method™</span> helps you build, fill, and scale your business sustainably — so you can serve at your highest potential.
-              </p>
-              {/* Checkmark Item */}
-              <div className="flex items-center gap-2">
-                <span className="w-4 h-4 bg-[#3D1D4E] rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg className="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                  </svg>
-                </span>
-                <span className="text-xs text-gray-700">Proven. Sustainable. Scalable.</span>
-              </div>
-            </div>
+    <section
+      className="w-full"
+      style={{
+        background:
+          'radial-gradient(900px circle at 50% 0%, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 55%), linear-gradient(180deg, #3D1D4E 0%, #2A1036 100%)',
+      }}
+    >
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-14 md:py-16">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+          {/* Left: Solution Card */}
+          <div>
+            <div className="bg-white border border-black/10 rounded-sm overflow-hidden">
+              <div className="px-7 pt-7 pb-5">
+                <h3 className="text-xl font-semibold text-gray-900">The Solution</h3>
+                <p className="text-gray-600 text-xs leading-relaxed mt-3 max-w-md">
+                  The <span className="font-semibold">Swift Marketing Method™</span> helps you build, fill, and scale your business sustainably — so you can serve at your highest potential.
+                </p>
+                <div className="h-px bg-gray-200 mt-5" />
 
-            {/* Card Image */}
-            <div className="relative h-48">
-              <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
-                alt="Marketing planning session"
-                className="w-full h-full object-cover"
-              />
+                <div className="flex items-center gap-3 mt-4">
+                  <span className="w-5 h-5 rounded-full bg-[#3D1D4E] flex items-center justify-center shrink-0">
+                    <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </span>
+                  <span className="text-xs text-gray-600">Proven. Sustainable. Scalable.</span>
+                </div>
+              </div>
+
+              <div className="px-5 pb-5">
+                <div className="bg-gray-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&h=600&fit=crop"
+                    alt="Marketing planning session"
+                    className="w-full aspect-video object-cover"
+                  />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Right Side - Pain Points */}
-        <div className="bg-white p-6 md:p-8 lg:p-10 flex flex-col justify-center">
-          <h2 className="text-3xl md:text-4xl font-serif text-gray-900 leading-tight mb-3 italic">
-            Feeling Stuck in Your<br />Business Growth?
-          </h2>
-          <p className="text-gray-500 text-sm mb-6 max-w-md">
-            Breaking down the business model behind my most scalable offer – and how you can build yours.
-          </p>
+          {/* Right: Heading + Rows */}
+          <div className="pt-1">
+            <h2 className="text-4xl md:text-5xl font-serif text-white leading-tight">
+              Feeling Stuck in Your
+              <br />
+              Business Growth?
+            </h2>
+            <p className="text-white/70 text-sm mt-5 max-w-md">
+              Breaking down the business model behind my most scalable offer – and how you can build yours.
+            </p>
 
-          {/* Pain Point Cards */}
-          <div className="space-y-3">
-            {painPoints.map((point, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-between p-3 bg-[#F5F5F3] rounded-lg cursor-pointer group"
-              >
-                <div className="flex items-center gap-3">
-                  {/* Icon */}
-                  <div className="w-9 h-9 bg-white rounded-md flex items-center justify-center text-[#3D1D4E]">
-                    {point.icon}
+            <div className="mt-9 space-y-4">
+              {painPoints.map((point, index) => (
+                <div
+                  key={index}
+                  className="bg-white border border-black/10 rounded-sm px-5 py-4 flex items-center justify-between"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 border border-[#3D1D4E]/40 rounded-sm flex items-center justify-center text-[#3D1D4E]">
+                      {point.icon}
+                    </div>
+                    <div>
+                      <div className="text-sm font-semibold text-gray-900">{point.title}</div>
+                      <div className="text-xs text-gray-500 mt-0.5">{point.description}</div>
+                    </div>
                   </div>
-                  {/* Text */}
-                  <div>
-                    <h4 className="font-semibold text-gray-900 text-sm">
-                      {point.title}
-                    </h4>
-                    <p className="text-gray-500 text-xs">
-                      {point.description}
-                    </p>
+
+                  <div className="text-gray-800">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
                   </div>
                 </div>
-                {/* Arrow */}
-                <div className="text-[#3D1D4E] pr-2">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
