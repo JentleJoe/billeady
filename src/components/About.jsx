@@ -20,7 +20,7 @@ const About = () => {
         </div>
 
         {/* Right Side - Content */}
-        <div className="bg-[#3D1D4E] px-8 md:px-12 lg:px-16 py-16 lg:py-24 flex flex-col justify-center lg:basis-[55%]">
+        <div className="bg-[#722F37] px-8 md:px-12 lg:px-16 py-16 lg:py-24 flex flex-col justify-center lg:basis-[55%]">
           <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-semibold text-white leading-tight mb-6">
             Hey, I'm Billeady Saliu — High Ticket Closer, Coach & Business Consultant.
           </h2>
@@ -32,12 +32,12 @@ const About = () => {
           {/* CTA Button */}
           <a
             href="#"
-            className="inline-flex items-center gap-2 bg-transparent text-white px-6 py-3 rounded-full text-sm font-medium border border-white hover:bg-white hover:text-[#3D1D4E] transition-colors w-fit mb-10"
+            className="inline-flex items-center gap-2 bg-transparent text-white px-6 py-3 rounded-full text-sm font-medium border border-white hover:bg-white hover:text-[#722F37] transition-colors w-fit mb-10"
           >
             Learn My Story
-            <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center group-hover:bg-[#3D1D4E]">
+            <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center group-hover:bg-[#722F37]">
               <svg
-                className="w-3 h-3 text-[#3D1D4E]"
+                className="w-3 h-3 text-[#722F37]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

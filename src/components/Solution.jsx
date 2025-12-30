@@ -39,7 +39,7 @@ const Solution = () => {
       className="w-full"
       style={{
         background:
-          'radial-gradient(900px circle at 50% 0%, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 55%), linear-gradient(180deg, #3D1D4E 0%, #2A1036 100%)',
+          'radial-gradient(900px circle at 50% 0%, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 55%), linear-gradient(180deg, #722F37 0%, #4A1E23 100%)',
       }}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-14 md:py-16">
@@ -55,7 +55,7 @@ const Solution = () => {
                 <div className="h-px bg-gray-200 mt-5" />
 
                 <div className="flex items-center gap-3 mt-4">
-                  <span className="w-5 h-5 rounded-full bg-[#3D1D4E] flex items-center justify-center shrink-0">
+                  <span className="w-5 h-5 rounded-full bg-[#722F37] flex items-center justify-center shrink-0">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                     </svg>
@@ -92,10 +92,10 @@ const Solution = () => {
                 <Link
                   key={index}
                   to={point.link}
-                  className="bg-white border border-black/10 rounded-sm px-5 py-4 flex items-center justify-between hover:border-[#3D1D4E]/30 hover:shadow-md transition-all group"
+                  className="bg-white border border-black/10 rounded-sm px-5 py-4 flex items-center justify-between hover:border-[#722F37]/30 hover:shadow-md transition-all group"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 border border-[#3D1D4E]/40 rounded-sm flex items-center justify-center text-[#3D1D4E]">
+                    <div className="w-10 h-10 border border-[#722F37]/40 rounded-sm flex items-center justify-center text-[#722F37]">
                       {point.icon}
                     </div>
                     <div>

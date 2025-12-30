@@ -24,7 +24,7 @@ const Contact = () => {
       ),
       action: 'Send an Email',
       href: 'mailto:hello@billeady.com',
-      color: 'bg-[#3D1D4E] hover:bg-[#2D1538]',
+      color: 'bg-[#722F37] hover:bg-[#5C242B]',
     },
   ]
 
@@ -99,19 +99,19 @@ const Contact = () => {
           className="absolute inset-0"
           style={{
             background:
-              'radial-gradient(ellipse 80% 50% at 50% 30%, rgba(61,29,78,0.15) 0%, transparent 70%), linear-gradient(135deg, #FEF6EE 0%, #FDEBD6 40%, #FDF3E8 100%)',
+              'radial-gradient(ellipse 80% 50% at 50% 30%, rgba(114,47,55,0.15) 0%, transparent 70%), linear-gradient(135deg, #FEF6EE 0%, #FDEBD6 40%, #FDF3E8 100%)',
           }}
         />
         <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-28">
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex items-center justify-center gap-2 mb-5">
-              <span className="text-[#3D1D4E] text-sm">✦</span>
+              <span className="text-[#722F37] text-sm">✦</span>
               <span className="text-xs text-gray-600 uppercase tracking-wider">Get In Touch</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-6">
               Let's Start a
               <br />
-              <span className="text-[#3D1D4E]">Conversation</span>
+              <span className="text-[#722F37]">Conversation</span>
             </h1>
             <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
               Have a question about my programs? Want to explore working together? Or just want to say hi? I'd love to hear from you.
@@ -127,9 +127,9 @@ const Contact = () => {
             {contactMethods.map((method, index) => (
               <div
                 key={index}
-                className="border border-black/10 rounded-lg p-8 hover:border-[#3D1D4E]/30 hover:shadow-lg transition-all"
+                className="border border-black/10 rounded-lg p-8 hover:border-[#722F37]/30 hover:shadow-lg transition-all"
               >
-                <div className="w-14 h-14 bg-[#3D1D4E]/10 rounded-xl flex items-center justify-center text-[#3D1D4E] mb-6">
+                <div className="w-14 h-14 bg-[#722F37]/10 rounded-xl flex items-center justify-center text-[#722F37] mb-6">
                   {method.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{method.title}</h3>
@@ -193,9 +193,9 @@ const Contact = () => {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 bg-white border border-black/10 px-6 py-4 rounded-lg hover:border-[#3D1D4E]/30 hover:shadow-md transition-all group"
+                className="flex items-center gap-3 bg-white border border-black/10 px-6 py-4 rounded-lg hover:border-[#722F37]/30 hover:shadow-md transition-all group"
               >
-                <span className="text-gray-600 group-hover:text-[#3D1D4E] transition-colors">
+                <span className="text-gray-600 group-hover:text-[#722F37] transition-colors">
                   {social.icon}
                 </span>
                 <span className="font-medium text-gray-900">{social.name}</span>
@@ -229,7 +229,7 @@ const Contact = () => {
       <section
         className="w-full py-20 md:py-28"
         style={{
-          background: 'linear-gradient(135deg, #3D1D4E 0%, #2A1036 100%)',
+          background: 'linear-gradient(135deg, #722F37 0%, #4A1E23 100%)',
         }}
       >
         <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
@@ -244,7 +244,7 @@ const Contact = () => {
               href="https://wa.me/2347069487679?text=Hi%20Billeady,%20I'm%20ready%20to%20start%20closing%20high%20ticket%20clients!"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-white text-[#3D1D4E] px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-white text-[#722F37] px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors"
             >
               Start a Conversation
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

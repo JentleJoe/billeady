@@ -77,7 +77,7 @@ const Book = () => {
           className="absolute inset-0"
           style={{
             background:
-              'radial-gradient(ellipse 100% 80% at 50% 100%, rgba(61,29,78,0.3) 0%, transparent 60%), linear-gradient(180deg, #1a0a24 0%, #3D1D4E 50%, #2A1036 100%)',
+              'radial-gradient(ellipse 100% 80% at 50% 100%, rgba(114,47,55,0.3) 0%, transparent 60%), linear-gradient(180deg, #2D1215 0%, #722F37 50%, #4A1E23 100%)',
           }}
         />
         <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20">
@@ -97,7 +97,7 @@ const Book = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="#waitlist"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-[#3D1D4E] px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-[#722F37] px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
                 >
                   Join the Waitlist
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -111,7 +111,7 @@ const Book = () => {
             <div className="relative flex justify-center">
               <div className="relative">
                 {/* Book Cover */}
-                <div className="w-64 md:w-80 bg-gradient-to-br from-[#2A1036] to-[#1a0a24] rounded-lg shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                <div className="w-64 md:w-80 bg-gradient-to-br from-[#4A1E23] to-[#2D1215] rounded-lg shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
                   <div className="border border-white/20 rounded p-6 h-96 flex flex-col justify-between">
                     <div>
                       <div className="text-white/60 text-xs uppercase tracking-widest mb-4">Billeady Saliu</div>
@@ -158,12 +158,12 @@ const Book = () => {
               </p>
             </div>
             <div className="bg-[#FAF9F7] p-8 rounded-sm">
-              <div className="text-[#3D1D4E] text-6xl font-serif mb-4">"</div>
+              <div className="text-[#722F37] text-6xl font-serif mb-4">"</div>
               <p className="text-gray-700 text-lg italic mb-6">
                 I didn't write this book because I'm proud of failing. I wrote it because I know someone out there is going through what I went through — and they need to know it's possible to come back stronger.
               </p>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-[#3D1D4E] rounded-full flex items-center justify-center text-white font-semibold">
+                <div className="w-12 h-12 bg-[#722F37] rounded-full flex items-center justify-center text-white font-semibold">
                   BS
                 </div>
                 <div>
@@ -191,7 +191,7 @@ const Book = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {chapters.map((chapter, index) => (
               <div key={index} className="bg-white p-6 rounded-sm border border-black/5 hover:shadow-lg transition-shadow">
-                <div className="text-[#3D1D4E] text-3xl font-bold mb-3">{chapter.number}</div>
+                <div className="text-[#722F37] text-3xl font-bold mb-3">{chapter.number}</div>
                 <h3 className="font-semibold text-gray-900 mb-2">{chapter.title}</h3>
                 <p className="text-gray-600 text-sm">{chapter.description}</p>
               </div>
@@ -201,7 +201,7 @@ const Book = () => {
       </section>
 
       {/* Who Is This For Section */}
-      <section className="w-full py-20 md:py-28 bg-[#3D1D4E]">
+      <section className="w-full py-20 md:py-28 bg-[#722F37]">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -243,7 +243,7 @@ const Book = () => {
       {/* Waitlist Section */}
       <section id="waitlist" className="w-full py-20 md:py-28 bg-white">
         <div className="max-w-3xl mx-auto px-6 md:px-12 lg:px-20 text-center">
-          <div className="inline-block bg-[#3D1D4E]/10 text-[#3D1D4E] text-xs font-medium px-4 py-2 rounded-full mb-6">
+          <div className="inline-block bg-[#722F37]/10 text-[#722F37] text-xs font-medium px-4 py-2 rounded-full mb-6">
             Be the First to Know
           </div>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
@@ -262,11 +262,11 @@ const Book = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email address"
                   required
-                  className="flex-1 px-5 py-4 border border-gray-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#3D1D4E]/20 focus:border-[#3D1D4E]"
+                  className="flex-1 px-5 py-4 border border-gray-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#722F37]/20 focus:border-[#722F37]"
                 />
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center gap-2 bg-[#3D1D4E] text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-[#2D1538] transition-colors whitespace-nowrap"
+                  className="inline-flex items-center justify-center gap-2 bg-[#722F37] text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-[#5C242B] transition-colors whitespace-nowrap"
                 >
                   Join Waitlist
                 </button>
@@ -335,7 +335,7 @@ const Book = () => {
       <section
         className="w-full py-20 md:py-28"
         style={{
-          background: 'linear-gradient(135deg, #3D1D4E 0%, #2A1036 100%)',
+          background: 'linear-gradient(135deg, #722F37 0%, #4A1E23 100%)',
         }}
       >
         <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
@@ -347,10 +347,10 @@ const Book = () => {
           </p>
           <a
             href="#waitlist"
-            className="inline-flex items-center gap-3 bg-white text-[#3D1D4E] px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
+            className="inline-flex items-center gap-3 bg-white text-[#722F37] px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
           >
             Secure Your Spot on the Waitlist
-            <span className="w-6 h-6 bg-[#3D1D4E] rounded-full flex items-center justify-center">
+            <span className="w-6 h-6 bg-[#722F37] rounded-full flex items-center justify-center">
               <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

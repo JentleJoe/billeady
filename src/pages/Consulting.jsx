@@ -100,19 +100,19 @@ const Consulting = () => {
           className="absolute inset-0"
           style={{
             background:
-              'radial-gradient(ellipse 80% 50% at 50% 50%, rgba(61,29,78,0.12) 0%, transparent 70%), linear-gradient(135deg, #FEF6EE 0%, #FDEBD6 40%, #FDF3E8 100%)',
+              'radial-gradient(ellipse 80% 50% at 50% 50%, rgba(114,47,55,0.12) 0%, transparent 70%), linear-gradient(135deg, #FEF6EE 0%, #FDEBD6 40%, #FDF3E8 100%)',
           }}
         />
         <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-28">
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex items-center justify-center gap-2 mb-5">
-              <span className="text-[#3D1D4E] text-sm">✦</span>
+              <span className="text-[#722F37] text-sm">✦</span>
               <span className="text-xs text-gray-600 uppercase tracking-wider">Business Consulting</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-6">
               Strategic Guidance for
               <br />
-              <span className="text-[#3D1D4E]">Business Growth</span>
+              <span className="text-[#722F37]">Business Growth</span>
             </h1>
             <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
               Partner with someone who's built, lost, and rebuilt. My consulting approach combines real-world experience with proven frameworks to help you scale sustainably.
@@ -120,7 +120,7 @@ const Consulting = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-[#3D1D4E] text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-[#2D1538] transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-[#722F37] text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-[#5C242B] transition-colors"
               >
                 Schedule Consultation
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -133,7 +133,7 @@ const Consulting = () => {
       </section>
 
       {/* My Story Section */}
-      <section className="w-full py-20 md:py-28 bg-[#3D1D4E]">
+      <section className="w-full py-20 md:py-28 bg-[#722F37]">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -190,7 +190,7 @@ const Consulting = () => {
                 key={index}
                 className="bg-[#FAF9F7] p-6 rounded-sm border border-black/5 hover:shadow-lg transition-shadow"
               >
-                <div className="w-12 h-12 bg-[#3D1D4E] rounded-full flex items-center justify-center text-white mb-5">
+                <div className="w-12 h-12 bg-[#722F37] rounded-full flex items-center justify-center text-white mb-5">
                   {service.icon}
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h3>
@@ -215,7 +215,7 @@ const Consulting = () => {
               <div className="grid grid-cols-2 gap-4">
                 {industries.map((industry, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <span className="w-2 h-2 bg-[#3D1D4E] rounded-full"></span>
+                    <span className="w-2 h-2 bg-[#722F37] rounded-full"></span>
                     <span className="text-gray-700">{industry}</span>
                   </div>
                 ))}
@@ -235,7 +235,7 @@ const Consulting = () => {
                   'Are ready to invest in expert guidance',
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3 text-sm">
-                    <span className="w-5 h-5 bg-[#3D1D4E] rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                    <span className="w-5 h-5 bg-[#722F37] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                       <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
@@ -265,9 +265,9 @@ const Consulting = () => {
             {engagementTypes.map((type, index) => (
               <div
                 key={index}
-                className={`p-8 rounded-sm border ${index === 1 ? 'bg-[#3D1D4E] border-[#3D1D4E]' : 'bg-white border-black/10'}`}
+                className={`p-8 rounded-sm border ${index === 1 ? 'bg-[#722F37] border-[#722F37]' : 'bg-white border-black/10'}`}
               >
-                <div className={`text-xs font-medium mb-2 ${index === 1 ? 'text-white/60' : 'text-[#3D1D4E]'}`}>
+                <div className={`text-xs font-medium mb-2 ${index === 1 ? 'text-white/60' : 'text-[#722F37]'}`}>
                   {type.duration}
                 </div>
                 <h3 className={`text-xl font-semibold mb-3 ${index === 1 ? 'text-white' : 'text-gray-900'}`}>
@@ -279,7 +279,7 @@ const Consulting = () => {
                 <ul className="space-y-2 mb-6">
                   {type.features.map((feature, fIndex) => (
                     <li key={fIndex} className={`flex items-center gap-2 text-sm ${index === 1 ? 'text-white/80' : 'text-gray-600'}`}>
-                      <svg className={`w-4 h-4 ${index === 1 ? 'text-white' : 'text-[#3D1D4E]'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className={`w-4 h-4 ${index === 1 ? 'text-white' : 'text-[#722F37]'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       {feature}
@@ -299,7 +299,7 @@ const Consulting = () => {
       <section
         className="w-full py-20 md:py-28"
         style={{
-          background: 'linear-gradient(135deg, #3D1D4E 0%, #2A1036 100%)',
+          background: 'linear-gradient(135deg, #722F37 0%, #4A1E23 100%)',
         }}
       >
         <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
@@ -311,10 +311,10 @@ const Consulting = () => {
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-3 bg-white text-[#3D1D4E] px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
+            className="inline-flex items-center gap-3 bg-white text-[#722F37] px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
           >
             Book Your Free Consultation
-            <span className="w-6 h-6 bg-[#3D1D4E] rounded-full flex items-center justify-center">
+            <span className="w-6 h-6 bg-[#722F37] rounded-full flex items-center justify-center">
               <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

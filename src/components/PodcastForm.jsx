@@ -31,7 +31,7 @@ const PodcastForm = () => {
                     <input
                       type="text"
                       placeholder="Your First Name"
-                      className="w-full px-4 py-3 bg-gray-50 border border-transparent text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#3D1D4E]/20"
+                      className="w-full px-4 py-3 bg-gray-50 border border-transparent text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#722F37]/20"
                     />
                   </div>
                   <div>
@@ -41,7 +41,7 @@ const PodcastForm = () => {
                     <input
                       type="text"
                       placeholder="Your Last Name"
-                      className="w-full px-4 py-3 bg-gray-50 border border-transparent text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#3D1D4E]/20"
+                      className="w-full px-4 py-3 bg-gray-50 border border-transparent text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#722F37]/20"
                     />
                   </div>
                 </div>
@@ -54,7 +54,7 @@ const PodcastForm = () => {
                   <input
                     type="email"
                     placeholder="Enter Your Email Address"
-                    className="w-full px-4 py-3 bg-gray-50 border border-transparent text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#3D1D4E]/20"
+                    className="w-full px-4 py-3 bg-gray-50 border border-transparent text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#722F37]/20"
                   />
                 </div>
 
@@ -66,19 +66,19 @@ const PodcastForm = () => {
                   <input
                     type="text"
                     placeholder="Instagram (Optional)"
-                    className="w-full px-4 py-3 bg-gray-50 border border-transparent text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#3D1D4E]/20"
+                    className="w-full px-4 py-3 bg-gray-50 border border-transparent text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#722F37]/20"
                   />
                 </div>
 
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-3 bg-[#3D1D4E] text-white pl-6 pr-3 py-3 rounded-full text-sm font-medium hover:bg-[#2D1538] transition-colors mt-3"
+                  className="inline-flex items-center gap-3 bg-[#722F37] text-white pl-6 pr-3 py-3 rounded-full text-sm font-medium hover:bg-[#5C242B] transition-colors mt-3"
                 >
                   Get Free Access
                   <span className="w-7 h-7 bg-white rounded-full flex items-center justify-center">
                     <svg
-                      className="w-4 h-4 text-[#3D1D4E]"
+                      className="w-4 h-4 text-[#722F37]"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -106,7 +106,7 @@ const PodcastForm = () => {
               <div className="absolute inset-0 flex items-center justify-center">
                 <button className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
                   <svg
-                    className="w-6 h-6 text-[#3D1D4E] ml-0.5"
+                    className="w-6 h-6 text-[#722F37] ml-0.5"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >

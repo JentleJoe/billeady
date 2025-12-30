@@ -135,19 +135,19 @@ const Programs = () => {
           className="absolute inset-0"
           style={{
             background:
-              'radial-gradient(ellipse 80% 50% at 50% 30%, rgba(61,29,78,0.15) 0%, transparent 70%), linear-gradient(135deg, #FEF6EE 0%, #FDEBD6 40%, #FDF3E8 100%)',
+              'radial-gradient(ellipse 80% 50% at 50% 30%, rgba(114,47,55,0.15) 0%, transparent 70%), linear-gradient(135deg, #FEF6EE 0%, #FDEBD6 40%, #FDF3E8 100%)',
           }}
         />
         <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-28">
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex items-center justify-center gap-2 mb-5">
-              <span className="text-[#3D1D4E] text-sm">✦</span>
+              <span className="text-[#722F37] text-sm">✦</span>
               <span className="text-xs text-gray-600 uppercase tracking-wider">Training Programs</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-6">
               Level Up Your
               <br />
-              <span className="text-[#3D1D4E]">Closing Skills</span>
+              <span className="text-[#722F37]">Closing Skills</span>
             </h1>
             <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
               Structured training programs designed to transform you into a confident, high-performing sales professional. Choose the program that fits your goals.
@@ -163,29 +163,29 @@ const Programs = () => {
             {programs.map((program, index) => (
               <div
                 key={program.id}
-                className={`rounded-sm overflow-hidden ${program.featured ? 'border-2 border-[#3D1D4E]' : 'border border-black/10'}`}
+                className={`rounded-sm overflow-hidden ${program.featured ? 'border-2 border-[#722F37]' : 'border border-black/10'}`}
               >
                 {program.featured && (
-                  <div className="bg-[#3D1D4E] text-white text-center py-2 text-sm font-medium">
+                  <div className="bg-[#722F37] text-white text-center py-2 text-sm font-medium">
                     ⭐ Most Popular Program
                   </div>
                 )}
                 <div className="grid lg:grid-cols-2">
                   {/* Left - Info */}
                   <div className="p-8 md:p-12 bg-white">
-                    <div className="text-xs text-[#3D1D4E] font-medium mb-2">{program.subtitle}</div>
+                    <div className="text-xs text-[#722F37] font-medium mb-2">{program.subtitle}</div>
                     <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">{program.title}</h2>
                     <p className="text-gray-600 mb-6">{program.description}</p>
 
                     <div className="flex flex-wrap gap-4 mb-6">
                       <div className="flex items-center gap-2 text-sm text-gray-600">
-                        <svg className="w-4 h-4 text-[#3D1D4E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4 text-[#722F37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         {program.duration}
                       </div>
                       <div className="flex items-center gap-2 text-sm text-gray-600">
-                        <svg className="w-4 h-4 text-[#3D1D4E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4 text-[#722F37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
                         {program.format}
@@ -207,13 +207,13 @@ const Programs = () => {
                     </div>
 
                     <div className="flex items-baseline gap-3 mb-6">
-                      <span className="text-3xl font-bold text-[#3D1D4E]">{program.price}</span>
+                      <span className="text-3xl font-bold text-[#722F37]">{program.price}</span>
                       <span className="text-lg text-gray-400 line-through">{program.originalPrice}</span>
                     </div>
 
                     <Link
                       to="/contact"
-                      className="inline-flex items-center gap-2 bg-[#3D1D4E] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#2D1538] transition-colors"
+                      className="inline-flex items-center gap-2 bg-[#722F37] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#5C242B] transition-colors"
                     >
                       Enroll Now
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -228,7 +228,7 @@ const Programs = () => {
                     <ul className="space-y-3">
                       {program.features.map((feature, fIndex) => (
                         <li key={fIndex} className="flex items-center gap-3 text-sm text-gray-700">
-                          <span className="w-5 h-5 bg-[#3D1D4E] rounded-full flex items-center justify-center shrink-0">
+                          <span className="w-5 h-5 bg-[#722F37] rounded-full flex items-center justify-center shrink-0">
                             <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                             </svg>
@@ -251,7 +251,7 @@ const Programs = () => {
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(135deg, #2A1036 0%, #3D1D4E 50%, #2A1036 100%)',
+              'linear-gradient(135deg, #4A1E23 0%, #722F37 50%, #4A1E23 100%)',
           }}
         />
         {/* Decorative elements */}
@@ -288,7 +288,7 @@ const Programs = () => {
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <span className="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center shrink-0">
-                      <svg className="w-3.5 h-3.5 text-[#2A1036]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-3.5 h-3.5 text-[#4A1E23]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </span>
@@ -315,7 +315,7 @@ const Programs = () => {
                 href="https://wa.me/2348000000000?text=Hi%20Billeady,%20I'm%20interested%20in%20the%201-on-1%20Cold%20DM%20Coaching%20Program"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-yellow-400 text-[#2A1036] px-8 py-4 rounded-full text-sm font-bold hover:bg-yellow-300 transition-colors"
+                className="inline-flex items-center gap-3 bg-yellow-400 text-[#4A1E23] px-8 py-4 rounded-full text-sm font-bold hover:bg-yellow-300 transition-colors"
               >
                 Apply for 1-on-1 Coaching
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -326,13 +326,13 @@ const Programs = () => {
 
             {/* Right Content - Feature Card */}
             <div className="bg-white rounded-lg overflow-hidden shadow-2xl">
-              <div className="bg-[#3D1D4E] px-6 py-4">
+              <div className="bg-[#722F37] px-6 py-4">
                 <h3 className="text-white font-semibold text-lg">What Makes This Different</h3>
               </div>
               <div className="p-6 space-y-6">
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-[#3D1D4E]/10 rounded-lg flex items-center justify-center shrink-0">
-                    <svg className="w-6 h-6 text-[#3D1D4E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-12 h-12 bg-[#722F37]/10 rounded-lg flex items-center justify-center shrink-0">
+                    <svg className="w-6 h-6 text-[#722F37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
                   </div>
@@ -343,8 +343,8 @@ const Programs = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-[#3D1D4E]/10 rounded-lg flex items-center justify-center shrink-0">
-                    <svg className="w-6 h-6 text-[#3D1D4E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-12 h-12 bg-[#722F37]/10 rounded-lg flex items-center justify-center shrink-0">
+                    <svg className="w-6 h-6 text-[#722F37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
                   </div>
@@ -355,8 +355,8 @@ const Programs = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-[#3D1D4E]/10 rounded-lg flex items-center justify-center shrink-0">
-                    <svg className="w-6 h-6 text-[#3D1D4E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-12 h-12 bg-[#722F37]/10 rounded-lg flex items-center justify-center shrink-0">
+                    <svg className="w-6 h-6 text-[#722F37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
@@ -367,8 +367,8 @@ const Programs = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-[#3D1D4E]/10 rounded-lg flex items-center justify-center shrink-0">
-                    <svg className="w-6 h-6 text-[#3D1D4E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-12 h-12 bg-[#722F37]/10 rounded-lg flex items-center justify-center shrink-0">
+                    <svg className="w-6 h-6 text-[#722F37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                     </svg>
                   </div>
@@ -393,7 +393,7 @@ const Programs = () => {
       </section>
 
       {/* Bonuses Section */}
-      <section className="w-full py-20 md:py-28 bg-[#3D1D4E]">
+      <section className="w-full py-20 md:py-28 bg-[#722F37]">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4">
@@ -447,11 +447,11 @@ const Programs = () => {
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-3 bg-[#3D1D4E] text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-[#2D1538] transition-colors"
+            className="inline-flex items-center gap-3 bg-[#722F37] text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-[#5C242B] transition-colors"
           >
             Book Free Strategy Call
             <span className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
-              <svg className="w-3 h-3 text-[#3D1D4E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 text-[#722F37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </span>

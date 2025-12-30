@@ -11,7 +11,7 @@ const Podcast = () => {
           style={{
             height: 'clamp(380px, 42vw, 440px)',
             background:
-              'radial-gradient(900px circle at 50% 10%, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0) 55%), linear-gradient(180deg, #3D1D4E 0%, #2A1036 100%)',
+              'radial-gradient(900px circle at 50% 10%, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0) 55%), linear-gradient(180deg, #722F37 0%, #4A1E23 100%)',
           }}
         >
           <div className="max-w-4xl mx-auto px-6 md:px-12 pt-14 md:pt-16">
@@ -32,7 +32,7 @@ const Podcast = () => {
           style={{
             height: 'clamp(260px, 32vw, 320px)',
             background:
-              'radial-gradient(900px circle at 50% 0%, rgba(61,29,78,0.08) 0%, rgba(61,29,78,0) 52%), linear-gradient(180deg, #FAF9F7 0%, #F3EAE2 100%)',
+              'radial-gradient(900px circle at 50% 0%, rgba(114,47,55,0.08) 0%, rgba(114,47,55,0) 52%), linear-gradient(180deg, #FAF9F7 0%, #F3EAE2 100%)',
           }}
         />
 
@@ -55,7 +55,7 @@ const Podcast = () => {
                   aria-label="Play podcast"
                   className="w-12 h-12 md:w-14 md:h-14 bg-white rounded-full flex items-center justify-center shadow-lg"
                 >
-                  <svg className="w-5 h-5 md:w-5 md:h-5 text-[#3D1D4E] ml-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 md:w-5 md:h-5 text-[#722F37] ml-0.5" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                   </svg>
                 </button>

@@ -78,19 +78,19 @@ const HighTicketClosing = () => {
           className="absolute inset-0"
           style={{
             background:
-              'radial-gradient(ellipse 80% 50% at 70% 50%, rgba(61,29,78,0.15) 0%, transparent 70%), linear-gradient(135deg, #FEF6EE 0%, #FDEBD6 40%, #FDF3E8 100%)',
+              'radial-gradient(ellipse 80% 50% at 70% 50%, rgba(114,47,55,0.15) 0%, transparent 70%), linear-gradient(135deg, #FEF6EE 0%, #FDEBD6 40%, #FDF3E8 100%)',
           }}
         />
         <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-28">
           <div className="max-w-3xl">
             <div className="flex items-center gap-2 mb-5">
-              <span className="text-[#3D1D4E] text-sm">✦</span>
+              <span className="text-[#722F37] text-sm">✦</span>
               <span className="text-xs text-gray-600 uppercase tracking-wider">High Ticket Closing Services</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-6">
               Close More Deals.
               <br />
-              <span className="text-[#3D1D4E]">Maximize Revenue.</span>
+              <span className="text-[#722F37]">Maximize Revenue.</span>
             </h1>
             <p className="text-gray-600 text-lg mb-8 max-w-2xl">
               Let me handle the most critical part of your sales process. With a proven track record of closing high-ticket deals, I turn your qualified leads into paying customers.
@@ -98,7 +98,7 @@ const HighTicketClosing = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-[#3D1D4E] text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-[#2D1538] transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-[#722F37] text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-[#5C242B] transition-colors"
               >
                 Book a Discovery Call
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -107,7 +107,7 @@ const HighTicketClosing = () => {
               </Link>
               <Link
                 to="/coaching"
-                className="inline-flex items-center justify-center gap-2 bg-transparent text-[#3D1D4E] px-8 py-4 rounded-full text-sm font-medium border border-[#3D1D4E] hover:bg-[#3D1D4E] hover:text-white transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-transparent text-[#722F37] px-8 py-4 rounded-full text-sm font-medium border border-[#722F37] hover:bg-[#722F37] hover:text-white transition-colors"
               >
                 Learn to Close Yourself
               </Link>
@@ -117,7 +117,7 @@ const HighTicketClosing = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="w-full bg-[#3D1D4E] py-16">
+      <section className="w-full bg-[#722F37] py-16">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -148,7 +148,7 @@ const HighTicketClosing = () => {
                 key={index}
                 className="bg-[#FAF9F7] p-8 rounded-sm border border-black/5 hover:shadow-lg transition-shadow"
               >
-                <div className="w-12 h-12 bg-[#3D1D4E] rounded-full flex items-center justify-center text-white mb-5">
+                <div className="w-12 h-12 bg-[#722F37] rounded-full flex items-center justify-center text-white mb-5">
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
@@ -172,7 +172,7 @@ const HighTicketClosing = () => {
               </p>
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 text-[#3D1D4E] font-medium hover:gap-3 transition-all"
+                className="inline-flex items-center gap-2 text-[#722F37] font-medium hover:gap-3 transition-all"
               >
                 Get Started Today
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -184,7 +184,7 @@ const HighTicketClosing = () => {
             <div className="space-y-6">
               {process.map((item, index) => (
                 <div key={index} className="flex gap-5">
-                  <div className="shrink-0 w-12 h-12 bg-[#3D1D4E] rounded-full flex items-center justify-center text-white text-sm font-semibold">
+                  <div className="shrink-0 w-12 h-12 bg-[#722F37] rounded-full flex items-center justify-center text-white text-sm font-semibold">
                     {item.step}
                   </div>
                   <div>
@@ -202,7 +202,7 @@ const HighTicketClosing = () => {
       <section
         className="w-full py-20 md:py-28"
         style={{
-          background: 'linear-gradient(135deg, #3D1D4E 0%, #2A1036 100%)',
+          background: 'linear-gradient(135deg, #722F37 0%, #4A1E23 100%)',
         }}
       >
         <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
@@ -214,10 +214,10 @@ const HighTicketClosing = () => {
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-3 bg-white text-[#3D1D4E] px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
+            className="inline-flex items-center gap-3 bg-white text-[#722F37] px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
           >
             Schedule Your Free Consultation
-            <span className="w-6 h-6 bg-[#3D1D4E] rounded-full flex items-center justify-center">
+            <span className="w-6 h-6 bg-[#722F37] rounded-full flex items-center justify-center">
               <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

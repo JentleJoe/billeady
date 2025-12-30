@@ -108,7 +108,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="w-10 h-10 bg-[#3D1D4E] rounded-full flex items-center justify-center -ml-1 hover:bg-[#2D1538] transition-colors"
+                className="w-10 h-10 bg-[#722F37] rounded-full flex items-center justify-center -ml-1 hover:bg-[#5C242B] transition-colors"
               >
                 <svg
                   className="w-4 h-4 text-white"
@@ -150,10 +150,10 @@ const Footer = () => {
       </div>
 
       {/* Developer Credit */}
-      <div className="bg-[#3D1D4E]">
+      <div className="bg-[#722F37]">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-4">
           <p className="text-center text-sm text-white/80">
-            Built with 💜 by{' '}
+            Built by{' '}
             <a
               href="https://joshuaoseghale.vercel.app/"
               target="_blank"

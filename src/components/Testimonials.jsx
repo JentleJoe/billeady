@@ -123,12 +123,12 @@ const Testimonials = () => {
           </div>
           <a
             href="#"
-            className="inline-flex items-center gap-2 bg-[#3D1D4E] text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#2D1538] transition-colors mt-4 md:mt-0 w-fit"
+            className="inline-flex items-center gap-2 bg-[#722F37] text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#5C242B] transition-colors mt-4 md:mt-0 w-fit"
           >
             View All Results
             <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center">
               <svg
-                className="w-3 h-3 text-[#3D1D4E]"
+                className="w-3 h-3 text-[#722F37]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
