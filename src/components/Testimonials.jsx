@@ -1,15 +1,19 @@
 import { useRef } from 'react'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
-const TestimonialCard = ({ testimonial }) => {
+const TestimonialCard = ({ testimonial, delay = 0 }) => {
   if (testimonial.layout === 'image-top') {
     return (
-      <div className="bg-white rounded-xl p-5 shadow-sm min-w-65 max-w-65 flex flex-col">
+      <div 
+        className="bg-white rounded-xl p-5 shadow-sm min-w-65 max-w-65 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+        style={{ transitionDelay: `${delay}ms` }}
+      >
         {/* Image and Name at Top */}
         <div className="flex items-center gap-3 mb-4">
           <img
             src={testimonial.image}
             alt={testimonial.name}
-            className="w-10 h-10 rounded-full object-cover"
+            className="w-10 h-10 rounded-full object-cover ring-2 ring-transparent hover:ring-[#722F37] transition-all"
           />
           <div>
             <h4 className="font-semibold text-gray-900 text-sm">{testimonial.name}</h4>
@@ -24,7 +28,10 @@ const TestimonialCard = ({ testimonial }) => {
 
   // quote-top layout
   return (
-    <div className="bg-white rounded-xl p-5 shadow-sm min-w-65 max-w-65 flex flex-col">
+    <div 
+      className="bg-white rounded-xl p-5 shadow-sm min-w-65 max-w-65 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+      style={{ transitionDelay: `${delay}ms` }}
+    >
       {/* Name at Top */}
       <div className="mb-3">
         <h4 className="font-semibold text-gray-900 text-sm">{testimonial.name}</h4>
@@ -35,7 +42,7 @@ const TestimonialCard = ({ testimonial }) => {
         <img
           src={testimonial.image}
           alt={testimonial.name}
-          className="w-12 h-14 rounded-sm object-cover"
+          className="w-12 h-14 rounded-sm object-cover hover:scale-105 transition-transform"
         />
       </div>
       {/* Quote */}
@@ -46,6 +53,7 @@ const TestimonialCard = ({ testimonial }) => {
 
 const Testimonials = () => {
   const scrollRef = useRef(null)
+  const [sectionRef, isVisible] = useScrollAnimation()
 
   const testimonials = [
     {
@@ -109,11 +117,11 @@ const Testimonials = () => {
   }
 
   return (
-    <section className="w-full py-16 md:py-20 bg-[#FDF8F5]">
+    <section ref={sectionRef} className="w-full py-16 md:py-20 bg-[#FDF8F5]">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-10">
-          <div>
+          <div className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-2">
               Student Success Stories
             </h2>
@@ -123,12 +131,14 @@ const Testimonials = () => {
           </div>
           <a
             href="#"
-            className="inline-flex items-center gap-2 bg-[#722F37] text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#5C242B] transition-colors mt-4 md:mt-0 w-fit"
+            className={`inline-flex items-center gap-2 bg-[#722F37] text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#5C242B] hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 mt-4 md:mt-0 w-fit group ${
+              isVisible ? 'opacity-100 translate-y-0 delay-200' : 'opacity-0 translate-y-8'
+            }`}
           >
             View All Results
-            <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center">
+            <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
               <svg
-                className="w-3 h-3 text-[#722F37]"
+                className="w-3 h-3 text-[#722F37] group-hover:translate-x-0.5 transition-transform"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -145,11 +155,11 @@ const Testimonials = () => {
         </div>
 
         {/* Testimonials Grid - Horizontal Scroll */}
-        <div className="relative">
+        <div className={`relative transition-all duration-700 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
           {/* Scroll Buttons */}
           <button
             onClick={() => scroll('left')}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-white rounded-full shadow-lg hidden md:flex items-center justify-center hover:bg-gray-50 transition-colors"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-white rounded-full shadow-lg hidden md:flex items-center justify-center hover:bg-gray-50 hover:scale-110 active:scale-95 transition-all duration-200"
           >
             <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -157,7 +167,7 @@ const Testimonials = () => {
           </button>
           <button
             onClick={() => scroll('right')}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-white rounded-full shadow-lg hidden md:flex items-center justify-center hover:bg-gray-50 transition-colors"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-white rounded-full shadow-lg hidden md:flex items-center justify-center hover:bg-gray-50 hover:scale-110 active:scale-95 transition-all duration-200"
           >
             <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

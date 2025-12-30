@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const Solution = () => {
+  const [sectionRef, isVisible] = useScrollAnimation()
+  
   const painPoints = [
     {
       icon: (
@@ -36,6 +39,7 @@ const Solution = () => {
 
   return (
     <section
+      ref={sectionRef}
       className="w-full"
       style={{
         background:
@@ -45,8 +49,12 @@ const Solution = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-14 md:py-16">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
           {/* Left: Solution Card */}
-          <div>
-            <div className="bg-white border border-black/10 rounded-sm overflow-hidden">
+          <div 
+            className={`transition-all duration-700 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+            }`}
+          >
+            <div className="bg-white border border-black/10 rounded-sm overflow-hidden hover:shadow-2xl transition-shadow duration-500">
               <div className="px-7 pt-7 pb-5">
                 <h3 className="text-xl font-semibold text-gray-900">The Solution</h3>
                 <p className="text-gray-600 text-xs leading-relaxed mt-3 max-w-md">
@@ -55,7 +63,7 @@ const Solution = () => {
                 <div className="h-px bg-gray-200 mt-5" />
 
                 <div className="flex items-center gap-3 mt-4">
-                  <span className="w-5 h-5 rounded-full bg-[#722F37] flex items-center justify-center shrink-0">
+                  <span className="w-5 h-5 rounded-full bg-[#722F37] flex items-center justify-center shrink-0 animate-pulse-soft">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                     </svg>
@@ -65,11 +73,11 @@ const Solution = () => {
               </div>
 
               <div className="px-5 pb-5">
-                <div className="bg-gray-100">
+                <div className="bg-gray-100 overflow-hidden rounded-sm">
                   <img
                     src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&h=600&fit=crop"
                     alt="Marketing planning session"
-                    className="w-full aspect-video object-cover"
+                    className="w-full aspect-video object-cover hover:scale-105 transition-transform duration-700"
                   />
                 </div>
               </div>
@@ -78,12 +86,20 @@ const Solution = () => {
 
           {/* Right: Heading + Rows */}
           <div className="pt-1">
-            <h2 className="text-4xl md:text-5xl font-semibold text-white leading-tight">
+            <h2 
+              className={`text-4xl md:text-5xl font-semibold text-white leading-tight transition-all duration-700 delay-100 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+            >
               Struggling to Close
               <br />
               High Ticket Clients?
             </h2>
-            <p className="text-white/70 text-sm mt-5 max-w-md">
+            <p 
+              className={`text-white/70 text-sm mt-5 max-w-md transition-all duration-700 delay-200 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+            >
               Most people fail at closing because they lack the right framework. Learn the exact system I use to close premium deals consistently.
             </p>
 
@@ -92,19 +108,24 @@ const Solution = () => {
                 <Link
                   key={index}
                   to={point.link}
-                  className="bg-white border border-black/10 rounded-sm px-5 py-4 flex items-center justify-between hover:border-[#722F37]/30 hover:shadow-md transition-all group"
+                  className={`bg-white border border-black/10 rounded-sm px-5 py-4 flex items-center justify-between hover:border-[#722F37]/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group ${
+                    isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
+                  }`}
+                  style={{ 
+                    transitionDelay: `${300 + index * 100}ms`
+                  }}
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 border border-[#722F37]/40 rounded-sm flex items-center justify-center text-[#722F37]">
+                    <div className="w-10 h-10 border border-[#722F37]/40 rounded-sm flex items-center justify-center text-[#722F37] group-hover:bg-[#722F37] group-hover:text-white group-hover:border-[#722F37] transition-all duration-300">
                       {point.icon}
                     </div>
                     <div>
-                      <div className="text-sm font-semibold text-gray-900">{point.title}</div>
+                      <div className="text-sm font-semibold text-gray-900 group-hover:text-[#722F37] transition-colors">{point.title}</div>
                       <div className="text-xs text-gray-500 mt-0.5">{point.description}</div>
                     </div>
                   </div>
 
-                  <div className="text-gray-800 group-hover:translate-x-1 transition-transform">
+                  <div className="text-gray-800 group-hover:translate-x-2 group-hover:text-[#722F37] transition-all duration-300">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>

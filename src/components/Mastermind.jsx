@@ -1,4 +1,8 @@
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
+
 const Mastermind = () => {
+  const [sectionRef, isVisible] = useScrollAnimation()
+  
   const programs = [
     {
       title: 'High Ticket Closing Mastery',
@@ -30,7 +34,7 @@ const Mastermind = () => {
   ]
 
   return (
-    <section className="w-full relative overflow-hidden">
+    <section ref={sectionRef} className="w-full relative overflow-hidden">
       {/* Background image + overlay (matches screenshot: photo visible with purple wash + bottom vignette) */}
       <div className="absolute inset-0">
         <img
@@ -52,12 +56,12 @@ const Mastermind = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pt-20 md:pt-24 pb-14 md:pb-16">
           {/* Header */}
           <div className="grid lg:grid-cols-2 gap-10 items-center">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white italic leading-tight">
+            <h2 className={`text-4xl md:text-5xl lg:text-6xl font-semibold text-white italic leading-tight transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
               Billeady's Signature
               <br />
               Programs
             </h2>
-            <p className="text-white/75 text-sm md:text-base max-w-md lg:justify-self-end">
+            <p className={`text-white/75 text-sm md:text-base max-w-md lg:justify-self-end transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
               Whether you're starting out or scaling up, my programs will help you close more deals, land premium clients, and build lasting wealth.
             </p>
           </div>
@@ -65,25 +69,29 @@ const Mastermind = () => {
           {/* Cards */}
           <div className="mt-10 grid md:grid-cols-3 gap-5">
             {programs.map((program, index) => (
-              <div key={index} className="bg-white rounded-sm border border-black/10 overflow-hidden">
+              <div 
+                key={index} 
+                className={`bg-white rounded-sm border border-black/10 overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2 group ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
+                style={{ transitionDelay: `${300 + index * 150}ms` }}
+              >
                 <div className="px-5 pt-5 pb-4">
-                  <h3 className="text-gray-900 font-semibold sm:text-lg text-sm">{program.title}</h3>
+                  <h3 className="text-gray-900 font-semibold sm:text-lg text-sm group-hover:text-[#722F37] transition-colors duration-300">{program.title}</h3>
                   <p className="text-gray-500 text-xs mt-2 leading-relaxed">
                     {program.description}
                   </p>
                 </div>
-                <div className="h-px bg-gray-200" />
+                <div className="h-px bg-gray-200 group-hover:bg-[#722F37]/20 transition-colors duration-300" />
 
                 <div className="px-5 py-4">
                   <div className="grid grid-cols-2 gap-x-6 gap-y-3">
                     {program.features.map((feature, fIndex) => (
-                      <div key={fIndex} className="flex items-center gap-2">
-                        <span className="w-4 h-4 rounded-full bg-[#722F37] flex items-center justify-center shrink-0">
+                      <div key={fIndex} className="flex items-center gap-2 group/item">
+                        <span className="w-4 h-4 rounded-full bg-[#722F37] flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform duration-300">
                           <svg className="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                           </svg>
                         </span>
-                        <span className="text-gray-600 text-xs">{feature.text}</span>
+                        <span className="text-gray-600 text-xs group-hover/item:text-gray-900 transition-colors duration-300">{feature.text}</span>
                       </div>
                     ))}
                   </div>

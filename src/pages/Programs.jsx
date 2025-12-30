@@ -1,6 +1,17 @@
 import { Link } from 'react-router-dom'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import { useState, useEffect } from 'react'
 
 const Programs = () => {
+  const [heroRef, heroVisible] = useScrollAnimation()
+  const [programsRef, programsVisible] = useScrollAnimation()
+  const [premiumRef, premiumVisible] = useScrollAnimation()
+  const [isLoaded, setIsLoaded] = useState(false)
+  
+  useEffect(() => {
+    setIsLoaded(true)
+  }, [])
+  
   const programs = [
     {
       id: 'high-ticket-mastery',
@@ -130,7 +141,7 @@ const Programs = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative w-full overflow-hidden">
+      <section ref={heroRef} className="relative w-full overflow-hidden">
         <div
           className="absolute inset-0"
           style={{
@@ -140,16 +151,16 @@ const Programs = () => {
         />
         <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-28">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="flex items-center justify-center gap-2 mb-5">
-              <span className="text-[#722F37] text-sm">✦</span>
+            <div className={`flex items-center justify-center gap-2 mb-5 transition-all duration-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
+              <span className="text-[#722F37] text-sm animate-pulse-soft">✦</span>
               <span className="text-xs text-gray-600 uppercase tracking-wider">Training Programs</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-6">
+            <h1 className={`text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-6 transition-all duration-700 delay-100 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               Level Up Your
               <br />
               <span className="text-[#722F37]">Closing Skills</span>
             </h1>
-            <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
+            <p className={`text-gray-600 text-lg mb-8 max-w-2xl mx-auto transition-all duration-700 delay-200 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               Structured training programs designed to transform you into a confident, high-performing sales professional. Choose the program that fits your goals.
             </p>
           </div>
@@ -157,13 +168,14 @@ const Programs = () => {
       </section>
 
       {/* Programs Section */}
-      <section className="w-full py-20 md:py-28 bg-white">
+      <section ref={programsRef} className="w-full py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="space-y-12">
             {programs.map((program, index) => (
               <div
                 key={program.id}
-                className={`rounded-sm overflow-hidden ${program.featured ? 'border-2 border-[#722F37]' : 'border border-black/10'}`}
+                className={`rounded-sm overflow-hidden transition-all duration-700 hover:shadow-xl ${program.featured ? 'border-2 border-[#722F37]' : 'border border-black/10'} ${programsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
+                style={{ transitionDelay: `${index * 150}ms` }}
               >
                 {program.featured && (
                   <div className="bg-[#722F37] text-white text-center py-2 text-sm font-medium">
@@ -213,10 +225,10 @@ const Programs = () => {
 
                     <Link
                       to="/contact"
-                      className="inline-flex items-center gap-2 bg-[#722F37] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#5C242B] transition-colors"
+                      className="inline-flex items-center gap-2 bg-[#722F37] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#5C242B] hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 group"
                     >
                       Enroll Now
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
                     </Link>
@@ -227,8 +239,8 @@ const Programs = () => {
                     <div className="text-sm font-semibold text-gray-900 mb-4">What's Included:</div>
                     <ul className="space-y-3">
                       {program.features.map((feature, fIndex) => (
-                        <li key={fIndex} className="flex items-center gap-3 text-sm text-gray-700">
-                          <span className="w-5 h-5 bg-[#722F37] rounded-full flex items-center justify-center shrink-0">
+                        <li key={fIndex} className="flex items-center gap-3 text-sm text-gray-700 group hover:text-gray-900 transition-colors duration-300">
+                          <span className="w-5 h-5 bg-[#722F37] rounded-full flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
                             <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                             </svg>
@@ -246,7 +258,7 @@ const Programs = () => {
       </section>
 
       {/* Premium 1-on-1 Coaching Section */}
-      <section className="w-full py-20 md:py-28 relative overflow-hidden">
+      <section ref={premiumRef} className="w-full py-20 md:py-28 relative overflow-hidden">
         <div
           className="absolute inset-0"
           style={{
@@ -255,29 +267,29 @@ const Programs = () => {
           }}
         />
         {/* Decorative elements */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full -translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute bottom-0 right-0 w-64 h-64 bg-white/5 rounded-full translate-x-1/3 translate-y-1/3" />
+        <div className="absolute top-0 left-0 w-96 h-96 bg-white/5 rounded-full -translate-x-1/2 -translate-y-1/2 animate-pulse-soft" />
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-white/5 rounded-full translate-x-1/3 translate-y-1/3 animate-pulse-soft" />
 
         <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full mb-6">
+              <div className={`inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full mb-6 transition-all duration-700 ${premiumVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
                 <span className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" />
                 <span className="text-xs text-white font-medium uppercase tracking-wider">Premium Offering</span>
               </div>
 
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6">
+              <h2 className={`text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 transition-all duration-700 delay-100 ${premiumVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
                 1-on-1 Cold DM
                 <br />
                 <span className="text-yellow-400">Coaching Program</span>
               </h2>
 
-              <p className="text-white/80 text-lg mb-8 leading-relaxed">
+              <p className={`text-white/80 text-lg mb-8 leading-relaxed transition-all duration-700 delay-200 ${premiumVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
                 Get personalized, hands-on coaching directly from Billeady. This exclusive program is for serious individuals who want accelerated results through direct mentorship and real-time feedback on their outreach strategies.
               </p>
 
-              <div className="space-y-4 mb-8">
+              <div className={`space-y-4 mb-8 transition-all duration-700 delay-300 ${premiumVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                 {[
                   'Personal strategy calls with Billeady',
                   'Real-time DM review and optimization',
@@ -286,13 +298,13 @@ const Programs = () => {
                   'Done-with-you prospect list building',
                   'Weekly accountability check-ins',
                 ].map((item, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <span className="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center shrink-0">
+                  <div key={index} className="flex items-center gap-3 group">
+                    <span className="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-3.5 h-3.5 text-[#4A1E23]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </span>
-                    <span className="text-white/90">{item}</span>
+                    <span className="text-white/90 group-hover:text-white transition-colors duration-300">{item}</span>
                   </div>
                 ))}
               </div>
@@ -315,7 +327,7 @@ const Programs = () => {
                 href="https://wa.me/2348000000000?text=Hi%20Billeady,%20I'm%20interested%20in%20the%201-on-1%20Cold%20DM%20Coaching%20Program"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-yellow-400 text-[#4A1E23] px-8 py-4 rounded-full text-sm font-bold hover:bg-yellow-300 transition-colors"
+                className="inline-flex items-center gap-3 bg-yellow-400 text-[#4A1E23] px-8 py-4 rounded-full text-sm font-bold hover:bg-yellow-300 hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 group"
               >
                 Apply for 1-on-1 Coaching
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
