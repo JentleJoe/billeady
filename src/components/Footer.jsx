@@ -148,6 +148,23 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+      {/* Developer Credit */}
+      <div className="bg-[#3D1D4E]">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-4">
+          <p className="text-center text-sm text-white/80">
+            Built with 💜 by{' '}
+            <a
+              href="https://joshuaoseghale.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-white hover:underline"
+            >
+              Joshua Oseghale
+            </a>
+          </p>
+        </div>
+      </div>
     </footer>
   )
 }
