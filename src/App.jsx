@@ -8,6 +8,7 @@ import Coaching from './pages/Coaching'
 import Consulting from './pages/Consulting'
 import Programs from './pages/Programs'
 import Book from './pages/Book'
+import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/consulting" element={<Consulting />} />
         <Route path="/programs" element={<Programs />} />
         <Route path="/book" element={<Book />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>
