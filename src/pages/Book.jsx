@@ -26,7 +26,7 @@ const Book = () => {
     {
       number: '03',
       title: 'The Decision',
-      description: 'Choosing to rebuild instead of giving up — and what that really means.',
+      description: 'Choosing to rebuild instead of giving up, and what that really means.',
     },
     {
       number: '04',
@@ -57,7 +57,7 @@ const Book = () => {
 
   const testimonialQuotes = [
     {
-      quote: "Billeady's story isn't just inspiring — it's instructive. He doesn't just tell you what happened, he shows you how to apply those lessons.",
+      quote: "Billeady's story isn't just inspiring, it's instructive. He doesn't just tell you what happened, he shows you how to apply those lessons.",
       author: 'Early Reader',
     },
     {
@@ -93,7 +93,7 @@ const Book = () => {
                 <span className="italic text-[#FDEBD6]">Dust Again</span>
               </h1>
               <p className="text-white/80 text-lg mb-8 max-w-xl">
-                The raw, unfiltered story of losing over ₦60 Million, hitting rock bottom, and rebuilding a thriving business from scratch. This isn't motivational fluff — it's a practical guide for anyone who's ever had to start over.
+                The raw, unfiltered story of losing over ₦60 Million, hitting rock bottom, and rebuilding a thriving business from scratch. This isn't motivational fluff, it's a practical guide for anyone who's ever had to start over.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -146,13 +146,13 @@ const Book = () => {
                 Not Just Another Success Story
               </h2>
               <p className="text-gray-600 mb-6">
-                In 2022, I watched everything I had built crumble. Over ₦60 Million — gone. My business, my reputation, my confidence — all of it felt destroyed.
+                In 2022, I watched everything I had built crumble. Over ₦60 Million, gone. My business, my reputation, my confidence, all of it felt destroyed.
               </p>
               <p className="text-gray-600 mb-6">
                 Most "success stories" skip the messy parts. They show you the highlight reel and leave out the sleepless nights, the doubt, the moments when quitting seemed like the only option.
               </p>
               <p className="text-gray-600 mb-6">
-                This book is different. <strong>Building from Dust Again</strong> takes you through the entire journey — the fall, the bottom, and the rebuild. Not to glorify failure, but to give you a real roadmap for what to do when life knocks you down.
+                This book is different. <strong>Building from Dust Again</strong> takes you through the entire journey, the fall, the bottom, and the rebuild. Not to glorify failure, but to give you a real roadmap for what to do when life knocks you down.
               </p>
               <p className="text-gray-600">
                 Because chances are, at some point, you'll face your own "dust" moment. And when you do, this book will be your guide.
@@ -173,7 +173,7 @@ const Book = () => {
               <div className="p-8 md:p-10 relative">
                 <div className="text-[#722F37] text-5xl md:text-6xl font-serif absolute -top-6 left-8 leading-none">"</div>
                 <p className="text-gray-700 text-lg md:text-xl italic mb-8 pt-6 leading-relaxed">
-                  I didn't write this book because I'm proud of failing. I wrote it because I know someone out there is going through what I went through — and they need to know it's possible to come back stronger.
+                  I didn't write this book because I'm proud of failing. I wrote it because I know someone out there is going through what I went through, and they need to know it's possible to come back stronger.
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="relative">
@@ -237,7 +237,7 @@ const Book = () => {
                 {[
                   "You've experienced a major setback and don't know how to move forward",
                   "You're building something and want to avoid the mistakes that destroy businesses",
-                  "You need real, practical guidance — not motivational clichés",
+                  "You need real, practical guidance, not motivational clichés",
                   "You want to learn from someone who's actually been through it",
                   "You believe in second chances and the power of resilience",
                   "You're ready to build something that lasts this time",
@@ -257,7 +257,7 @@ const Book = () => {
               {testimonialQuotes.map((item, index) => (
                 <div key={index} className="bg-white/10 p-6 rounded-sm">
                   <p className="text-white/90 italic mb-4">"{item.quote}"</p>
-                  <div className="text-white/60 text-sm">— {item.author}</div>
+                  <div className="text-white/60 text-sm">{item.author}</div>
                 </div>
               ))}
             </div>

@@ -22,10 +22,10 @@ const Podcast = () => {
             <h2 className={`text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-3 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'}`}>
               Building from Dust Again
               <br />
-              — The Book
+              The Book
             </h2>
             <p className={`text-white/70 text-xs md:text-sm max-w-2xl mx-auto leading-relaxed transition-all duration-700 delay-150 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              Coming 2026 — My story of losing ₦60M+, hitting rock bottom, and rebuilding from scratch. A raw, honest guide for anyone who's ever had to start over.
+              Coming 2026, my story of losing ₦60M+, hitting rock bottom, and rebuilding from scratch. A raw, honest guide for anyone who's ever had to start over.
             </p>
           </div>
         </div>

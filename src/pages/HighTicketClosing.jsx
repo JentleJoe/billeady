@@ -138,7 +138,7 @@ const HighTicketClosing = () => {
               What I Do For You
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              I specialize in the final and most crucial stage of sales — closing. Here's how I help businesses like yours increase revenue.
+              I specialize in the final and most crucial stage of sales, closing. Here's how I help businesses like yours increase revenue.
             </p>
           </div>
 

@@ -106,7 +106,7 @@ const Coaching = () => {
                 <span className="text-[#722F37]">Like a Pro.</span>
               </h1>
               <p className="text-gray-600 text-lg mb-8">
-                Master the art and science of high-ticket closing. I'll teach you the exact frameworks, scripts, and mindset shifts that have helped me close millions in deals — and helped hundreds of students do the same.
+                Master the art and science of high-ticket closing. I'll teach you the exact frameworks, scripts, and mindset shifts that have helped me close millions in deals, and helped hundreds of students do the same.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -157,7 +157,7 @@ const Coaching = () => {
                 Why Learn From Billeady?
               </h2>
               <p className="text-white/80 mb-6">
-                I don't just teach theory — I teach what works in the real world. After losing over ₦60 Million in 2022 and rebuilding from scratch, I've battle-tested every strategy I teach.
+                I don't just teach theory, I teach what works in the real world. After losing over ₦60 Million in 2022 and rebuilding from scratch, I've battle-tested every strategy I teach.
               </p>
               <p className="text-white/80 mb-8">
                 My coaching isn't about motivational fluff. It's about practical, actionable frameworks that you can implement immediately to start closing more deals.

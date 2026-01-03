@@ -144,7 +144,7 @@ const Consulting = () => {
                 In 2022, I lost over ₦60 Million. Everything I had built came crashing down. But that experience taught me more about business than any success ever could.
               </p>
               <p className="text-white/80 mb-6">
-                I rebuilt from zero — not by luck, but by understanding what actually works. The systems, strategies, and mindsets I developed during that comeback are now the foundation of my consulting practice.
+                I rebuilt from zero, not by luck, but by understanding what actually works. The systems, strategies, and mindsets I developed during that comeback are now the foundation of my consulting practice.
               </p>
               <p className="text-white/80">
                 When you work with me, you're not getting theoretical advice from someone who's only seen success. You're getting battle-tested wisdom from someone who's navigated the worst and come out stronger.

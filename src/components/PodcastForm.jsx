@@ -12,7 +12,7 @@ const PodcastForm = () => {
             Free High Ticket Closing Training
           </h2>
           <p className={`text-gray-500 text-sm max-w-2xl mx-auto transition-all duration-700 delay-150 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            Get instant access to my free training on how to close high ticket clients — the exact framework I use to close premium deals.
+            Get instant access to my free training on how to close high ticket clients, the exact framework I use to close premium deals.
           </p>
         </div>
 

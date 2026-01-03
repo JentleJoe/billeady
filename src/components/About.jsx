@@ -7,7 +7,7 @@ const About = () => {
   const highlights = [
     'Closed Millions in High Ticket Sales',
     '500+ Students Trained Globally',
-    'From Zero to Success — Twice',
+    'From Zero to Success, Twice',
   ]
 
   return (
@@ -33,7 +33,7 @@ const About = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
-            Hey, I'm Billeady Saliu — High Ticket Closer, Coach & Business Consultant.
+            Hey, I'm Billeady Saliu, High Ticket Closer, Coach & Business Consultant.
           </h2>
 
           <p 
