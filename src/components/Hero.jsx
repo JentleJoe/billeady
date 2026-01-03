@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import heroImg from '../assets/heroImg.png'
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -149,7 +150,7 @@ const Hero = () => {
           >
             <div className="relative w-64 sm:w-72">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop"
+                src={heroImg}
                 alt="Billeady Saliu"
                 className="w-full h-auto object-cover object-top rounded-lg hover:scale-[1.02] transition-transform duration-500"
                 style={{
@@ -161,7 +162,7 @@ const Hero = () => {
               <div className="absolute bottom-8 -left-4 bg-white p-1 rounded-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer animate-float">
                 <div className="relative w-16 h-20 bg-gray-100 rounded-md overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=300&fit=crop"
+                    src={heroImg}
                     alt="Video thumbnail"
                     className="w-full h-full object-cover"
                   />
@@ -190,7 +191,7 @@ const Hero = () => {
             {/* Main Image - Woman */}
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop"
+                src={heroImg}
                 alt="Billeady Saliu"
                 className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-cover object-top hover:scale-[1.02] transition-transform duration-700"
                 style={{
@@ -203,7 +204,7 @@ const Hero = () => {
               <div className="absolute bottom-24 left-4 md:bottom-32 md:left-8 bg-white p-1.5 rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 cursor-pointer animate-float">
                 <div className="relative w-24 md:w-28 h-32 md:h-36 bg-gray-100 rounded-lg overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=300&fit=crop"
+                    src={heroImg}
                     alt="Video thumbnail"
                     className="w-full h-full object-cover"
                   />

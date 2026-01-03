@@ -1,4 +1,5 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import aboutImg from '../assets/aboutImg.png'
 
 const About = () => {
   const [sectionRef, isVisible] = useScrollAnimation()
@@ -17,7 +18,7 @@ const About = () => {
           isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'
         }`}>
           <img
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=900&fit=crop"
+            src={aboutImg}
             alt="Billeady coaching session"
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
           />
