@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import booksImg from '../assets/booksImg.png'
 
 const Book = () => {
   const [email, setEmail] = useState('')
@@ -157,18 +158,42 @@ const Book = () => {
                 Because chances are, at some point, you'll face your own "dust" moment. And when you do, this book will be your guide.
               </p>
             </div>
-            <div className="bg-[#FAF9F7] p-8 rounded-sm">
-              <div className="text-[#722F37] text-6xl font-serif mb-4">"</div>
-              <p className="text-gray-700 text-lg italic mb-6">
-                I didn't write this book because I'm proud of failing. I wrote it because I know someone out there is going through what I went through — and they need to know it's possible to come back stronger.
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-[#722F37] rounded-full flex items-center justify-center text-white font-semibold">
-                  BS
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-900">Billeady Saliu</div>
-                  <div className="text-sm text-gray-500">Author</div>
+            <div className="bg-[#FAF9F7] rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+              {/* Image Section */}
+              <div className="relative h-64 md:h-80 overflow-hidden">
+                <img 
+                  src={booksImg} 
+                  alt="Billeady Saliu"
+                  className="w-full h-full object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#FAF9F7] via-transparent to-transparent"></div>
+              </div>
+              
+              {/* Quote Section */}
+              <div className="p-8 md:p-10 relative">
+                <div className="text-[#722F37] text-5xl md:text-6xl font-serif absolute -top-6 left-8 leading-none">"</div>
+                <p className="text-gray-700 text-lg md:text-xl italic mb-8 pt-6 leading-relaxed">
+                  I didn't write this book because I'm proud of failing. I wrote it because I know someone out there is going through what I went through — and they need to know it's possible to come back stronger.
+                </p>
+                <div className="flex items-center gap-4">
+                  <div className="relative">
+                    <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#722F37]/20">
+                      <img 
+                        src={booksImg} 
+                        alt="Billeady Saliu"
+                        className="w-full h-full object-cover object-center"
+                      />
+                    </div>
+                    <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-[#722F37] rounded-full border-2 border-white flex items-center justify-center">
+                      <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-900 text-lg">Billeady Saliu</div>
+                    <div className="text-sm text-gray-500">Author & Business Consultant</div>
+                  </div>
                 </div>
               </div>
             </div>
