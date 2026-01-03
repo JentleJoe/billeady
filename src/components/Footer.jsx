@@ -13,7 +13,7 @@ const Footer = () => {
   const navLinks2 = [
     { name: 'Consulting', href: '/consulting' },
     { name: 'Programs', href: '/programs' },
-    { name: 'Book', href: '/book' },
+    { name: 'Books', href: '/books' },
   ]
 
   const socialIcons = [

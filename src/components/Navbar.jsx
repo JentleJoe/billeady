@@ -21,7 +21,7 @@ const Navbar = () => {
     { name: 'Coaching', href: '/coaching' },
     { name: 'Consulting', href: '/consulting' },
     { name: 'Programs', href: '/programs' },
-    { name: 'Book', href: '/book' },
+    { name: 'Books', href: '/books' },
   ]
 
   const isActive = (href) => {
