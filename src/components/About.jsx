@@ -20,7 +20,7 @@ const About = () => {
           <img
             src={aboutImg}
             alt="Billeady coaching session"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+            className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
           />
           {/* Overlay elements to simulate whiteboard/planning aesthetic */}
           <div className="absolute inset-0 bg-linear-to-r from-transparent to-white/10" />
