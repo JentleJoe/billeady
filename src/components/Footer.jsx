@@ -159,10 +159,10 @@ const Footer = () => {
           <p className="text-center text-sm text-white/80">
             Built by{' '}
             <a
-              href="https://joshuaoseghale.vercel.app/"
+              href="https://joshuaoseghale.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-white hover:underline hover:text-white/90 transition-colors duration-300"
+              className="font-medium hover:underline hover:font-medium hover:text-white/90 transition-colors duration-300"
             >
               Joshua Oseghale
             </a>
