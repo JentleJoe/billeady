@@ -156,13 +156,13 @@ const Footer = () => {
       {/* Developer Credit */}
       <div className="bg-[#722F37]">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-4">
-          <p className="text-center text-sm text-white/80">
+          <p className="text-center text-xs text-white/80">
             Built by{' '}
             <a
               href="https://joshuaoseghale.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium hover:underline hover:font-medium hover:text-white/90 transition-colors duration-300"
+              className="font-medium hover:underline text-white hover:text-white/90 transition-colors duration-300"
             >
               Joshua Oseghale
             </a>

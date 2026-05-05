@@ -138,16 +138,16 @@ const Consulting = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
-                Advice From Someone Who's Been There
+                Built on Real-World Results
               </h2>
               <p className="text-white/80 mb-6">
-                In 2022, I lost over ₦60 Million. Everything I had built came crashing down. But that experience taught me more about business than any success ever could.
+                Billeady Saliu is a results-driven sales and marketing strategist specializing in high-ticket closing and business consulting. This work exists to help entrepreneurs and teams turn attention into revenue with clear, repeatable systems.
               </p>
               <p className="text-white/80 mb-6">
-                I rebuilt from zero, not by luck, but by understanding what actually works. The systems, strategies, and mindsets I developed during that comeback are now the foundation of my consulting practice.
+                With years of hands-on experience, Billeady helps businesses fix weak sales processes, refine brand positioning, and build consistent demand. Every engagement is designed for measurable growth.
               </p>
               <p className="text-white/80">
-                When you work with me, you're not getting theoretical advice from someone who's only seen success. You're getting battle-tested wisdom from someone who's navigated the worst and come out stronger.
+                At the core are trust, integrity, and competence. You get practical, real-world guidance that creates clarity, structure, and confidence as you scale.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">

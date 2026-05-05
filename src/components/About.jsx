@@ -5,9 +5,17 @@ const About = () => {
   const [sectionRef, isVisible] = useScrollAnimation()
   
   const highlights = [
-    'Closed Millions in High Ticket Sales',
-    '500+ Students Trained Globally',
-    'From Zero to Success, Twice',
+    'Results-driven sales and marketing strategy',
+    'High-ticket closing and business consulting',
+    'Real-world systems rooted in trust',
+    'Clarity, structure, and measurable growth',
+  ]
+
+  const aboutCopy = [
+    'Billeady Saliu is a results-driven sales and marketing strategist specializing in high-ticket closing and business consulting. Built on a deep passion for sales and a proven track record of transforming businesses, the brand helps entrepreneurs and digital marketers turn attention into revenue.',
+    'With years of hands-on experience, Billeady has helped clients and students overcome one of the biggest challenges in business: converting leads into consistent, high-value sales. From fixing weak sales processes to refining brand positioning and marketing strategy, every solution is designed for measurable growth.',
+    'At its core, the brand stands for trust, integrity, and competence. Every strategy, system, and insight is rooted in real-world results, not theory. Businesses that work with Billeady gain the clarity, structure, and confidence needed to dominate their market.',
+    'The mission is simple: become the go-to authority for sales, marketing, and high-ticket closing, helping businesses stand out, connect deeply with their audience, and increase revenue consistently.',
   ]
 
   return (
@@ -33,48 +41,32 @@ const About = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
-            Hey, I'm Billeady Saliu, High Ticket Closer, Coach & Business Consultant.
+            About Billeady Saliu
+            <span className="block text-white/80 text-base md:text-lg font-normal mt-3">
+              Results-driven sales and marketing strategist.
+            </span>
           </h2>
 
-          <p 
-            className={`text-gray-300 text-base mb-8 transition-all duration-700 delay-200 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-            }`}
-          >
-            In 2022, I lost over ₦60 Million and hit rock bottom. But I didn't stay there. I rebuilt from scratch, mastered the art of closing high ticket clients, and now I teach others to do the same.
-          </p>
-
-          {/* CTA Button */}
-          <a
-            href="#"
-            className={`inline-flex items-center gap-2 bg-transparent text-white px-6 py-3 rounded-full text-sm font-medium border border-white hover:bg-white hover:text-[#722F37] hover:scale-105 active:scale-95 transition-all duration-300 w-fit mb-10 group ${
-              isVisible ? 'opacity-100 translate-y-0 delay-300' : 'opacity-0 translate-y-8'
-            }`}
-          >
-            Learn My Story
-            <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center group-hover:bg-[#722F37] transition-colors">
-              <svg
-                className="w-3 h-3 text-[#722F37] group-hover:text-white transition-colors group-hover:translate-x-0.5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+          <div className="space-y-5 mb-8">
+            {aboutCopy.map((paragraph, index) => (
+              <p
+                key={paragraph.slice(0, 24)}
+                className={`text-gray-300 text-sm md:text-base leading-relaxed transition-all duration-700 ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                }`}
+                style={{ transitionDelay: `${200 + index * 100}ms` }}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </span>
-          </a>
+                {paragraph}
+              </p>
+            ))}
+          </div>
 
           {/* Why Learn Section */}
           <div className={`transition-all duration-700 delay-[400ms] ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <h3 className="text-white text-sm font-medium mb-4">
-              Why Learn From Billeady?:
+              What I Stand For
             </h3>
             <ul className="space-y-3">
               {highlights.map((item, index) => (
