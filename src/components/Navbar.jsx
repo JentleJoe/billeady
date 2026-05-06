@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import redLogo from '../assets/redLogo.png'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -32,18 +33,19 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-12 lg:px-20 transition-all duration-300 ${
+    <nav className={`fixed top-0 left-0 right-0 z-50 py-3 px-6 md:px-12 lg:px-20 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-white/95 backdrop-blur-md shadow-lg py-3' 
+        ? 'bg-white/95 backdrop-blur-md shadow-lg py-2' 
         : 'bg-white shadow-sm'
     }`}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link 
           to="/" 
-          className="text-2xl font-medium text-brand-primary transition-transform duration-200 hover:scale-105"
+          className="flex items-center transition-transform duration-200 hover:scale-105"
+          aria-label="Billeady home"
         >
-          billeady
+          <img src={redLogo} alt="Billeady Saliu" className="h-11 sm:h-12 md:h-14 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import redLogo from '../assets/redLogo.png'
 
 const Footer = () => {
   const [footerRef, isVisible] = useScrollAnimation()
@@ -46,8 +47,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Logo & Social */}
           <div className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <Link to="/" className="text-2xl font-medium text-gray-900 mb-4 block hover:text-brand-primary transition-colors duration-300">
-              billeady
+            <Link
+              to="/"
+              className="mb-4 inline-block transition-transform duration-200 hover:scale-105"
+              aria-label="Billeady home"
+            >
+              <img src={redLogo} alt="Billeady Saliu" className="h-12 md:h-14 w-auto" />
             </Link>
             <div className="flex items-center gap-3 mt-4">
               {socialIcons.map((icon, index) => (
