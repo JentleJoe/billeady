@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom'
+import salesFlierAvif from '../assets/salesFlier.avif'
+import salesFlierWebp from '../assets/salesFlier.webp'
+import salesFlierJpg from '../assets/salesFlier.jpg'
 
 const HighTicketClosing = () => {
   const services = [
@@ -82,35 +85,62 @@ const HighTicketClosing = () => {
           }}
         />
         <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-28">
-          <div className="max-w-3xl">
-            <div className="flex items-center gap-2 mb-5">
-              <span className="text-brand-primary text-sm">✦</span>
-              <span className="text-xs text-gray-600 uppercase tracking-wider">High Ticket Closing Services</span>
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="max-w-3xl">
+              <div className="flex items-center gap-2 mb-5">
+                <span className="text-brand-primary text-sm">✦</span>
+                <span className="text-xs text-gray-600 uppercase tracking-wider">High Ticket Closing Services</span>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-6">
+                Close More Deals.
+                <br />
+                <span className="text-brand-primary">Maximize Revenue.</span>
+              </h1>
+              <p className="text-gray-600 text-lg mb-8 max-w-2xl">
+                Let me handle the most critical part of your sales process. With a proven track record of closing high-ticket deals, I turn your qualified leads into paying customers.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center justify-center gap-2 bg-brand-primary text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-brand-accent transition-colors"
+                >
+                  Book a Discovery Call
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+                <Link
+                  to="/coaching"
+                  className="inline-flex items-center justify-center gap-2 bg-transparent text-brand-primary px-8 py-4 rounded-full text-sm font-medium border border-brand-primary hover:bg-brand-primary hover:text-white transition-colors"
+                >
+                  Learn to Close Yourself
+                </Link>
+              </div>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-6">
-              Close More Deals.
-              <br />
-              <span className="text-brand-primary">Maximize Revenue.</span>
-            </h1>
-            <p className="text-gray-600 text-lg mb-8 max-w-2xl">
-              Let me handle the most critical part of your sales process. With a proven track record of closing high-ticket deals, I turn your qualified leads into paying customers.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-brand-primary text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-brand-accent transition-colors"
-              >
-                Book a Discovery Call
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-              <Link
-                to="/coaching"
-                className="inline-flex items-center justify-center gap-2 bg-transparent text-brand-primary px-8 py-4 rounded-full text-sm font-medium border border-brand-primary hover:bg-brand-primary hover:text-white transition-colors"
-              >
-                Learn to Close Yourself
-              </Link>
+
+            {/* Flyer */}
+            <div className="relative flex justify-center lg:justify-end">
+              <div className="relative w-full max-w-sm md:max-w-md">
+                {/* Decorative "tape" */}
+                <div className="absolute -top-3 left-10 w-24 h-8 bg-white/70 -rotate-12 rounded-sm shadow-sm ring-1 ring-black/5" />
+                <div className="absolute -top-2 right-8 w-20 h-7 bg-white/60 rotate-12 rounded-sm shadow-sm ring-1 ring-black/5" />
+
+                <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-3 shadow-2xl ring-1 ring-black/10 transform rotate-1 hover:rotate-0 transition-transform duration-500">
+                  <div className="overflow-hidden rounded-lg bg-white">
+                    <picture>
+                      <source srcSet={salesFlierAvif} type="image/avif" />
+                      <source srcSet={salesFlierWebp} type="image/webp" />
+                      <img
+                        src={salesFlierJpg}
+                        alt="Sales flyer for high ticket closing services"
+                        className="w-full h-auto block"
+                        loading="eager"
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
