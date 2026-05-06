@@ -81,7 +81,7 @@ const Book = () => {
               'radial-gradient(ellipse 100% 80% at 50% 100%, rgba(109,30,23,0.3) 0%, transparent 60%), linear-gradient(180deg, #2D1215 0%, var(--color-brand-primary) 50%, #4A1E23 100%)',
           }}
         />
-        <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20">
+        <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pt-28 pb-20 md:pt-36 md:pb-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block bg-white/10 text-white text-xs font-medium px-4 py-2 rounded-full mb-6">

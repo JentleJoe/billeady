@@ -102,7 +102,7 @@ const Contact = () => {
               'radial-gradient(ellipse 80% 50% at 50% 30%, rgba(109,30,23,0.15) 0%, transparent 70%), linear-gradient(135deg, var(--color-brand-cream) 0%, #FDEBD6 40%, #FDF3E8 100%)',
           }}
         />
-        <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-28">
+        <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pt-28 pb-20 md:pt-36 md:pb-28">
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex items-center justify-center gap-2 mb-5">
               <span className="text-brand-primary text-sm">✦</span>

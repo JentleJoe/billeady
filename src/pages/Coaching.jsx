@@ -93,7 +93,7 @@ const Coaching = () => {
               'radial-gradient(ellipse 80% 50% at 30% 50%, rgba(109,30,23,0.15) 0%, transparent 70%), linear-gradient(135deg, var(--color-brand-cream) 0%, #FDEBD6 40%, #FDF3E8 100%)',
           }}
         />
-        <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-28">
+        <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pt-28 pb-20 md:pt-36 md:pb-28">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center gap-2 mb-5">
