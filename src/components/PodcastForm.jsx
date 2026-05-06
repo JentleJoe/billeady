@@ -29,60 +29,60 @@ const PodcastForm = () => {
                 {/* Name Fields */}
                 <div className="grid grid-cols-2 gap-4">
                   <div className="group">
-                    <label className="block text-[11px] text-gray-700 mb-2 group-focus-within:text-[#722F37] transition-colors duration-300">
+                    <label className="block text-[11px] text-gray-700 mb-2 group-focus-within:text-brand-primary transition-colors duration-300">
                       First Name
                     </label>
                     <input
                       type="text"
                       placeholder="Your First Name"
-                      className="w-full px-4 py-3 bg-gray-50 border border-transparent text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#722F37]/20 focus:border-[#722F37]/30 focus:bg-white transition-all duration-300"
+                      className="w-full px-4 py-3 bg-gray-50 border border-transparent text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary/30 focus:bg-white transition-all duration-300"
                     />
                   </div>
                   <div className="group">
-                    <label className="block text-[11px] text-gray-700 mb-2 group-focus-within:text-[#722F37] transition-colors duration-300">
+                    <label className="block text-[11px] text-gray-700 mb-2 group-focus-within:text-brand-primary transition-colors duration-300">
                       Last Name
                     </label>
                     <input
                       type="text"
                       placeholder="Your Last Name"
-                      className="w-full px-4 py-3 bg-gray-50 border border-transparent text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#722F37]/20 focus:border-[#722F37]/30 focus:bg-white transition-all duration-300"
+                      className="w-full px-4 py-3 bg-gray-50 border border-transparent text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary/30 focus:bg-white transition-all duration-300"
                     />
                   </div>
                 </div>
 
                 {/* Email */}
                 <div className="group">
-                  <label className="block text-[11px] text-gray-700 mb-2 group-focus-within:text-[#722F37] transition-colors duration-300">
+                  <label className="block text-[11px] text-gray-700 mb-2 group-focus-within:text-brand-primary transition-colors duration-300">
                     Email
                   </label>
                   <input
                     type="email"
                     placeholder="Enter Your Email Address"
-                    className="w-full px-4 py-3 bg-gray-50 border border-transparent text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#722F37]/20 focus:border-[#722F37]/30 focus:bg-white transition-all duration-300"
+                    className="w-full px-4 py-3 bg-gray-50 border border-transparent text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary/30 focus:bg-white transition-all duration-300"
                   />
                 </div>
 
                 {/* Social Media */}
                 <div className="group">
-                  <label className="block text-[11px] text-gray-700 mb-2 group-focus-within:text-[#722F37] transition-colors duration-300">
+                  <label className="block text-[11px] text-gray-700 mb-2 group-focus-within:text-brand-primary transition-colors duration-300">
                     Social Media
                   </label>
                   <input
                     type="text"
                     placeholder="Instagram (Optional)"
-                    className="w-full px-4 py-3 bg-gray-50 border border-transparent text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#722F37]/20 focus:border-[#722F37]/30 focus:bg-white transition-all duration-300"
+                    className="w-full px-4 py-3 bg-gray-50 border border-transparent text-xs placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary/30 focus:bg-white transition-all duration-300"
                   />
                 </div>
 
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-3 bg-[#722F37] text-white pl-6 pr-3 py-3 rounded-full text-sm font-medium hover:bg-[#5C242B] hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 mt-3 group"
+                  className="inline-flex items-center gap-3 bg-brand-primary text-white pl-6 pr-3 py-3 rounded-full text-sm font-medium hover:bg-brand-accent hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 mt-3 group"
                 >
                   Get Free Access
                   <span className="w-7 h-7 bg-white rounded-full flex items-center justify-center group-hover:bg-white/90 transition-colors duration-300">
                     <svg
-                      className="w-4 h-4 text-[#722F37] group-hover:translate-x-0.5 transition-transform duration-300"
+                      className="w-4 h-4 text-brand-primary group-hover:translate-x-0.5 transition-transform duration-300"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -108,9 +108,9 @@ const PodcastForm = () => {
               />
               {/* Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/20 transition-colors duration-500">
-                <button className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-[#722F37] active:scale-95 transition-all duration-300 group/btn">
+                <button className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 hover:bg-brand-primary active:scale-95 transition-all duration-300 group/btn">
                   <svg
-                    className="w-6 h-6 text-[#722F37] group-hover/btn:text-white ml-0.5 transition-colors duration-300"
+                    className="w-6 h-6 text-brand-primary group-hover/btn:text-white ml-0.5 transition-colors duration-300"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >

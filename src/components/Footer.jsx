@@ -40,13 +40,13 @@ const Footer = () => {
   ]
 
   return (
-    <footer ref={footerRef} className="w-full bg-[#FAF9F7]">
+    <footer ref={footerRef} className="w-full bg-brand-cream">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Logo & Social */}
           <div className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <Link to="/" className="text-2xl font-medium text-gray-900 mb-4 block hover:text-[#722F37] transition-colors duration-300">
+            <Link to="/" className="text-2xl font-medium text-gray-900 mb-4 block hover:text-brand-primary transition-colors duration-300">
               billeady
             </Link>
             <div className="flex items-center gap-3 mt-4">
@@ -56,7 +56,7 @@ const Footer = () => {
                   href={icon.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:border-[#722F37] hover:text-white hover:bg-[#722F37] transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+                  className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:border-brand-primary hover:text-white hover:bg-brand-primary transition-all duration-300 hover:scale-110 hover:-translate-y-1"
                   style={{ transitionDelay: `${index * 50}ms` }}
                 >
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -74,7 +74,7 @@ const Footer = () => {
                 <li key={link.name} style={{ transitionDelay: `${150 + index * 50}ms` }}>
                   <Link
                     to={link.href}
-                    className="text-gray-600 text-sm hover:text-[#722F37] transition-all duration-300 hover:translate-x-1 inline-block"
+                    className="text-gray-600 text-sm hover:text-brand-primary transition-all duration-300 hover:translate-x-1 inline-block"
                   >
                     {link.name}
                   </Link>
@@ -90,7 +90,7 @@ const Footer = () => {
                 <li key={link.name} style={{ transitionDelay: `${200 + index * 50}ms` }}>
                   <Link
                     to={link.href}
-                    className="text-gray-600 text-sm hover:text-[#722F37] transition-all duration-300 hover:translate-x-1 inline-block"
+                    className="text-gray-600 text-sm hover:text-brand-primary transition-all duration-300 hover:translate-x-1 inline-block"
                   >
                     {link.name}
                   </Link>
@@ -108,11 +108,11 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter email"
-                className="flex-1 px-4 py-2.5 border border-gray-300 rounded-l-full text-sm placeholder-gray-400 focus:outline-none focus:border-[#722F37] focus:ring-2 focus:ring-[#722F37]/10 bg-white transition-all duration-300"
+                className="flex-1 px-4 py-2.5 border border-gray-300 rounded-l-full text-sm placeholder-gray-400 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/10 bg-white transition-all duration-300"
               />
               <button
                 type="submit"
-                className="w-10 h-10 bg-[#722F37] rounded-full flex items-center justify-center -ml-1 hover:bg-[#5C242B] hover:scale-110 active:scale-95 transition-all duration-300 group"
+                className="w-10 h-10 bg-brand-primary rounded-full flex items-center justify-center -ml-1 hover:bg-brand-accent hover:scale-110 active:scale-95 transition-all duration-300 group"
               >
                 <svg
                   className="w-4 h-4 text-white group-hover:translate-x-0.5 transition-transform duration-300"
@@ -139,12 +139,12 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
             <div className="flex items-center gap-6">
               <span>©copyright 2025</span>
-              <a href="#" className="hover:text-[#722F37] transition-colors duration-300 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-[#722F37] after:transition-all after:duration-300 hover:after:w-full">
+              <a href="#" className="hover:text-brand-primary transition-colors duration-300 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-brand-primary after:transition-all after:duration-300 hover:after:w-full">
                 Privacy Policy
               </a>
             </div>
             <div className="flex items-center gap-6">
-              <a href="#" className="hover:text-[#722F37] transition-colors duration-300 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-[#722F37] after:transition-all after:duration-300 hover:after:w-full">
+              <a href="#" className="hover:text-brand-primary transition-colors duration-300 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-brand-primary after:transition-all after:duration-300 hover:after:w-full">
                 Terms & Condition
               </a>
               <span>All rights reserved.</span>
@@ -154,7 +154,7 @@ const Footer = () => {
       </div>
 
       {/* Developer Credit */}
-      <div className="bg-[#722F37]">
+      <div className="bg-brand-primary">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-4">
           <p className="text-center text-xs text-white/80">
             Built by{' '}

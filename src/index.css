@@ -2,6 +2,10 @@
 
 @theme {
   --font-sans: "Rubik", sans-serif;
+
+  --color-brand-cream: #F9F1E6;
+  --color-brand-primary: #6D1E17;
+  --color-brand-accent: #B5241A;
 }
 
 body {
@@ -90,23 +94,23 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #722F37;
+  background: var(--color-brand-primary);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #5C242B;
+  background: var(--color-brand-accent);
 }
 
 /* Selection color */
 ::selection {
-  background: #722F37;
+  background: var(--color-brand-primary);
   color: white;
 }
 
 /* Focus styles for accessibility */
 *:focus-visible {
-  outline: 2px solid #722F37;
+  outline: 2px solid var(--color-brand-accent);
   outline-offset: 2px;
 }
 

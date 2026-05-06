@@ -43,7 +43,7 @@ const Solution = () => {
       className="w-full"
       style={{
         background:
-          'radial-gradient(900px circle at 50% 0%, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 55%), linear-gradient(180deg, #722F37 0%, #4A1E23 100%)',
+          'radial-gradient(900px circle at 50% 0%, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 55%), linear-gradient(180deg, var(--color-brand-primary) 0%, #4A1E23 100%)',
       }}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-14 md:py-16">
@@ -63,7 +63,7 @@ const Solution = () => {
                 <div className="h-px bg-gray-200 mt-5" />
 
                 <div className="flex items-center gap-3 mt-4">
-                  <span className="w-5 h-5 rounded-full bg-[#722F37] flex items-center justify-center shrink-0 animate-pulse-soft">
+                  <span className="w-5 h-5 rounded-full bg-brand-primary flex items-center justify-center shrink-0 animate-pulse-soft">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                     </svg>
@@ -108,7 +108,7 @@ const Solution = () => {
                 <Link
                   key={index}
                   to={point.link}
-                  className={`bg-white border border-black/10 rounded-sm px-5 py-4 flex items-center justify-between hover:border-[#722F37]/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group ${
+                  className={`bg-white border border-black/10 rounded-sm px-5 py-4 flex items-center justify-between hover:border-brand-primary/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group ${
                     isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
                   }`}
                   style={{ 
@@ -116,16 +116,16 @@ const Solution = () => {
                   }}
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 border border-[#722F37]/40 rounded-sm flex items-center justify-center text-[#722F37] group-hover:bg-[#722F37] group-hover:text-white group-hover:border-[#722F37] transition-all duration-300">
+                    <div className="w-10 h-10 border border-brand-primary/40 rounded-sm flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white group-hover:border-brand-primary transition-all duration-300">
                       {point.icon}
                     </div>
                     <div>
-                      <div className="text-sm font-semibold text-gray-900 group-hover:text-[#722F37] transition-colors">{point.title}</div>
+                      <div className="text-sm font-semibold text-gray-900 group-hover:text-brand-primary transition-colors">{point.title}</div>
                       <div className="text-xs text-gray-500 mt-0.5">{point.description}</div>
                     </div>
                   </div>
 
-                  <div className="text-gray-800 group-hover:translate-x-2 group-hover:text-[#722F37] transition-all duration-300">
+                  <div className="text-gray-800 group-hover:translate-x-2 group-hover:text-brand-primary transition-all duration-300">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>

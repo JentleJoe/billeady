@@ -18,7 +18,7 @@ const Hero = () => {
         className="absolute inset-0"
         style={{
           background:
-            'radial-gradient(ellipse 80% 50% at 70% 50%, rgba(253,210,180,0.5) 0%, transparent 70%), linear-gradient(135deg, #FEF6EE 0%, #FDEBD6 40%, #FDF3E8 100%)',
+            'radial-gradient(ellipse 80% 50% at 70% 50%, rgba(253,210,180,0.5) 0%, transparent 70%), linear-gradient(135deg, var(--color-brand-cream) 0%, #FDEBD6 40%, #FDF3E8 100%)',
         }}
       />
 
@@ -32,7 +32,7 @@ const Hero = () => {
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
               }`}
             >
-              <span className="text-[#722F37] text-sm animate-pulse">✦</span>
+              <span className="text-brand-primary text-sm animate-pulse">✦</span>
               <span className="text-xs text-gray-600">High Ticket Closer & Business Consultant</span>
             </div>
 
@@ -61,14 +61,14 @@ const Hero = () => {
             {/* CTA Button */}
             <Link
               to="/programs"
-              className={`inline-flex items-center gap-2 bg-[#722F37] text-white pl-5 pr-1.5 py-1.5 rounded-full text-sm font-medium hover:bg-[#5C242B] hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 mb-8 lg:mb-24 group delay-300 ${
+              className={`inline-flex items-center gap-2 bg-brand-primary text-white pl-5 pr-1.5 py-1.5 rounded-full text-sm font-medium hover:bg-brand-accent hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 mb-8 lg:mb-24 group delay-300 ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
             >
               Start Learning Now
               <span className="w-7 h-7 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                 <svg
-                  className="w-3.5 h-3.5 text-[#722F37] group-hover:translate-x-0.5 transition-transform"
+                  className="w-3.5 h-3.5 text-brand-primary group-hover:translate-x-0.5 transition-transform"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -169,7 +169,7 @@ const Hero = () => {
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-6 h-6 bg-white/95 rounded-full flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
                       <svg
-                        className="w-2.5 h-2.5 text-[#722F37] ml-0.5"
+                        className="w-2.5 h-2.5 text-brand-primary ml-0.5"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -210,9 +210,9 @@ const Hero = () => {
                   />
                   {/* Play Button */}
                   <div className="absolute inset-0 flex items-center justify-center group">
-                    <div className="w-8 h-8 bg-white/95 rounded-full flex items-center justify-center shadow-md group-hover:scale-110 group-hover:bg-[#722F37] transition-all duration-300">
+                    <div className="w-8 h-8 bg-white/95 rounded-full flex items-center justify-center shadow-md group-hover:scale-110 group-hover:bg-brand-primary transition-all duration-300">
                       <svg
-                        className="w-3 h-3 text-[#722F37] ml-0.5 group-hover:text-white transition-colors"
+                        className="w-3 h-3 text-brand-primary ml-0.5 group-hover:text-white transition-colors"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >

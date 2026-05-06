@@ -35,7 +35,7 @@ const About = () => {
         </div>
 
         {/* Right Side - Content */}
-        <div className="bg-[#722F37] px-8 md:px-12 lg:px-16 py-16 lg:py-24 flex flex-col justify-center lg:basis-[55%]">
+        <div className="bg-brand-primary px-8 md:px-12 lg:px-16 py-16 lg:py-24 flex flex-col justify-center lg:basis-[55%]">
           <h2 
             className={`text-3xl md:text-4xl lg:text-[2.75rem] font-semibold text-white leading-tight mb-6 transition-all duration-700 delay-100 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'

@@ -41,7 +41,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link 
           to="/" 
-          className="text-2xl font-medium text-[#722F37] transition-transform duration-200 hover:scale-105"
+          className="text-2xl font-medium text-brand-primary transition-transform duration-200 hover:scale-105"
         >
           billeady
         </Link>
@@ -54,8 +54,8 @@ const Navbar = () => {
               to={link.href}
               className={`text-sm font-medium transition-colors ${
                 isActive(link.href)
-                  ? 'text-[#722F37] border-b-2 border-[#722F37] pb-1'
-                  : 'text-gray-700 hover:text-[#722F37]'
+                  ? 'text-brand-primary border-b-2 border-brand-primary pb-1'
+                  : 'text-gray-700 hover:text-brand-primary'
               }`}
             >
               {link.name}
@@ -66,12 +66,12 @@ const Navbar = () => {
         {/* CTA Button */}
         <Link
           to="/programs"
-          className="hidden lg:flex items-center gap-2 bg-[#722F37] text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#5C242B] hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-200"
+          className="hidden lg:flex items-center gap-2 bg-brand-primary text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-accent hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-200"
         >
           Free Training
           <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center">
             <svg
-              className="w-3 h-3 text-[#722F37]"
+              className="w-3 h-3 text-brand-primary"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -126,7 +126,7 @@ const Navbar = () => {
                 to={link.href}
                 onClick={() => setIsMenuOpen(false)}
                 className={`text-sm font-medium ${
-                  isActive(link.href) ? 'text-[#722F37]' : 'text-gray-700'
+                  isActive(link.href) ? 'text-brand-primary' : 'text-gray-700'
                 }`}
               >
                 {link.name}
@@ -135,12 +135,12 @@ const Navbar = () => {
             <Link
               to="/programs"
               onClick={() => setIsMenuOpen(false)}
-              className="flex items-center gap-2 bg-[#722F37] text-white px-5 py-2.5 rounded-full text-sm font-medium w-fit"
+              className="flex items-center gap-2 bg-brand-primary text-white px-5 py-2.5 rounded-full text-sm font-medium w-fit"
             >
               Free Training
               <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center">
                 <svg
-                  className="w-3 h-3 text-[#722F37]"
+                  className="w-3 h-3 text-brand-primary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

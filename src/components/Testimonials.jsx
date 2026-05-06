@@ -13,7 +13,7 @@ const TestimonialCard = ({ testimonial, delay = 0 }) => {
           <img
             src={testimonial.image}
             alt={testimonial.name}
-            className="w-10 h-10 rounded-full object-cover ring-2 ring-transparent hover:ring-[#722F37] transition-all"
+            className="w-10 h-10 rounded-full object-cover ring-2 ring-transparent hover:ring-brand-primary transition-all"
           />
           <div>
             <h4 className="font-semibold text-gray-900 text-sm">{testimonial.name}</h4>
@@ -131,14 +131,14 @@ const Testimonials = () => {
           </div>
           <a
             href="#"
-            className={`inline-flex items-center gap-2 bg-[#722F37] text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#5C242B] hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 mt-4 md:mt-0 w-fit group ${
+            className={`inline-flex items-center gap-2 bg-brand-primary text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-accent hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 mt-4 md:mt-0 w-fit group ${
               isVisible ? 'opacity-100 translate-y-0 delay-200' : 'opacity-0 translate-y-8'
             }`}
           >
             View All Results
             <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
               <svg
-                className="w-3 h-3 text-[#722F37] group-hover:translate-x-0.5 transition-transform"
+                className="w-3 h-3 text-brand-primary group-hover:translate-x-0.5 transition-transform"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

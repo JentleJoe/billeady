@@ -42,12 +42,12 @@ const Mastermind = () => {
           alt="Team working"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-[#722F37]/75" />
+        <div className="absolute inset-0 bg-brand-primary/75" />
         <div
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(180deg, rgba(114,47,55,0.35) 0%, rgba(114,47,55,0.85) 70%, rgba(114,47,55,0.95) 100%)',
+              'linear-gradient(180deg, rgba(109,30,23,0.35) 0%, rgba(109,30,23,0.85) 70%, rgba(109,30,23,0.95) 100%)',
           }}
         />
       </div>
@@ -75,18 +75,18 @@ const Mastermind = () => {
                 style={{ transitionDelay: `${300 + index * 150}ms` }}
               >
                 <div className="px-5 pt-5 pb-4">
-                  <h3 className="text-gray-900 font-semibold sm:text-lg text-sm group-hover:text-[#722F37] transition-colors duration-300">{program.title}</h3>
+                  <h3 className="text-gray-900 font-semibold sm:text-lg text-sm group-hover:text-brand-primary transition-colors duration-300">{program.title}</h3>
                   <p className="text-gray-500 text-xs mt-2 leading-relaxed">
                     {program.description}
                   </p>
                 </div>
-                <div className="h-px bg-gray-200 group-hover:bg-[#722F37]/20 transition-colors duration-300" />
+                <div className="h-px bg-gray-200 group-hover:bg-brand-primary/20 transition-colors duration-300" />
 
                 <div className="px-5 py-4">
                   <div className="grid grid-cols-2 gap-x-6 gap-y-3">
                     {program.features.map((feature, fIndex) => (
                       <div key={fIndex} className="flex items-center gap-2 group/item">
-                        <span className="w-4 h-4 rounded-full bg-[#722F37] flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform duration-300">
+                        <span className="w-4 h-4 rounded-full bg-brand-primary flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform duration-300">
                           <svg className="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                           </svg>

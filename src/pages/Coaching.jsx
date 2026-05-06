@@ -90,20 +90,20 @@ const Coaching = () => {
           className="absolute inset-0"
           style={{
             background:
-              'radial-gradient(ellipse 80% 50% at 30% 50%, rgba(114,47,55,0.15) 0%, transparent 70%), linear-gradient(135deg, #FEF6EE 0%, #FDEBD6 40%, #FDF3E8 100%)',
+              'radial-gradient(ellipse 80% 50% at 30% 50%, rgba(109,30,23,0.15) 0%, transparent 70%), linear-gradient(135deg, var(--color-brand-cream) 0%, #FDEBD6 40%, #FDF3E8 100%)',
           }}
         />
         <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-28">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center gap-2 mb-5">
-                <span className="text-[#722F37] text-sm">✦</span>
+                <span className="text-brand-primary text-sm">✦</span>
                 <span className="text-xs text-gray-600 uppercase tracking-wider">High Ticket Closing Coaching</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-6">
                 Learn to Close
                 <br />
-                <span className="text-[#722F37]">Like a Pro.</span>
+                <span className="text-brand-primary">Like a Pro.</span>
               </h1>
               <p className="text-gray-600 text-lg mb-8">
                 Master the art and science of high-ticket closing. I'll teach you the exact frameworks, scripts, and mindset shifts that have helped me close millions in deals, and helped hundreds of students do the same.
@@ -111,7 +111,7 @@ const Coaching = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   to="/programs"
-                  className="inline-flex items-center justify-center gap-2 bg-[#722F37] text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-[#5C242B] transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-brand-primary text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-brand-accent transition-colors"
                 >
                   View Coaching Programs
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,7 +120,7 @@ const Coaching = () => {
                 </Link>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center gap-2 bg-transparent text-[#722F37] px-8 py-4 rounded-full text-sm font-medium border border-[#722F37] hover:bg-[#722F37] hover:text-white transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-transparent text-brand-primary px-8 py-4 rounded-full text-sm font-medium border border-brand-primary hover:bg-brand-primary hover:text-white transition-colors"
                 >
                   Book Free Strategy Call
                 </Link>
@@ -129,15 +129,15 @@ const Coaching = () => {
             <div className="relative">
               <div className="bg-white p-8 rounded-sm shadow-xl">
                 <div className="text-center mb-6">
-                  <div className="text-5xl font-bold text-[#722F37] mb-2">500+</div>
+                  <div className="text-5xl font-bold text-brand-primary mb-2">500+</div>
                   <div className="text-gray-600">Students Trained</div>
                 </div>
                 <div className="grid grid-cols-2 gap-4 text-center">
-                  <div className="bg-[#FAF9F7] p-4 rounded-sm">
+                  <div className="bg-brand-cream p-4 rounded-sm">
                     <div className="text-2xl font-semibold text-gray-900">₦2B+</div>
                     <div className="text-xs text-gray-500">Closed by Students</div>
                   </div>
-                  <div className="bg-[#FAF9F7] p-4 rounded-sm">
+                  <div className="bg-brand-cream p-4 rounded-sm">
                     <div className="text-2xl font-semibold text-gray-900">73%</div>
                     <div className="text-xs text-gray-500">Avg. Close Rate</div>
                   </div>
@@ -149,7 +149,7 @@ const Coaching = () => {
       </section>
 
       {/* Why Learn From Me */}
-      <section className="w-full py-20 md:py-28 bg-[#722F37]">
+      <section className="w-full py-20 md:py-28 bg-brand-primary">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -205,8 +205,8 @@ const Coaching = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((benefit, index) => (
-              <div key={index} className="bg-[#FAF9F7] p-6 rounded-sm border border-black/5">
-                <div className="w-10 h-10 bg-[#722F37] rounded-full flex items-center justify-center text-white mb-4">
+              <div key={index} className="bg-brand-cream p-6 rounded-sm border border-black/5">
+                <div className="w-10 h-10 bg-brand-primary rounded-full flex items-center justify-center text-white mb-4">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -220,7 +220,7 @@ const Coaching = () => {
       </section>
 
       {/* Curriculum */}
-      <section className="w-full py-20 md:py-28 bg-[#FAF9F7]">
+      <section className="w-full py-20 md:py-28 bg-brand-cream">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
@@ -234,12 +234,12 @@ const Coaching = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {curriculum.map((item, index) => (
               <div key={index} className="bg-white p-6 rounded-sm border border-black/5">
-                <div className="text-xs text-[#722F37] font-medium mb-2">{item.module}</div>
+                <div className="text-xs text-brand-primary font-medium mb-2">{item.module}</div>
                 <h3 className="font-semibold text-gray-900 mb-4">{item.title}</h3>
                 <ul className="space-y-2">
                   {item.topics.map((topic, tIndex) => (
                     <li key={tIndex} className="flex items-center gap-2 text-gray-600 text-sm">
-                      <span className="w-1.5 h-1.5 bg-[#722F37] rounded-full"></span>
+                      <span className="w-1.5 h-1.5 bg-brand-primary rounded-full"></span>
                       {topic}
                     </li>
                   ))}
@@ -264,7 +264,7 @@ const Coaching = () => {
 
           <div className="grid md:grid-cols-3 gap-6">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-[#FAF9F7] p-6 rounded-sm border border-black/5">
+              <div key={index} className="bg-brand-cream p-6 rounded-sm border border-black/5">
                 <div className="flex items-center gap-3 mb-4">
                   <img
                     src={testimonial.image}
@@ -287,7 +287,7 @@ const Coaching = () => {
       <section
         className="w-full py-20 md:py-28"
         style={{
-          background: 'linear-gradient(135deg, #722F37 0%, #4A1E23 100%)',
+          background: 'linear-gradient(135deg, var(--color-brand-primary) 0%, #4A1E23 100%)',
         }}
       >
         <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
@@ -300,10 +300,10 @@ const Coaching = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/programs"
-              className="inline-flex items-center justify-center gap-3 bg-white text-[#722F37] px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center justify-center gap-3 bg-white text-brand-primary px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
             >
               Explore Programs
-              <span className="w-6 h-6 bg-[#722F37] rounded-full flex items-center justify-center">
+              <span className="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center">
                 <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -311,7 +311,7 @@ const Coaching = () => {
             </Link>
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center gap-2 bg-transparent text-white px-8 py-4 rounded-full text-sm font-medium border border-white hover:bg-white hover:text-[#722F37] transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-transparent text-white px-8 py-4 rounded-full text-sm font-medium border border-white hover:bg-white hover:text-brand-primary transition-colors"
             >
               Book Free Call
             </Link>

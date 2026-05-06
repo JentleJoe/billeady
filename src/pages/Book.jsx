@@ -78,7 +78,7 @@ const Book = () => {
           className="absolute inset-0"
           style={{
             background:
-              'radial-gradient(ellipse 100% 80% at 50% 100%, rgba(114,47,55,0.3) 0%, transparent 60%), linear-gradient(180deg, #2D1215 0%, #722F37 50%, #4A1E23 100%)',
+              'radial-gradient(ellipse 100% 80% at 50% 100%, rgba(109,30,23,0.3) 0%, transparent 60%), linear-gradient(180deg, #2D1215 0%, var(--color-brand-primary) 50%, #4A1E23 100%)',
           }}
         />
         <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20">
@@ -98,7 +98,7 @@ const Book = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="#waitlist"
-                  className="inline-flex items-center justify-center gap-2 bg-white text-[#722F37] px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-brand-primary px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
                 >
                   Join the Waitlist
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -158,7 +158,7 @@ const Book = () => {
                 Because chances are, at some point, you'll face your own "dust" moment. And when you do, this book will be your guide.
               </p>
             </div>
-            <div className="bg-[#FAF9F7] rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+            <div className="bg-brand-cream rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
               {/* Image Section */}
               <div className="relative h-64 md:h-80 overflow-hidden">
                 <img 
@@ -166,25 +166,25 @@ const Book = () => {
                   alt="Billeady Saliu"
                   className="w-full h-full object-cover object-top"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#FAF9F7] via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-cream via-transparent to-transparent"></div>
               </div>
               
               {/* Quote Section */}
               <div className="p-8 md:p-10 relative">
-                <div className="text-[#722F37] text-5xl md:text-6xl font-serif absolute -top-6 left-8 leading-none">"</div>
+                <div className="text-brand-primary text-5xl md:text-6xl font-serif absolute -top-6 left-8 leading-none">"</div>
                 <p className="text-gray-700 text-lg md:text-xl italic mb-8 pt-6 leading-relaxed">
                   I didn't write this book because I'm proud of failing. I wrote it because I know someone out there is going through what I went through, and they need to know it's possible to come back stronger.
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="relative">
-                    <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#722F37]/20">
+                    <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-brand-primary/20">
                       <img 
                         src={booksImg} 
                         alt="Billeady Saliu"
                         className="w-full h-full object-cover object-center"
                       />
                     </div>
-                    <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-[#722F37] rounded-full border-2 border-white flex items-center justify-center">
+                    <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-brand-primary rounded-full border-2 border-white flex items-center justify-center">
                       <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
@@ -202,7 +202,7 @@ const Book = () => {
       </section>
 
       {/* What's Inside Section */}
-      <section className="w-full py-20 md:py-28 bg-[#FAF9F7]">
+      <section className="w-full py-20 md:py-28 bg-brand-cream">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
@@ -216,7 +216,7 @@ const Book = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {chapters.map((chapter, index) => (
               <div key={index} className="bg-white p-6 rounded-sm border border-black/5 hover:shadow-lg transition-shadow">
-                <div className="text-[#722F37] text-3xl font-bold mb-3">{chapter.number}</div>
+                <div className="text-brand-primary text-3xl font-bold mb-3">{chapter.number}</div>
                 <h3 className="font-semibold text-gray-900 mb-2">{chapter.title}</h3>
                 <p className="text-gray-600 text-sm">{chapter.description}</p>
               </div>
@@ -226,7 +226,7 @@ const Book = () => {
       </section>
 
       {/* Who Is This For Section */}
-      <section className="w-full py-20 md:py-28 bg-[#722F37]">
+      <section className="w-full py-20 md:py-28 bg-brand-primary">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -268,7 +268,7 @@ const Book = () => {
       {/* Waitlist Section */}
       <section id="waitlist" className="w-full py-20 md:py-28 bg-white">
         <div className="max-w-3xl mx-auto px-6 md:px-12 lg:px-20 text-center">
-          <div className="inline-block bg-[#722F37]/10 text-[#722F37] text-xs font-medium px-4 py-2 rounded-full mb-6">
+          <div className="inline-block bg-brand-primary/10 text-brand-primary text-xs font-medium px-4 py-2 rounded-full mb-6">
             Be the First to Know
           </div>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
@@ -287,11 +287,11 @@ const Book = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email address"
                   required
-                  className="flex-1 px-5 py-4 border border-gray-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#722F37]/20 focus:border-[#722F37]"
+                  className="flex-1 px-5 py-4 border border-gray-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary"
                 />
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center gap-2 bg-[#722F37] text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-[#5C242B] transition-colors whitespace-nowrap"
+                  className="inline-flex items-center justify-center gap-2 bg-brand-primary text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-brand-accent transition-colors whitespace-nowrap"
                 >
                   Join Waitlist
                 </button>
@@ -317,7 +317,7 @@ const Book = () => {
       </section>
 
       {/* Bonus Section */}
-      <section className="w-full py-20 md:py-28 bg-[#FAF9F7]">
+      <section className="w-full py-20 md:py-28 bg-brand-cream">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
@@ -360,7 +360,7 @@ const Book = () => {
       <section
         className="w-full py-20 md:py-28"
         style={{
-          background: 'linear-gradient(135deg, #722F37 0%, #4A1E23 100%)',
+          background: 'linear-gradient(135deg, var(--color-brand-primary) 0%, #4A1E23 100%)',
         }}
       >
         <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
@@ -372,10 +372,10 @@ const Book = () => {
           </p>
           <a
             href="#waitlist"
-            className="inline-flex items-center gap-3 bg-white text-[#722F37] px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
+            className="inline-flex items-center gap-3 bg-white text-brand-primary px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
           >
             Secure Your Spot on the Waitlist
-            <span className="w-6 h-6 bg-[#722F37] rounded-full flex items-center justify-center">
+            <span className="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center">
               <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
