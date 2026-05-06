@@ -139,7 +139,7 @@ const Programs = () => {
   ]
 
   return (
-    <div className="pt-20">
+    <div>
       {/* Hero Section */}
       <section ref={heroRef} className="relative w-full overflow-hidden">
         <div

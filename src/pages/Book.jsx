@@ -71,7 +71,7 @@ const Book = () => {
   ]
 
   return (
-    <div className="pt-20">
+    <div>
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden min-h-[90vh] flex items-center">
         <div

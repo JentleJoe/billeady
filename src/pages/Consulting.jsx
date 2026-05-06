@@ -93,7 +93,7 @@ const Consulting = () => {
   ]
 
   return (
-    <div className="pt-20">
+    <div>
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden">
         <div
