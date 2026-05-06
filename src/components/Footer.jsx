@@ -138,40 +138,39 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-5">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
-            <div className="flex items-center gap-6">
+      {/* Bottom Bar (Copyright + Policies + Credit) */}
+      <div className="bg-brand-primary border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-4">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-xs text-white/80">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-6 gap-y-2">
               <span>©copyright 2025</span>
-              <a href="#" className="hover:text-brand-primary transition-colors duration-300 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-brand-primary after:transition-all after:duration-300 hover:after:w-full">
+              <Link
+                to="/privacy-policy"
+                className="hover:text-white transition-colors duration-300 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-white/80 after:transition-all after:duration-300 hover:after:w-full"
+              >
                 Privacy Policy
-              </a>
-            </div>
-            <div className="flex items-center gap-6">
-              <a href="#" className="hover:text-brand-primary transition-colors duration-300 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-brand-primary after:transition-all after:duration-300 hover:after:w-full">
-                Terms & Condition
-              </a>
+              </Link>
+              <Link
+                to="/terms"
+                className="hover:text-white transition-colors duration-300 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-white/80 after:transition-all after:duration-300 hover:after:w-full"
+              >
+                Terms & Conditions
+              </Link>
               <span>All rights reserved.</span>
             </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Developer Credit */}
-      <div className="bg-brand-primary">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-4">
-          <p className="text-center text-xs text-white/80">
-            Built by{' '}
-            <a
-              href="https://joshuaoseghale.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium hover:underline text-white hover:text-white/90 transition-colors duration-300"
-            >
-              Joshua Oseghale
-            </a>
-          </p>
+            <p className="text-center md:text-right">
+              Built by{' '}
+              <a
+                href="https://joshuaoseghale.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-white hover:underline hover:text-white transition-colors duration-300"
+              >
+                Joshua Oseghale
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

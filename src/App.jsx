@@ -9,6 +9,8 @@ import Consulting from './pages/Consulting'
 import Programs from './pages/Programs'
 import Book from './pages/Book'
 import Contact from './pages/Contact'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import Terms from './pages/Terms'
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/programs" element={<Programs />} />
         <Route path="/books" element={<Book />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<Terms />} />
       </Routes>
       <Footer />
     </div>
