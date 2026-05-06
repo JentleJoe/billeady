@@ -33,7 +33,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 py-3 px-6 md:px-12 lg:px-20 transition-all duration-300 ${
+    <nav className={`sticky top-0 z-50 py-3 px-6 md:px-12 lg:px-20 transition-all duration-300 ${
       isScrolled 
         ? 'bg-white/95 backdrop-blur-md shadow-lg py-2' 
         : 'bg-white shadow-sm'

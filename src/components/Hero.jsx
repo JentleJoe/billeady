@@ -12,7 +12,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <section className="relative w-full min-h-screen lg:h-screen overflow-hidden">
+    <section className="relative w-full min-h-screen lg:h-[calc(100vh-80px)] lg:min-h-[calc(100vh-80px)] overflow-hidden">
       {/* Background gradient */}
       <div
         className="absolute inset-0"
@@ -23,7 +23,7 @@ const Hero = () => {
       />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 h-full">
-        <div className="flex flex-col lg:flex-row lg:items-center min-h-screen lg:h-full pt-24 lg:pt-16 pb-8 lg:pb-0">
+        <div className="flex flex-col lg:flex-row lg:items-center min-h-screen lg:h-full pt-20 lg:pt-8 pb-8 lg:pb-0">
           {/* Left Content */}
           <div className="z-10 lg:pt-0 lg:basis-1/2 lg:pr-8">
             {/* Tag */}
