@@ -6,7 +6,6 @@ import Home from './pages/Home'
 import HighTicketClosing from './pages/HighTicketClosing'
 import Coaching from './pages/Coaching'
 import Consulting from './pages/Consulting'
-import Programs from './pages/Programs'
 import Book from './pages/Book'
 import Contact from './pages/Contact'
 import PrivacyPolicy from './pages/PrivacyPolicy'
@@ -22,7 +21,6 @@ function App() {
         <Route path="/high-ticket-closing" element={<HighTicketClosing />} />
         <Route path="/coaching" element={<Coaching />} />
         <Route path="/consulting" element={<Consulting />} />
-        <Route path="/programs" element={<Programs />} />
         <Route path="/books" element={<Book />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

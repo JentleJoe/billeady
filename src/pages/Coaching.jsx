@@ -37,26 +37,6 @@ const Coaching = () => {
     },
   ]
 
-  const testimonials = [
-    {
-      name: 'Adebayo Johnson',
-      role: 'Sales Consultant',
-      quote: 'Before working with Billeddy, I struggled to close anything above ₦500K. Within 3 months of his coaching, I closed my first ₦5M deal. His frameworks are game-changing.',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
-    },
-    {
-      name: 'Chioma Okafor',
-      role: 'Business Owner',
-      quote: "Billeddy's coaching transformed my approach to sales. I went from dreading sales calls to actually enjoying them. My close rate increased from 15% to 60%.",
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
-    },
-    {
-      name: 'Emmanuel Nwachukwu',
-      role: 'High Ticket Closer',
-      quote: 'The ROI on this coaching is insane. I made back 10x my investment in the first month. Billeddy knows what he\'s talking about because he\'s done it himself.',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop',
-    },
-  ]
 
   const curriculum = [
     {
@@ -669,39 +649,6 @@ const Coaching = () => {
               <div key={index} className="bg-white p-6 rounded-sm border border-black/5">
                 <h3 className="font-semibold text-gray-900 mb-2">{faq.question}</h3>
                 <p className="text-gray-600 text-sm">{faq.answer}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="w-full py-20 md:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-              Success Stories
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Real results from real students who've transformed their closing abilities.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-brand-cream p-6 rounded-sm border border-black/5">
-                <div className="flex items-center gap-3 mb-4">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover"
-                  />
-                  <div>
-                    <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                    <div className="text-xs text-gray-500">{testimonial.role}</div>
-                  </div>
-                </div>
-                <p className="text-gray-600 text-sm italic">"{testimonial.quote}"</p>
               </div>
             ))}
           </div>

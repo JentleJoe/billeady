@@ -21,7 +21,6 @@ const Navbar = () => {
     { name: 'Closing Services', href: '/high-ticket-closing' },
     { name: 'Coaching', href: '/coaching' },
     { name: 'Consulting', href: '/consulting' },
-    { name: 'Programs', href: '/programs' },
     { name: 'Books', href: '/books' },
   ]
 
@@ -67,7 +66,7 @@ const Navbar = () => {
 
         {/* CTA Button */}
         <Link
-          to="/programs"
+          to="/coaching#programs"
           className="hidden lg:flex items-center gap-2 bg-brand-primary text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-accent hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-200"
         >
           Free Training
@@ -135,7 +134,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Link
-              to="/programs"
+              to="/coaching#programs"
               onClick={() => setIsMenuOpen(false)}
               className="flex items-center gap-2 bg-brand-primary text-white px-5 py-2.5 rounded-full text-sm font-medium w-fit"
             >

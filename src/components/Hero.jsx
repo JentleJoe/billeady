@@ -60,7 +60,7 @@ const Hero = () => {
 
             {/* CTA Button */}
             <Link
-              to="/programs"
+              to="/coaching#programs"
               className={`inline-flex items-center gap-2 bg-brand-primary text-white pl-5 pr-1.5 py-1.5 rounded-full text-sm font-medium hover:bg-brand-accent hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 mb-8 lg:mb-24 group delay-300 ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}

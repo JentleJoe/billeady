@@ -252,7 +252,7 @@ const Contact = () => {
               </svg>
             </a>
             <Link
-              to="/programs"
+              to="/coaching#programs"
               className="inline-flex items-center justify-center gap-2 bg-transparent border border-white text-white px-8 py-4 rounded-full text-sm font-semibold hover:bg-white/10 transition-colors"
             >
               View Programs
