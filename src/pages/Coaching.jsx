@@ -172,12 +172,16 @@ const Coaching = () => {
 
   const faqs = [
     {
-      question: 'Who are these programs for?',
-      answer: 'These programs are designed for sales professionals, entrepreneurs, coaches, consultants, and anyone who wants to improve their ability to close high-ticket deals. Whether you\'re just starting or looking to level up, there\'s a program for you.',
+      question: 'Which learning path is right for me?',
+      answer: 'Choose Self-Paced if you\'re self-motivated and budget-conscious. Choose Live + Self-Paced for the best value with structure and accountability. Choose Specialized if you\'re in a specific industry like real estate. Choose 1-on-1 VIP Coaching if you want personalized attention and accelerated results.',
     },
     {
-      question: 'How are the programs delivered?',
-      answer: 'Programs are delivered through our online learning platform with a mix of pre-recorded video modules and live calls. You\'ll also get access to our private community for ongoing support.',
+      question: 'How are the learning paths delivered?',
+      answer: 'All learning paths include the complete curriculum through our online learning platform with pre-recorded video modules. The Live + Self-Paced path adds weekly Q&A calls, and the Specialized path includes industry-specific sessions. You\'ll also get access to our private community.',
+    },
+    {
+      question: 'What\'s the difference between the learning paths and VIP coaching?',
+      answer: 'Learning paths are structured programs with video modules and (for some tiers) group calls. VIP 1-on-1 coaching is personalized mentorship with direct access to Billeddy for custom strategies and real-time feedback on your specific business.',
     },
     {
       question: 'What if I can\'t attend the live calls?',
@@ -185,7 +189,7 @@ const Coaching = () => {
     },
     {
       question: 'Is there a payment plan available?',
-      answer: 'Yes! We offer flexible payment plans for all programs. Contact us to discuss options that work for your budget.',
+      answer: 'Yes! We offer flexible payment plans for all learning paths and VIP coaching. Contact us to discuss options that work for your budget.',
     },
     {
       question: 'What results can I expect?',
@@ -228,7 +232,7 @@ const Coaching = () => {
                   to="#programs"
                   className="inline-flex items-center justify-center gap-2 bg-brand-primary text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-brand-accent transition-colors"
                 >
-                  View Coaching Programs
+                  Explore Learning Paths
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -339,10 +343,10 @@ const Coaching = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-              The Curriculum
+              What You'll Master
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              A structured, step-by-step program to take you from beginner to expert closer.
+              This comprehensive curriculum is the foundation of all our programs. Every learning path includes these core modules to ensure you get complete training.
             </p>
           </div>
 
@@ -370,10 +374,10 @@ const Coaching = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-              Programs
+              Choose Your Learning Path
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Structured training programs designed to transform you into a confident, high-performing sales professional. Choose the program that fits your goals.
+              Select the learning path that fits your schedule, budget, and goals. All paths include the complete curriculum.
             </p>
           </div>
 
@@ -386,7 +390,7 @@ const Coaching = () => {
               >
                 {program.featured && (
                   <div className="bg-brand-primary text-white text-center py-2 text-sm font-medium">
-                    ⭐ Most Popular Program
+                    ⭐ Most Popular - Best Value
                   </div>
                 )}
                 <div className="grid lg:grid-cols-2">
@@ -394,7 +398,28 @@ const Coaching = () => {
                   <div className="p-8 md:p-12 bg-white">
                     <div className="text-xs text-brand-primary font-medium mb-2">{program.subtitle}</div>
                     <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">{program.title}</h2>
-                    <p className="text-gray-600 mb-6">{program.description}</p>
+                    <p className="text-gray-600 mb-4">{program.description}</p>
+
+                    {program.id === 'cold-dm-blueprint' && (
+                      <div className="bg-brand-cream p-4 rounded-sm mb-6">
+                        <div className="text-sm font-semibold text-gray-900 mb-1">Best for:</div>
+                        <div className="text-sm text-gray-600">Self-motivated learners who want to learn at their own pace with limited budget</div>
+                      </div>
+                    )}
+
+                    {program.id === 'high-ticket-mastery' && (
+                      <div className="bg-brand-cream p-4 rounded-sm mb-6">
+                        <div className="text-sm font-semibold text-gray-900 mb-1">Best for:</div>
+                        <div className="text-sm text-gray-600">Those who want structure, accountability, and live support from coaches</div>
+                      </div>
+                    )}
+
+                    {program.id === 'realtor-accelerator' && (
+                      <div className="bg-brand-cream p-4 rounded-sm mb-6">
+                        <div className="text-sm font-semibold text-gray-900 mb-1">Best for:</div>
+                        <div className="text-sm text-gray-600">Real estate professionals who want industry-specific strategies</div>
+                      </div>
+                    )}
 
                     <div className="flex flex-wrap gap-4 mb-6">
                       <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -483,7 +508,7 @@ const Coaching = () => {
             <div>
               <div className={`inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full mb-6 transition-all duration-700 ${premiumVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
                 <span className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" />
-                <span className="text-xs text-white font-medium uppercase tracking-wider">Premium Offering</span>
+                <span className="text-xs text-white font-medium uppercase tracking-wider">VIP Experience</span>
               </div>
 
               <h2 className={`text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6 transition-all duration-700 delay-100 ${premiumVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
@@ -492,8 +517,12 @@ const Coaching = () => {
                 <span className="text-yellow-400">Coaching Program</span>
               </h2>
 
-              <p className={`text-white/80 text-lg mb-8 leading-relaxed transition-all duration-700 delay-200 ${premiumVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
-                Get personalized, hands-on coaching directly from Billeddy. This exclusive program is for serious individuals who want accelerated results through direct mentorship and real-time feedback on their outreach strategies.
+              <p className={`text-white/80 text-lg mb-4 leading-relaxed transition-all duration-700 delay-200 ${premiumVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+                Get personalized, hands-on coaching directly from Billeddy. This exclusive VIP program is separate from our group learning paths and is designed for serious individuals who want accelerated results through direct mentorship and real-time feedback.
+              </p>
+
+              <p className={`text-white/60 text-sm mb-8 transition-all duration-700 delay-200 ${premiumVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
+                Not sure if 1-on-1 coaching is right for you? <Link to="/contact" className="text-yellow-400 hover:underline">Book a free strategy call</Link> to discuss your goals.
               </p>
 
               <div className={`space-y-4 mb-8 transition-all duration-700 delay-300 ${premiumVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
@@ -619,7 +648,7 @@ const Coaching = () => {
               Exclusive Bonuses
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              Enroll in any program and get these bonuses absolutely free.
+              Enroll in any of the three learning paths (Self-Paced, Live + Self-Paced, or Specialized) and get these bonuses absolutely free.
             </p>
           </div>
 
