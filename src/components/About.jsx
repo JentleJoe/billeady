@@ -12,9 +12,9 @@ const About = () => {
   ]
 
   const aboutCopy = [
-    'Billeady Saliu is a results-driven sales and marketing strategist specializing in high-ticket closing and business consulting. Built on a deep passion for sales and a proven track record of transforming businesses, the brand helps entrepreneurs and digital marketers turn attention into revenue.',
-    'With years of hands-on experience, Billeady has helped clients and students overcome one of the biggest challenges in business: converting leads into consistent, high-value sales. From fixing weak sales processes to refining brand positioning and marketing strategy, every solution is designed for measurable growth.',
-    'At its core, the brand stands for trust, integrity, and competence. Every strategy, system, and insight is rooted in real-world results, not theory. Businesses that work with Billeady gain the clarity, structure, and confidence needed to dominate their market.',
+    'Billeddy Saliu is a results-driven sales and marketing strategist specializing in high-ticket closing and business consulting. Built on a deep passion for sales and a proven track record of transforming businesses, the brand helps entrepreneurs and digital marketers turn attention into revenue.',
+    'With years of hands-on experience, Billeddy has helped clients and students overcome one of the biggest challenges in business: converting leads into consistent, high-value sales. From fixing weak sales processes to refining brand positioning and marketing strategy, every solution is designed for measurable growth.',
+    'At its core, the brand stands for trust, integrity, and competence. Every strategy, system, and insight is rooted in real-world results, not theory. Businesses that work with Billeddy gain the clarity, structure, and confidence needed to dominate their market.',
     'The mission is simple: become the go-to authority for sales, marketing, and high-ticket closing, helping businesses stand out, connect deeply with their audience, and increase revenue consistently.',
   ]
 
@@ -27,7 +27,7 @@ const About = () => {
         }`}>
           <img
             src={aboutImg}
-            alt="Billeady coaching session"
+            alt="Billeddy coaching session"
             className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
           />
           {/* Overlay elements to simulate whiteboard/planning aesthetic */}
@@ -41,7 +41,7 @@ const About = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
-            About Billeady Saliu
+            About Billeddy Saliu
             <span className="block text-white/80 text-base md:text-lg font-normal mt-3">
               Results-driven sales and marketing strategist.
             </span>

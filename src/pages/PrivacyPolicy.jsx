@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
 
         <div className="prose prose-gray max-w-none">
           <p>
-            This Privacy Policy explains how Billeady Saliu ("we", "us", "our") collects, uses, and
+            This Privacy Policy explains how Billeddy Saliu ("we", "us", "our") collects, uses, and
             protects information when you visit this website or contact us.
           </p>
 

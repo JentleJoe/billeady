@@ -15,7 +15,7 @@ const Terms = () => {
         <div className="prose prose-gray max-w-none">
           <p>
             These Terms & Conditions ("Terms") govern your use of this website and any related
-            content, resources, or services offered by Billeady Saliu ("we", "us", "our"). By accessing
+            content, resources, or services offered by Billeddy Saliu ("we", "us", "our"). By accessing
             or using this site, you agree to these Terms.
           </p>
 

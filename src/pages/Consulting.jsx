@@ -141,10 +141,10 @@ const Consulting = () => {
                 Built on Real-World Results
               </h2>
               <p className="text-white/80 mb-6">
-                Billeady Saliu is a results-driven sales and marketing strategist specializing in high-ticket closing and business consulting. This work exists to help entrepreneurs and teams turn attention into revenue with clear, repeatable systems.
+                Billeddy Saliu is a results-driven sales and marketing strategist specializing in high-ticket closing and business consulting. This work exists to help entrepreneurs and teams turn attention into revenue with clear, repeatable systems.
               </p>
               <p className="text-white/80 mb-6">
-                With years of hands-on experience, Billeady helps businesses fix weak sales processes, refine brand positioning, and build consistent demand. Every engagement is designed for measurable growth.
+                With years of hands-on experience, Billeddy helps businesses fix weak sales processes, refine brand positioning, and build consistent demand. Every engagement is designed for measurable growth.
               </p>
               <p className="text-white/80">
                 At the core are trust, integrity, and competence. You get practical, real-world guidance that creates clarity, structure, and confidence as you scale.

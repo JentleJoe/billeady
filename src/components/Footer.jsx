@@ -50,9 +50,9 @@ const Footer = () => {
             <Link
               to="/"
               className="mb-4 inline-block transition-transform duration-200 hover:scale-105"
-              aria-label="Billeady home"
+              aria-label="Billeddy home"
             >
-              <img src={redLogo} alt="Billeady Saliu" className="h-12 md:h-14 w-auto" />
+              <img src={redLogo} alt="Billeddy Saliu" className="h-12 md:h-14 w-auto" />
             </Link>
             <div className="flex items-center gap-3 mt-4">
               {socialIcons.map((icon, index) => (

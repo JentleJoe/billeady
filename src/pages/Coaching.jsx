@@ -32,19 +32,19 @@ const Coaching = () => {
     {
       name: 'Adebayo Johnson',
       role: 'Sales Consultant',
-      quote: 'Before working with Billeady, I struggled to close anything above ₦500K. Within 3 months of his coaching, I closed my first ₦5M deal. His frameworks are game-changing.',
+      quote: 'Before working with Billeddy, I struggled to close anything above ₦500K. Within 3 months of his coaching, I closed my first ₦5M deal. His frameworks are game-changing.',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
     },
     {
       name: 'Chioma Okafor',
       role: 'Business Owner',
-      quote: "Billeady's coaching transformed my approach to sales. I went from dreading sales calls to actually enjoying them. My close rate increased from 15% to 60%.",
+      quote: "Billeddy's coaching transformed my approach to sales. I went from dreading sales calls to actually enjoying them. My close rate increased from 15% to 60%.",
       image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
     },
     {
       name: 'Emmanuel Nwachukwu',
       role: 'High Ticket Closer',
-      quote: 'The ROI on this coaching is insane. I made back 10x my investment in the first month. Billeady knows what he\'s talking about because he\'s done it himself.',
+      quote: 'The ROI on this coaching is insane. I made back 10x my investment in the first month. Billeddy knows what he\'s talking about because he\'s done it himself.',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop',
     },
   ]
@@ -63,7 +63,7 @@ const Coaching = () => {
     {
       module: 'Module 3',
       title: 'The Closing System',
-      topics: ['The Billeady Closing Framework™', 'Price presentation strategies', 'Creating urgency ethically'],
+      topics: ['The Billeddy Closing Framework™', 'Price presentation strategies', 'Creating urgency ethically'],
     },
     {
       module: 'Module 4',
@@ -154,7 +154,7 @@ const Coaching = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
-                Why Learn From Billeady?
+                Why Learn From Billeddy?
               </h2>
               <p className="text-white/80 mb-6">
                 I don't just teach theory, I teach what works in the real world. After losing over ₦60 Million in 2022 and rebuilding from scratch, I've battle-tested every strategy I teach.

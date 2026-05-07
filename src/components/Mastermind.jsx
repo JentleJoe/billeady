@@ -57,7 +57,7 @@ const Mastermind = () => {
           {/* Header */}
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <h2 className={`text-4xl md:text-5xl lg:text-6xl font-semibold text-white italic leading-tight transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
-              Billeady's Signature
+              Billeddy's Signature
               <br />
               Programs
             </h2>

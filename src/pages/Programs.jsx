@@ -286,12 +286,12 @@ const Programs = () => {
               </h2>
 
               <p className={`text-white/80 text-lg mb-8 leading-relaxed transition-all duration-700 delay-200 ${premiumVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
-                Get personalized, hands-on coaching directly from Billeady. This exclusive program is for serious individuals who want accelerated results through direct mentorship and real-time feedback on their outreach strategies.
+                Get personalized, hands-on coaching directly from Billeddy. This exclusive program is for serious individuals who want accelerated results through direct mentorship and real-time feedback on their outreach strategies.
               </p>
 
               <div className={`space-y-4 mb-8 transition-all duration-700 delay-300 ${premiumVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                 {[
-                  'Personal strategy calls with Billeady',
+                  'Personal strategy calls with Billeddy',
                   'Real-time DM review and optimization',
                   'Custom outreach scripts for your niche',
                   'Direct WhatsApp access for support',
@@ -324,7 +324,7 @@ const Programs = () => {
               </div>
 
               <a
-                href="https://wa.me/2348000000000?text=Hi%20Billeady,%20I'm%20interested%20in%20the%201-on-1%20Cold%20DM%20Coaching%20Program"
+                href="https://wa.me/2348000000000?text=Hi%20Billeddy,%20I'm%20interested%20in%20the%201-on-1%20Cold%20DM%20Coaching%20Program"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-yellow-400 text-[#4A1E23] px-8 py-4 rounded-full text-sm font-bold hover:bg-yellow-300 hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 group"
@@ -350,7 +350,7 @@ const Programs = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Personalized Attention</h4>
-                    <p className="text-sm text-gray-600">No group calls. Just you and Billeady working on YOUR specific business and challenges.</p>
+                    <p className="text-sm text-gray-600">No group calls. Just you and Billeddy working on YOUR specific business and challenges.</p>
                   </div>
                 </div>
 

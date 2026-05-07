@@ -11,7 +11,7 @@ const Contact = () => {
         </svg>
       ),
       action: 'Chat on WhatsApp',
-      href: 'https://wa.me/2347069487679?text=Hi%20Billeady,%20I%20want%20to%20reach%20out%20about...',
+      href: 'https://wa.me/2347069487679?text=Hi%20Billeddy,%20I%20want%20to%20reach%20out%20about...',
       color: 'bg-green-500 hover:bg-green-600',
     },
     {
@@ -23,7 +23,7 @@ const Contact = () => {
         </svg>
       ),
       action: 'Send an Email',
-      href: 'mailto:hello@billeady.com',
+      href: 'mailto:billeddysaliu1@gmail.com',
       color: 'bg-brand-primary hover:bg-brand-accent',
     },
   ]
@@ -241,7 +241,7 @@ const Contact = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/2347069487679?text=Hi%20Billeady,%20I'm%20ready%20to%20start%20closing%20high%20ticket%20clients!"
+              href="https://wa.me/2347069487679?text=Hi%20Billeddy,%20I'm%20ready%20to%20start%20closing%20high%20ticket%20clients!"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-white text-brand-primary px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors"

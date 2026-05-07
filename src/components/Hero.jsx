@@ -151,7 +151,7 @@ const Hero = () => {
             <div className="relative w-64 sm:w-72">
               <img
                 src={heroImg}
-                alt="Billeady Saliu"
+                alt="Billeddy Saliu"
                 className="w-full h-auto object-cover object-top rounded-lg hover:scale-[1.02] transition-transform duration-500"
                 style={{
                   maskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)',
@@ -192,7 +192,7 @@ const Hero = () => {
             <div className="relative">
               <img
                 src={heroImg}
-                alt="Billeady Saliu"
+                alt="Billeddy Saliu"
                 className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-cover object-top hover:scale-[1.02] transition-transform duration-700"
                 style={{
                   maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)',

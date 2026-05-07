@@ -57,7 +57,7 @@ const Book = () => {
 
   const testimonialQuotes = [
     {
-      quote: "Billeady's story isn't just inspiring, it's instructive. He doesn't just tell you what happened, he shows you how to apply those lessons.",
+      quote: "Billeddy's story isn't just inspiring, it's instructive. He doesn't just tell you what happened, he shows you how to apply those lessons.",
       author: 'Early Reader',
     },
     {
@@ -115,7 +115,7 @@ const Book = () => {
                 <div className="w-64 md:w-80 bg-gradient-to-br from-[#4A1E23] to-[#2D1215] rounded-lg shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
                   <div className="border border-white/20 rounded p-6 h-96 flex flex-col justify-between">
                     <div>
-                      <div className="text-white/60 text-xs uppercase tracking-widest mb-4">Billeady Saliu</div>
+                      <div className="text-white/60 text-xs uppercase tracking-widest mb-4">Billeddy Saliu</div>
                       <h2 className="text-white text-2xl md:text-3xl font-semibold leading-tight">
                         Building
                         <br />
@@ -163,7 +163,7 @@ const Book = () => {
               <div className="relative h-64 md:h-80 overflow-hidden">
                 <img 
                   src={booksImg} 
-                  alt="Billeady Saliu"
+                  alt="Billeddy Saliu"
                   className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-cream via-transparent to-transparent"></div>
@@ -180,7 +180,7 @@ const Book = () => {
                     <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-brand-primary/20">
                       <img 
                         src={booksImg} 
-                        alt="Billeady Saliu"
+                        alt="Billeddy Saliu"
                         className="w-full h-full object-cover object-center"
                       />
                     </div>
@@ -191,7 +191,7 @@ const Book = () => {
                     </div>
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900 text-lg">Billeady Saliu</div>
+                    <div className="font-semibold text-gray-900 text-lg">Billeddy Saliu</div>
                     <div className="text-sm text-gray-500">Author & Business Consultant</div>
                   </div>
                 </div>

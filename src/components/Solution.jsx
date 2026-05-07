@@ -58,7 +58,7 @@ const Solution = () => {
               <div className="px-7 pt-7 pb-5">
                 <h3 className="text-xl font-semibold text-gray-900">The Solution</h3>
                 <p className="text-gray-600 text-xs leading-relaxed mt-3 max-w-md">
-                  The <span className="font-semibold">Billeady Closing System™</span> teaches you how to close high ticket clients consistently, run effective cold outreach, and build a profitable business.
+                  The <span className="font-semibold">Billeddy Closing System™</span> teaches you how to close high ticket clients consistently, run effective cold outreach, and build a profitable business.
                 </p>
                 <div className="h-px bg-gray-200 mt-5" />
 

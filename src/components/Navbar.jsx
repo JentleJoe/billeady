@@ -43,9 +43,9 @@ const Navbar = () => {
         <Link 
           to="/" 
           className="flex items-center transition-transform duration-200 hover:scale-105"
-          aria-label="Billeady home"
+          aria-label="Billeddy home"
         >
-          <img src={redLogo} alt="Billeady Saliu" className="h-11 sm:h-12 md:h-14 w-auto" />
+          <img src={redLogo} alt="Billeddy Saliu" className="h-11 sm:h-12 md:h-14 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
