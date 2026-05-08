@@ -66,10 +66,10 @@ const Navbar = () => {
 
         {/* CTA Button */}
         <Link
-          to="/coaching#programs"
+          to="/contact"
           className="hidden lg:flex items-center gap-2 bg-brand-primary text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-accent hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-200"
         >
-          Free Training
+          Get in Touch
           <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center">
             <svg
               className="w-3 h-3 text-brand-primary"
@@ -134,11 +134,11 @@ const Navbar = () => {
               </Link>
             ))}
             <Link
-              to="/coaching#programs"
+              to="/contact"
               onClick={() => setIsMenuOpen(false)}
               className="flex items-center gap-2 bg-brand-primary text-white px-5 py-2.5 rounded-full text-sm font-medium w-fit"
             >
-              Free Training
+              Get in Touch
               <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center">
                 <svg
                   className="w-3 h-3 text-brand-primary"
