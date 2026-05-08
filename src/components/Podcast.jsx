@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import logoAnimation from '../assets/logoAnimation.mp4'
@@ -7,11 +7,30 @@ const Podcast = () => {
   const [sectionRef, isVisible] = useScrollAnimation()
   const videoRef = useRef(null)
   const [isPlaying, setIsPlaying] = useState(false)
+  const [shouldLoad, setShouldLoad] = useState(false)
+  const [pendingPlay, setPendingPlay] = useState(false)
+
+  useEffect(() => {
+    if (isVisible) {
+      setShouldLoad(true)
+    }
+  }, [isVisible])
+
+  useEffect(() => {
+    if (shouldLoad && pendingPlay && videoRef.current) {
+      videoRef.current.play()
+      setPendingPlay(false)
+    }
+  }, [pendingPlay, shouldLoad])
 
   const handlePlayClick = () => {
-    if (videoRef.current) {
-      videoRef.current.play()
+    if (!shouldLoad) {
+      setShouldLoad(true)
+      setPendingPlay(true)
+      return
     }
+
+    videoRef.current?.play()
   }
 
   return (
@@ -72,9 +91,9 @@ const Podcast = () => {
             >
               <video
                 ref={videoRef}
-                src={logoAnimation}
+                src={shouldLoad ? logoAnimation : undefined}
                 controls
-                preload="metadata"
+                preload="none"
                 onPlay={() => setIsPlaying(true)}
                 onPause={() => setIsPlaying(false)}
                 onEnded={() => setIsPlaying(false)}
