@@ -5,7 +5,7 @@ const Terms = () => {
 
   return (
     <main className="w-full bg-white">
-      <section className="max-w-5xl mx-auto px-6 md:px-12 lg:px-20 pt-28 md:pt-32 pb-16">
+      <section className="max-w-5xl mx-auto px-6 md:px-12 lg:px-20 pt-14 sm:pt-20 md:pt-24 pb-16">
         <div className="mb-10">
           <p className="text-xs uppercase tracking-widest text-gray-500 mb-3">Legal</p>
           <h1 className="text-3xl md:text-4xl font-semibold text-gray-900">Terms & Conditions</h1>

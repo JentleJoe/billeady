@@ -13,7 +13,7 @@ const Solution = () => {
       ),
       title: 'Struggling to Close Deals',
       description: 'Losing prospects at the final stage of the sale.',
-      link: '/high-ticket-closing',
+      link: '/coaching',
     },
     {
       icon: (
@@ -31,9 +31,9 @@ const Solution = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      title: 'Inconsistent Income',
+      title: 'Realtor with inconsistent Income',
       description: 'No predictable system for landing clients.',
-      link: '/consulting',
+      link: '/coaching',
     },
   ]
 
@@ -47,6 +47,15 @@ const Solution = () => {
       }}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-14 md:py-16">
+        <h2 
+          className={`lg:hidden mb-5 text-[32px] sm:text-4xl md:text-5xl font-semibold text-white leading-tight transition-all duration-700 delay-100 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
+          Struggling to Close
+          <br />
+          High Ticket Clients?
+        </h2>
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
           {/* Left: Solution Card */}
           <div 
@@ -87,7 +96,7 @@ const Solution = () => {
           {/* Right: Heading + Rows */}
           <div className="pt-1">
             <h2 
-              className={`text-4xl md:text-5xl font-semibold text-white leading-tight transition-all duration-700 delay-100 ${
+              className={`max-lg:hidden text-4xl md:text-5xl font-semibold text-white leading-tight transition-all duration-700 delay-100 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
             >
@@ -96,7 +105,7 @@ const Solution = () => {
               High Ticket Clients?
             </h2>
             <p 
-              className={`text-white/70 text-sm mt-5 max-w-md transition-all duration-700 delay-200 ${
+              className={`text-white/70 text-sm lg:mt-5 max-w-md transition-all duration-700 delay-200 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
             >

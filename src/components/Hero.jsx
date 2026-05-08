@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import heroImg from '../assets/heroImg.png'
+import heroImg from '../assets/heroImg.jpg'
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false)

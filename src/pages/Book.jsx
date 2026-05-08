@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import booksImg from '../assets/booksImg.png'
+import booksImg from '../assets/booksImg.jpg'
 
 const Book = () => {
   const [email, setEmail] = useState('')
