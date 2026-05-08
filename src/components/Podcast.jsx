@@ -17,6 +17,12 @@ const Podcast = () => {
   }, [isVisible])
 
   useEffect(() => {
+    if (shouldLoad && videoRef.current) {
+      videoRef.current.load()
+    }
+  }, [shouldLoad])
+
+  useEffect(() => {
     if (shouldLoad && pendingPlay && videoRef.current) {
       videoRef.current.play()
       setPendingPlay(false)
@@ -93,7 +99,7 @@ const Podcast = () => {
                 ref={videoRef}
                 src={shouldLoad ? logoAnimation : undefined}
                 controls
-                preload="none"
+                preload={shouldLoad ? 'metadata' : 'none'}
                 onPlay={() => setIsPlaying(true)}
                 onPause={() => setIsPlaying(false)}
                 onEnded={() => setIsPlaying(false)}
