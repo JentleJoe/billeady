@@ -1,6 +1,7 @@
 import Hero from '../components/Hero'
 import About from '../components/About'
-import PodcastForm from '../components/PodcastForm'
+// import PodcastForm from '../components/PodcastForm'
+import ServicesOverview from '../components/ServicesOverview'
 import Solution from '../components/Solution'
 import Mastermind from '../components/Mastermind'
 import Testimonials from '../components/Testimonials'
@@ -11,7 +12,8 @@ const Home = () => {
     <>
       <Hero />
       <About />
-      <PodcastForm />
+      <ServicesOverview />
+      {/* <PodcastForm /> */}
       <Solution />
       <Mastermind />
       <Testimonials />
