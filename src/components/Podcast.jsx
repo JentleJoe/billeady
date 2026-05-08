@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const Podcast = () => {
@@ -5,20 +6,15 @@ const Podcast = () => {
 
   return (
     <section ref={sectionRef} className="w-full">
-      <div className="relative">
-        {/*
-          We intentionally lock the header height so we can place the media card
-          exactly at the boundary (middle of the two colors), like the reference.
-        */}
+      <div>
         <div
           className="text-center"
           style={{
-            height: 'clamp(380px, 42vw, 440px)',
             background:
               'radial-gradient(900px circle at 50% 10%, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0) 55%), linear-gradient(180deg, var(--color-brand-primary) 0%, #4A1E23 100%)',
           }}
         >
-          <div className="max-w-4xl mx-auto px-6 md:px-12 pt-14 md:pt-16">
+          <div className="max-w-4xl mx-auto px-6 md:px-12 py-14 md:py-16">
             <h2
               className={`text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-3 transition-all duration-700 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8'
@@ -35,28 +31,35 @@ const Podcast = () => {
             >
               Coming 2026, my story of hitting rock bottom and rebuilding from scratch. A raw, honest guide for anyone who's ever had to start over.
             </p>
+            <Link
+              to="/books"
+              className={`inline-flex items-center gap-2 bg-white text-brand-primary px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-100 hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300 mt-6 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+            >
+              Join the Waitlist
+              <span className="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center">
+                <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
           </div>
         </div>
 
-        {/* Cream base */}
         <div
           className="w-full"
           style={{
-            height: 'clamp(260px, 32vw, 320px)',
             background:
               'radial-gradient(900px circle at 50% 0%, rgba(109,30,23,0.08) 0%, rgba(109,30,23,0) 52%), linear-gradient(180deg, var(--color-brand-cream) 0%, #F3EAE2 100%)',
           }}
-        />
-
-        {/* Media card centered between the two colors */}
-        <div
-          className={`absolute inset-x-0 -translate-y-1/2 transition-all duration-1000 delay-300 ${
-            isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
-          }`}
-          style={{ top: 'clamp(380px, 42vw, 440px)' }}
         >
-          <div className="max-w-5xl mx-auto px-6 md:px-12">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-black group hover:shadow-3xl transition-shadow duration-500">
+          <div className="max-w-5xl mx-auto px-6 md:px-12 py-12 md:py-16">
+            <div
+              className={`relative rounded-2xl overflow-hidden shadow-2xl bg-black group hover:shadow-3xl transition-all duration-700 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+            >
               <img
                 src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=1400&h=800&fit=crop"
                 alt="Podcast recording session"
