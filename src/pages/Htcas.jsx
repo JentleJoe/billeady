@@ -20,8 +20,9 @@ function Htcas() {
                   businesses, I&apos;ll show you how to land commission-based roles in high-ticket sales.
                 </p>
                 <p>
-                  This isn&apos;t theory and so far this year, I&apos;ve generated over $39,000 in revenue closing
-                  high-ticket deals on a commission basis.
+                  This isn&apos;t theory and so far this year, I&apos;ve generated over{' '}
+                  <span className="font-semibold text-black">$39,000</span> in revenue closing high-ticket
+                  deals on a commission basis.
                 </p>
                 <div className="overflow-hidden rounded-md border border-black/10 bg-white">
                   <img
@@ -159,7 +160,9 @@ function Htcas() {
 
             <div className="mt-12 border-t border-black/10 pt-10">
               <h2 className="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em] text-black">
-                <span className="h-0.5 w-6 bg-[var(--color-brand-accent)]" />
+                <span className="text-lg text-[var(--color-brand-accent)]" aria-hidden="true">
+                  ⚠️
+                </span>
                 Limited availability
               </h2>
               <p className="mt-4 text-black/80">
