@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -10,12 +10,16 @@ import Book from './pages/Book'
 import Contact from './pages/Contact'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Terms from './pages/Terms'
+import Htcas from './pages/Htcas'
 
 function App() {
+  const location = useLocation()
+  const hideChrome = location.pathname === '/htcas'
+
   return (
     <div className="min-h-screen">
       <ScrollToTop />
-      <Navbar />
+      {!hideChrome && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/high-ticket-closing" element={<HighTicketClosing />} />
@@ -25,8 +29,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/htcas" element={<Htcas />} />
       </Routes>
-      <Footer />
+      {!hideChrome && <Footer />}
     </div>
   )
 }
