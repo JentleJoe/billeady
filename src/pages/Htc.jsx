@@ -1,5 +1,5 @@
-import adTestimonial from '../assets/adTestimonial.png'
-import adProof from '../assets/adproof.png'
+import adTestimonial from '../assets/adTestimonial.PNG'
+import adProof from '../assets/adproof.PNG'
 
 const ctaLink = 'https://calendly.com/billeddysaliu1/30min'
 
