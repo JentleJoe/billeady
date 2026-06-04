@@ -1,4 +1,5 @@
 import adProof from '../assets/adproof.PNG'
+import adTestimonial from '../assets/adTestimonial.PNG'
 
 const ctaLink = 'https://calendly.com/billeddysaliu1/30min'
 
@@ -113,6 +114,15 @@ function Htcas() {
                 <li>Practical steps to land opportunities</li>
               </ul>
               <p className="mt-6 text-black/80">Not theory. Not recycled content.</p>
+              {/* Student Testimonials */}
+              <div className="mt-8 overflow-hidden rounded-md border border-black/10 bg-white">
+                <img
+                  src={adTestimonial}
+                  alt="Student testimonials"
+                  className="h-auto w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
               <a
                 className="mt-8 inline-flex items-center justify-center rounded-none border border-[var(--color-brand-accent)] bg-[var(--color-brand-accent)] px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white hover:bg-[var(--color-brand-primary)] motion-reduce:animate-none animate-float"
                 href={ctaLink}
