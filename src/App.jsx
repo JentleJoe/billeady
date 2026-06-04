@@ -11,11 +11,12 @@ import Contact from './pages/Contact'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Terms from './pages/Terms'
 import Htcas from './pages/Htcas'
+import Htc from './pages/Htc'
 import CallsToRevenue from './pages/CallsToRevenue'
 
 function App() {
   const location = useLocation()
-  const hideChrome = location.pathname === '/htcas' || location.pathname === '/calls-to-revenue'
+  const hideChrome = location.pathname === '/htcas' || location.pathname === '/htc' || location.pathname === '/calls-to-revenue'
 
   return (
     <div className="min-h-screen">
@@ -31,6 +32,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/htcas" element={<Htcas />} />
+        <Route path="/htc" element={<Htc />} />
         <Route path="/calls-to-revenue" element={<CallsToRevenue />} />
       </Routes>
       {!hideChrome && <Footer />}
