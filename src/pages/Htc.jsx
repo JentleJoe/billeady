@@ -1,5 +1,4 @@
 import adTestimonial from '../assets/adTestimonial.PNG'
-import adProof from '../assets/adproof.PNG'
 
 const ctaLink = 'https://calendly.com/billeddysaliu1/30min'
 
@@ -21,19 +20,6 @@ function Htc() {
                   businesses and get paid based on what you produce, not what someone decides you&apos;re
                   worth.
                 </p>
-                <p>
-                  This isn&apos;t theory as so far this year, I&apos;ve generated over{' '}
-                  <span className="font-semibold text-black">$39,000</span> in revenue closing high-ticket
-                  deals on a commission basis.
-                </p>
-                <div className="overflow-hidden rounded-md border border-black/10 bg-white">
-                  <img
-                    src={adProof}
-                    alt="Proof of results"
-                    className="h-auto w-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
                 <p>
                   High-ticket closers and appointment setters work remotely, set their own pace, and earn
                   based on performance.
