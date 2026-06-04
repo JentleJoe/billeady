@@ -1,6 +1,6 @@
 import adProof from '../assets/adproof.PNG'
 
-const ctaLink = 'https://forms.gle/ng5e5cxNtua6dhDi6'
+const ctaLink = 'https://calendly.com/billeddysaliu1/30min'
 
 function Htcas() {
   return (
