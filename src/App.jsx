@@ -10,13 +10,18 @@ import Book from './pages/Book'
 import Contact from './pages/Contact'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Terms from './pages/Terms'
-import Htcas from './pages/Htcas'
+// import Htcas from './pages/Htcas'
 import Htc from './pages/Htc'
 import CallsToRevenue from './pages/CallsToRevenue'
+import Htcap from './pages/Htcap'
 
 function App() {
   const location = useLocation()
-  const hideChrome = location.pathname === '/htcas' || location.pathname === '/htc' || location.pathname === '/calls-to-revenue'
+  const hideChrome =
+    location.pathname === '/htcas' ||
+    location.pathname === '/htc' ||
+    location.pathname === '/calls-to-revenue' ||
+    location.pathname === '/htcap'
 
   return (
     <div className="min-h-screen">
@@ -31,9 +36,10 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
-        <Route path="/htcas" element={<Htcas />} />
+        {/* <Route path="/htcas" element={<Htcas />} /> */}
         <Route path="/htc" element={<Htc />} />
         <Route path="/calls-to-revenue" element={<CallsToRevenue />} />
+        <Route path="/htcap" element={<Htcap />} />
       </Routes>
       {!hideChrome && <Footer />}
     </div>
