@@ -2,10 +2,16 @@ import adProof from '../assets/adproof.PNG'
 import htcapProof1 from '../assets/htcapProof1.PNG'
 import htcapProof2 from '../assets/htcapProof2.PNG'
 import htcapProof3 from '../assets/htcapProof3.PNG'
+import htcapProof4 from '../assets/htcapProof4.PNG'
+import htcapProof5 from '../assets/htcapProof5.PNG'
 
-const ctaLink = `https://wa.me/2347069487679?text=${encodeURIComponent(
-  'Hello Billeddy, I will love to book a call section with you',
-)}`
+const ctaMessage = `Hello Billeddy, I will love to book a call session with you.
+
+My name is……`
+
+const ctaLabel = "BOOK A CALL WITH ME - I'LL QUALIFY YOU TO SEE IF YOU'RE A BEST FIT FOR THIS"
+
+const ctaLink = `https://wa.me/2347069487679?text=${encodeURIComponent(ctaMessage)}`
 
 function CtaButton({ children, className = '' }) {
   return (
@@ -20,10 +26,10 @@ function CtaButton({ children, className = '' }) {
   )
 }
 
-function CtaRow({ children }) {
+function CtaRow() {
   return (
     <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-      <CtaButton>{children}</CtaButton>
+      <CtaButton>{ctaLabel}</CtaButton>
       <div className="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-black/60">
         <span className="h-2 w-2 rounded-full bg-[var(--color-brand-accent)]" />
         Spots are limited
@@ -73,7 +79,7 @@ function Htcap() {
               </div>
             </div>
 
-            <CtaRow>👉 Book A Free Call With Me — I&apos;ll Show You Exactly How To Start</CtaRow>
+            <CtaRow />
           </div>
 
           <div className="px-6 py-8 sm:px-10 sm:py-12">
@@ -141,7 +147,7 @@ function Htcap() {
                 <ProofImage src={adProof} alt="Screenshot of earnings" />
                 <p>That is the power of this skill. And I want to show you how you too can get started.</p>
               </div>
-              <CtaRow>👉 Book A Free Call With Me — I&apos;ll Show You Exactly How To Start</CtaRow>
+              <CtaRow />
             </div>
 
             <div className="mt-12 border-t border-black/10 pt-10">
@@ -194,7 +200,7 @@ function Htcap() {
                 </li>
               </ul>
               <p className="mt-6 font-semibold text-black">If that&apos;s you, this call is for you.</p>
-              <CtaRow>👉 Book A Free Call With Me — I&apos;ll Show You Exactly How To Start</CtaRow>
+              <CtaRow />
             </div>
 
             <div className="mt-12 border-t border-black/10 pt-10">
@@ -242,11 +248,13 @@ function Htcap() {
                 <ProofImage src={htcapProof1} alt="Student result screenshot 1" />
                 <ProofImage src={htcapProof2} alt="Student result screenshot 2" />
                 <ProofImage src={htcapProof3} alt="Student result screenshot 3" />
+                <ProofImage src={htcapProof4} alt="Student result screenshot 4" />
+                <ProofImage src={htcapProof5} alt="Student result screenshot 5" />
               </div>
               <p className="mt-4 text-black/80">
                 Real people. Real results. Real dollar income. From across Africa.
               </p>
-              <CtaRow>👉 Book A Free Call With Me — I&apos;ll Show You Exactly How To Start</CtaRow>
+              <CtaRow />
             </div>
 
             <div className="mt-12 border-t border-black/10 pt-10">
@@ -340,7 +348,7 @@ function Htcap() {
                   If I could do that from that point what&apos;s your excuse going to be?
                 </p>
               </div>
-              <CtaRow>👉 Book Your Free Strategy Call — Click Here Now</CtaRow>
+              <CtaRow />
               <p className="mt-6 text-black/80">
                 Spots are strictly limited. If the button is still active, there&apos;s a spot for you.
                 Don&apos;t let it close before you take it.
