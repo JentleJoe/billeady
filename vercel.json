@@ -1,16 +1,16 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    },
-    {
       "source": "/xadsblueprint",
       "destination": "https://xads-site.vercel.app/"
     },
     {
       "source": "/xadsblueprint/:path*",
       "destination": "https://vercel.app*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
