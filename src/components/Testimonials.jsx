@@ -58,49 +58,49 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Rene Wells',
-      role: 'Role/position',
-      quote: '"lorem ipsum dolor sit amet enim, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna."',
+      name: 'CEO, BOD GROUP',
+      role: 'Canada',
+      quote: 'Billeddy Saliu is one of the razor sharp closer I have got to work with that delivered the most exceptional closing outcome weekly.',
       image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
       layout: 'image-top',
     },
     {
       id: 2,
-      name: 'Rene Wells',
-      role: 'Role/position',
-      quote: '"lorem ipsum dolor sit amet enim, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna."',
+      name: 'Paris Calvin',
+      role: 'United States',
+      quote: 'Billeddy is the guy for you when your deal is close to a dead end and you want a closer resurrect it without destroying it totally.',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
       layout: 'quote-top',
     },
     {
       id: 3,
-      name: 'Rene Wells',
-      role: 'Role/position',
-      quote: '"lorem ipsum dolor sit amet enim, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna."',
+      name: 'CEO, Palm Beach Realty',
+      role: 'United States',
+      quote: 'The highest 6 figure property my company sold in 2025 was only possible because Billeddy was on the call with the company sales lead and the clients. He is an amazing guy.',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop',
       layout: 'image-top',
     },
     {
       id: 4,
-      name: 'Rene Wells',
-      role: 'Role/position',
-      quote: '"lorem ipsum dolor sit amet enim, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna."',
+      name: 'Founder, Cury Group',
+      role: 'London',
+      quote: 'If you have a good investment offer and you want an investor to buy in, Billeddy is your guy.',
       image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
       layout: 'quote-top',
     },
     {
       id: 5,
-      name: 'Rene Wells',
-      role: 'Role/position',
-      quote: '"lorem ipsum dolor sit amet enim, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna."',
+      name: 'Real Estate Developer Client',
+      role: 'Q2 2025',
+      quote: 'Closed $880,000 in high ticket deals in one quarter.',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop',
       layout: 'image-top',
     },
     {
       id: 6,
-      name: 'Rene Wells',
-      role: 'Role/position',
-      quote: '"lorem ipsum dolor sit amet enim, consectetur adipiscing, sed do eiusmod tempor incididunt ut labore et dolore magna."',
+      name: 'Agency Owner',
+      role: 'Outbound Pipeline',
+      quote: 'Generated $54,000 in commission from a single agency pipeline in 3 months.',
       image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop',
       layout: 'quote-top',
     },
@@ -123,19 +123,19 @@ const Testimonials = () => {
         <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-10">
           <div className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-2">
-              Student Success Stories
+              Proof From the Field
             </h2>
             <p className="text-gray-500 text-sm">
-              Real results from students who've transformed their sales game
+              Outcomes from clients across coaching, real estate, agencies, and consulting.
             </p>
           </div>
           <a
-            href="#"
+            href="/calls-to-revenue"
             className={`inline-flex items-center gap-2 bg-brand-primary text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-accent hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 mt-4 md:mt-0 w-fit group ${
               isVisible ? 'opacity-100 translate-y-0 delay-200' : 'opacity-0 translate-y-8'
             }`}
           >
-            View All Results
+            Apply to Work With Me
             <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
               <svg
                 className="w-3 h-3 text-brand-primary group-hover:translate-x-0.5 transition-transform"

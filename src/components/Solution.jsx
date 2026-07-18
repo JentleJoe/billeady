@@ -4,16 +4,16 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation'
 const Solution = () => {
   const [sectionRef, isVisible] = useScrollAnimation()
   
-  const painPoints = [
+  const modelPoints = [
     {
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
       ),
-      title: 'Struggling to Close Deals',
-      description: 'Losing prospects at the final stage of the sale.',
-      link: '/coaching',
+      title: 'No retainers',
+      description: 'No salary, no base pay.',
+      link: '/calls-to-revenue',
     },
     {
       icon: (
@@ -21,9 +21,9 @@ const Solution = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
       ),
-      title: 'Cold DMs Not Converting',
-      description: 'Sending messages but getting no responses.',
-      link: '/coaching',
+      title: 'Pay only when I close',
+      description: 'If I do not close, I do not get paid.',
+      link: '/calls-to-revenue',
     },
     {
       icon: (
@@ -31,9 +31,9 @@ const Solution = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      title: 'Realtor with inconsistent Income',
-      description: 'No predictable system for landing clients.',
-      link: '/coaching',
+      title: 'Zero risk on your end',
+      description: 'Full commitment on mine.',
+      link: '/calls-to-revenue',
     },
   ]
 
@@ -52,9 +52,9 @@ const Solution = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          Struggling to Close
+          My Model
           <br />
-          High Ticket Clients?
+          Performance Based Only.
         </h2>
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
           {/* Left: Solution Card */}
@@ -65,9 +65,9 @@ const Solution = () => {
           >
             <div className="bg-white border border-black/10 rounded-sm overflow-hidden hover:shadow-2xl transition-shadow duration-500">
               <div className="px-7 pt-7 pb-5">
-                <h3 className="text-xl font-semibold text-gray-900">The Solution</h3>
+                <h3 className="text-xl font-semibold text-gray-900">Performance based commission, period.</h3>
                 <p className="text-gray-600 text-xs leading-relaxed mt-3 max-w-md">
-                  The <span className="font-semibold">Billeddy Closing System™</span> teaches you how to close high ticket clients consistently, run effective cold outreach, and build a profitable business.
+                  I do not work on retainers or salaries. I step into your sales process, close qualified leads, and get paid when revenue lands.
                 </p>
                 <div className="h-px bg-gray-200 mt-5" />
 
@@ -100,20 +100,20 @@ const Solution = () => {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
             >
-              Struggling to Close
+              Performance Based
               <br />
-              High Ticket Clients?
+              Only.
             </h2>
             <p 
               className={`text-white/70 text-sm lg:mt-5 max-w-md transition-all duration-700 delay-200 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
             >
-              Most people fail at closing because they lack the right framework. Learn the exact system I use to close premium deals consistently.
+              Zero risk on your end. Full commitment on mine. That is the whole model.
             </p>
 
             <div className="mt-9 space-y-4">
-              {painPoints.map((point, index) => (
+              {modelPoints.map((point, index) => (
                 <Link
                   key={index}
                   to={point.link}

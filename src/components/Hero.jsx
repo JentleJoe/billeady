@@ -28,12 +28,12 @@ const Hero = () => {
           <div className="z-10 lg:pt-0 lg:basis-1/2 lg:pr-8">
             {/* Tag */}
             <div 
-              className={`flex items-center gap-2 mb-5 transition-all duration-700 ${
+              className={`flex items-center gap-2 mb-5 transition-all duration-700 delay-300 ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
               }`}
             >
               <span className="text-brand-primary text-sm animate-pulse">✦</span>
-              <span className="text-xs text-gray-600">High Ticket Closer & Business Consultant</span>
+              <span className="text-xs text-gray-600">High Ticket Closer | Revenue Partner for Elite Businesses</span>
             </div>
 
             {/* Main Headline */}
@@ -42,11 +42,10 @@ const Hero = () => {
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
             >
-              Master the Art of
+              I Don't Work For You.
               <br />
-              Closing High Ticket
+              I Close For You.
               <br />
-              Clients with Confidence.
             </h1>
 
             {/* Subtext */}
@@ -55,17 +54,17 @@ const Hero = () => {
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
             >
-              Learn proven strategies to close premium clients, run effective cold DMs, and build a thriving business.
+              You do not have a leads problem. You have a conversion problem. If qualified leads are already hitting your calendar and walking away without paying, the leak is in the close.
             </p>
 
             {/* CTA Button */}
             <Link
-              to="/coaching#programs"
+              to="/calls-to-revenue"
               className={`inline-flex items-center gap-2 bg-brand-primary text-white pl-5 pr-1.5 py-1.5 rounded-full text-sm font-medium hover:bg-brand-accent hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 mb-8 lg:mb-24 group delay-300 ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
             >
-              Start Learning Now
+              Apply Now
               <span className="w-7 h-7 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                 <svg
                   className="w-3.5 h-3.5 text-brand-primary group-hover:translate-x-0.5 transition-transform"
@@ -85,7 +84,7 @@ const Hero = () => {
 
             {/* Trust Badge */}
             <div 
-              className={`flex items-center gap-4 pb-8 lg:pb-16 transition-all duration-700 delay-[400ms] ${
+              className={`flex items-center gap-4 pb-8 lg:pb-16 transition-all duration-700 ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
             >
@@ -132,10 +131,10 @@ const Hero = () => {
                   >
                     <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                   </svg>
-                  <span className="text-sm text-gray-800 ml-1.5 font-medium">(500+ Students)</span>
+                  <span className="text-sm text-gray-800 ml-1.5 font-medium">US | UK | Canada</span>
                 </div>
                 <p className="text-xs text-gray-500 mt-0.5">
-                  Trusted by closers & entrepreneurs worldwide
+                  Remote first. Time zone aware. Culture aware.
                 </p>
               </div>
             </div>

@@ -4,37 +4,39 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation'
 const ServicesOverview = () => {
   const [sectionRef, isVisible] = useScrollAnimation()
 
-  const services = [
+  const results = [
     {
-      eyebrow: 'Closing Services',
-      title: 'Done-for-you high ticket closing',
+      title: '$880,000 closed in one quarter',
       description:
-        'I step into your sales process and close qualified leads so you can focus on delivery, fulfillment, and growth.',
-      highlights: [
-        'Sales call closing for qualified leads',
-        'Objection handling and deal negotiation',
-        'Revenue recovery and follow-up systems',
-      ],
-      cta: {
-        label: 'Explore Closing Services',
-        to: '/high-ticket-closing',
-      },
+        'Closed in high ticket deals for a real estate developer client in Q2 of 2025.',
     },
     {
-      eyebrow: 'Business Consulting',
-      title: 'Strategic guidance to scale revenue',
+      title: '74% booked-call conversion',
       description:
-        'Partner with me to refine your sales strategy, tighten your systems, and create predictable, sustainable growth.',
-      highlights: [
-        'Sales strategy and market positioning',
-        'Revenue optimization and pipeline clarity',
-        'Team performance and scalable systems',
-      ],
-      cta: {
-        label: 'Explore Consulting',
-        to: '/consulting',
-      },
+        'Converted booked calls into paying clients for a coaching offer priced at $4,000+.',
     },
+    {
+      title: '$54,000 commission in 3 months',
+      description:
+        'Generated from a single agency outbound pipeline by tightening the close.',
+    },
+    {
+      title: 'Multi-vertical close rate',
+      description:
+        'Closed deals in insurance, real estate, and fitness consultancy without losing consistency.',
+    },
+    {
+      title: 'A 12K coaching package in week one',
+      description:
+        'No discount, no compromise, no wasted momentum across eight prospects.',
+    },
+  ]
+
+  const proofLine = [
+    'Billeddy Saliu is one of the razor sharp closer I have got to work with that delivered the most exceptional closing outcome weekly.',
+    'CEO, BOD GROUP (Canada)',
+    'Billeddy is the guy for you when your deal is close to a dead end and you want a closer resurrect it without destroying it totally.',
+    'Paris Calvin (United State)',
   ]
 
   return (
@@ -62,19 +64,19 @@ const ServicesOverview = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}
           >
-            Services That Drive Revenue
+            Results Speak
           </h2>
           <p
             className={`text-gray-600 text-sm md:text-base transition-all duration-700 delay-150 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}
           >
-            Two ways I serve business owners: done-for-you closing and strategic consulting. If you want to learn to close yourself, the training section right after this is for you.
+            A few of the outcomes that show what changes when the close is handled with precision.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-6">
-          {services.map((service, index) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {results.map((service, index) => (
             <div
               key={service.title}
               className={`bg-white border border-black/10 rounded-sm p-8 md:p-9 shadow-sm hover:shadow-xl transition-all duration-500 ${
@@ -82,39 +84,31 @@ const ServicesOverview = () => {
               }`}
               style={{ transitionDelay: `${200 + index * 120}ms` }}
             >
-              <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-brand-primary mb-3">
-                <span className="text-brand-primary">✦</span>
-                {service.eyebrow}
-              </div>
               <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-3">
                 {service.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
+              <p className="text-gray-600 text-sm leading-relaxed">
                 {service.description}
               </p>
-              <ul className="space-y-3 mb-7">
-                {service.highlights.map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-gray-700">
-                    <span className="w-5 h-5 mt-0.5 bg-brand-primary rounded-full flex items-center justify-center shrink-0">
-                      <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <Link
-                to={service.cta.to}
-                className="inline-flex items-center gap-2 text-brand-primary font-medium text-sm hover:gap-3 transition-all"
-              >
-                {service.cta.label}
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10 grid lg:grid-cols-2 gap-6">
+          <div className="bg-white border border-black/10 rounded-sm p-8 shadow-sm">
+            <div className="text-xs uppercase tracking-[0.2em] text-brand-primary mb-3">Client Feedback</div>
+            <p className="text-gray-700 text-sm leading-relaxed mb-4">
+              {proofLine[0]}
+            </p>
+            <p className="text-gray-500 text-xs uppercase tracking-wider">{proofLine[1]}</p>
+          </div>
+          <div className="bg-white border border-black/10 rounded-sm p-8 shadow-sm">
+            <div className="text-xs uppercase tracking-[0.2em] text-brand-primary mb-3">What clients say</div>
+            <p className="text-gray-700 text-sm leading-relaxed mb-4">
+              {proofLine[2]}
+            </p>
+            <p className="text-gray-500 text-xs uppercase tracking-wider">{proofLine[3]}</p>
+          </div>
         </div>
       </div>
     </section>

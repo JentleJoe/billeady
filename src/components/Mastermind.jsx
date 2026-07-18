@@ -3,32 +3,32 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation'
 const Mastermind = () => {
   const [sectionRef, isVisible] = useScrollAnimation()
   
-  const programs = [
+  const qualifiers = [
     {
-      title: 'High Ticket Closing Mastery',
-      description: 'Master the psychology and techniques to close premium clients consistently.',
+      title: 'You have a proven high ticket offer',
+      description: 'Your offer already sells at $2,000+ and has real demand.',
       features: [
-        { text: 'Closing frameworks', col: 1 },
-        { text: 'Objection handling', col: 2 },
-        { text: 'Sales psychology', col: 1 },
+        { text: 'Offer validated', col: 1 },
+        { text: 'Premium price point', col: 2 },
+        { text: 'Real demand', col: 1 },
       ],
     },
     {
-      title: 'Cold DM Blueprint',
-      description: 'Learn how to run effective cold outreach that converts strangers into clients.',
+      title: 'You have consistent lead flow',
+      description: 'Ads, organic, or outbound is already bringing conversations in.',
       features: [
-        { text: 'DM scripts & templates', col: 1 },
-        { text: 'Lead qualification', col: 2 },
-        { text: 'Conversion tactics', col: 1 },
+        { text: 'Booked calls', col: 1 },
+        { text: 'Active pipeline', col: 2 },
+        { text: 'Qualified prospects', col: 1 },
       ],
     },
     {
-      title: 'Realtor Client Acquisition',
-      description: 'Specialized training for realtors to land high-value property clients.',
+      title: 'You are serious about scaling revenue',
+      description: 'You want the leak fixed, not more theory.',
       features: [
-        { text: 'Realtor strategies', col: 1 },
-        { text: 'Client nurturing', col: 2 },
-        { text: 'Deal closing', col: 1 },
+        { text: 'Revenue growth', col: 1 },
+        { text: 'No guessing', col: 2 },
+        { text: 'More closed deals', col: 1 },
       ],
     },
   ]
@@ -57,18 +57,18 @@ const Mastermind = () => {
           {/* Header */}
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <h2 className={`text-4xl md:text-5xl lg:text-6xl font-semibold text-white italic leading-tight transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'}`}>
-              Billeddy's Signature
+              Who This Is For
               <br />
-              Programs
+              And Who It Is Not For
             </h2>
             <p className={`text-white/75 text-sm md:text-base max-w-md lg:justify-self-end transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
-              Whether you're starting out or scaling up, my programs will help you close more deals, land premium clients, and build lasting wealth.
+              If you qualify, I can help you turn more of your existing calls into closed revenue. If you do not, this is not the right time to reach out and that is fine.
             </p>
           </div>
 
           {/* Cards */}
           <div className="mt-10 grid md:grid-cols-3 gap-5">
-            {programs.map((program, index) => (
+            {qualifiers.map((program, index) => (
               <div 
                 key={index} 
                 className={`bg-white rounded-sm border border-black/10 overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2 group ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}

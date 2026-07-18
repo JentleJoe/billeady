@@ -5,17 +5,17 @@ const About = () => {
   const [sectionRef, isVisible] = useScrollAnimation()
   
   const highlights = [
-    'Results-driven sales and marketing strategy',
-    'High-ticket closing and business consulting',
-    'Real-world systems rooted in trust',
-    'Clarity, structure, and measurable growth',
+    'Five years in high ticket sales, client acquisition, and deal structuring',
+    'More than $2.1 million in client profits',
+    'Remote-first closing across the US, UK, and Canada',
+    'Buyer psychology, objection reduction, and deal control',
   ]
 
   const aboutCopy = [
-    'Billeddy Saliu is a results-driven sales and marketing strategist specializing in high-ticket closing and business consulting. Built on a deep passion for sales and a proven track record of transforming businesses, the brand helps entrepreneurs and digital marketers turn attention into revenue.',
-    'With years of hands-on experience, Billeddy has helped clients and students overcome one of the biggest challenges in business: converting leads into consistent, high-value sales. From fixing weak sales processes to refining brand positioning and marketing strategy, every solution is designed for measurable growth.',
-    'At its core, the brand stands for trust, integrity, and competence. Every strategy, system, and insight is rooted in real-world results, not theory. Businesses that work with Billeddy gain the clarity, structure, and confidence needed to dominate their market.',
-    'The mission is simple: become the go-to authority for sales, marketing, and high-ticket closing, helping businesses stand out, connect deeply with their audience, and increase revenue consistently.',
+    'Billeddy Saliu has spent five years in high ticket sales, client acquisition, and deal structuring, helping elite businesses turn qualified conversations into cash. The work is focused on one thing: making sure strong offers do not die in the final stretch.',
+    'He does not just "sell." He reads buyer psychology, positions offers so objections shrink before they are spoken, and closes across markets and cultures with the kind of calm, direct control that comes from real-world repetition.',
+    'That edge matters because remote-first is not a workaround. It is the operating model. Billeddy closes clients across the US, UK, and Canada on their schedule, every day of the week.',
+    'The result is a revenue partner who steps into the close, protects the deal, and helps serious businesses convert more of the opportunities they are already paying to create.',
   ]
 
   return (
@@ -27,7 +27,7 @@ const About = () => {
         }`}>
           <img
             src={aboutImg}
-            alt="Billeddy coaching session"
+            alt="Billeddy Saliu working"
             className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
           />
           {/* Overlay elements to simulate whiteboard/planning aesthetic */}
@@ -41,9 +41,9 @@ const About = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
-            About Billeddy Saliu
+            Who I Am
             <span className="block text-white/80 text-base md:text-lg font-normal mt-3">
-              Results-driven sales and marketing strategist.
+              High ticket closer | Revenue partner for elite businesses.
             </span>
           </h2>
 
@@ -62,11 +62,11 @@ const About = () => {
           </div>
 
           {/* Why Learn Section */}
-          <div className={`transition-all duration-700 delay-[400ms] ${
+          <div className={`transition-all duration-700 delay-300 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <h3 className="text-white text-sm font-medium mb-4">
-              What I Stand For
+              What You Get
             </h3>
             <ul className="space-y-3">
               {highlights.map((item, index) => (
