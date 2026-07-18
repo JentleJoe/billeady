@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <section className="relative w-full min-h-screen lg:h-[calc(100vh-80px)] lg:min-h-[calc(100vh-80px)] overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-hero-light" />
+      <div className="absolute inset-0 bg-hero-light-center" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 h-full">
         <div className="flex flex-col lg:flex-row lg:items-center min-h-screen lg:h-full pt-20 lg:pt-8 pb-8 lg:pb-0">
