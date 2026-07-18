@@ -15,58 +15,23 @@ const Book = () => {
   const chapters = [
     {
       number: '01',
-      title: 'The Fall',
-      description: 'How I lost ₦60+ Million and everything I thought I knew about success.',
+      title: 'The Collapse',
+      description: 'The real story of what happened, and what I got wrong.',
     },
     {
       number: '02',
-      title: 'Rock Bottom',
-      description: 'The darkest days and the mindset shifts that kept me going.',
+      title: 'The Rebuild Mindset',
+      description: 'The mindset shift that separates people who rebuild from people who stay down.',
     },
     {
       number: '03',
-      title: 'The Decision',
-      description: 'Choosing to rebuild instead of giving up, and what that really means.',
+      title: 'Starting From Zero',
+      description: 'The practical steps I took to generate income again from zero.',
     },
     {
       number: '04',
-      title: 'Starting From Zero',
-      description: 'Practical steps I took when I had nothing but determination.',
-    },
-    {
-      number: '05',
-      title: 'Building the Foundation',
-      description: 'Creating systems and strategies that would last this time.',
-    },
-    {
-      number: '06',
-      title: 'The Comeback',
-      description: 'How I rebuilt stronger than before and what I learned along the way.',
-    },
-    {
-      number: '07',
-      title: 'Lessons from the Dust',
-      description: 'The principles that guide me now and can guide you too.',
-    },
-    {
-      number: '08',
-      title: 'Your Turn',
-      description: 'A framework for building (or rebuilding) your own success story.',
-    },
-  ]
-
-  const testimonialQuotes = [
-    {
-      quote: "Billeddy's story isn't just inspiring, it's instructive. He doesn't just tell you what happened, he shows you how to apply those lessons.",
-      author: 'Early Reader',
-    },
-    {
-      quote: "This is the book I wish I had when I was going through my own failure. Raw, honest, and incredibly practical.",
-      author: 'Business Owner',
-    },
-    {
-      quote: "Finally, a success story that includes the failure. This is what real entrepreneurship looks like.",
-      author: 'Entrepreneur',
+      title: 'What I Would Do Again',
+      description: 'What I would do differently, and what I would do exactly the same.',
     },
   ]
 
@@ -85,15 +50,16 @@ const Book = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block bg-white/10 text-white text-xs font-medium px-4 py-2 rounded-full mb-6">
-                📖 Coming Second Half of 2026
+                📖 Memoir. Rebuild. Blueprint.
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
-                Building from
+                Building From
                 <br />
                 <span className="italic text-[#FDEBD6]">Dust Again</span>
               </h1>
               <p className="text-white/80 text-lg mb-8 max-w-xl">
-                The raw, unfiltered story of losing over ₦60 Million, hitting rock bottom, and rebuilding a thriving business from scratch. This isn't motivational fluff, it's a practical guide for anyone who's ever had to start over.
+                A memoir. A rebuild. A blueprint for starting over.<br /><br />
+                The raw, unfiltered story of losing over ₦50 Million, hitting rock bottom, and rebuilding a thriving business from scratch. This isn't motivational fluff, it's a practical guide for anyone who has been there, or is there right now.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -112,7 +78,7 @@ const Book = () => {
             <div className="relative flex justify-center">
               <div className="relative">
                 {/* Book Cover */}
-                <div className="w-64 md:w-80 bg-gradient-to-br from-[#4A1E23] to-[#2D1215] rounded-lg shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                <div className="w-64 md:w-80 bg-linear-to-br from-[#4A1E23] to-[#2D1215] rounded-lg shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
                   <div className="border border-white/20 rounded p-6 h-96 flex flex-col justify-between">
                     <div>
                       <div className="text-white/60 text-xs uppercase tracking-widest mb-4">Billeddy Saliu</div>
@@ -143,19 +109,19 @@ const Book = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
-                Not Just Another Success Story
+                I Lost Over ₦50 Million.
               </h2>
               <p className="text-gray-600 mb-6">
-                In 2022, I watched everything I had built crumble. Over ₦60 Million, gone. My business, my reputation, my confidence, all of it felt destroyed.
+                Not slowly. Not in a way I saw coming. The kind of loss that does not leave room for a graceful landing, just the floor, and the question of what happens next.
               </p>
               <p className="text-gray-600 mb-6">
-                Most "success stories" skip the messy parts. They show you the highlight reel and leave out the sleepless nights, the doubt, the moments when quitting seemed like the only option.
+                <strong>Building From Dust Again</strong> is the raw, unfiltered account of that collapse and everything that came after: the version of rock bottom nobody posts about, and the exact rebuild that took me from nothing back to a business that actually works.
               </p>
               <p className="text-gray-600 mb-6">
-                This book is different. <strong>Building from Dust Again</strong> takes you through the entire journey, the fall, the bottom, and the rebuild. Not to glorify failure, but to give you a real roadmap for what to do when life knocks you down.
+                This is not motivational fluff. There is no chapter that ends with and then I manifested my way back. It is a practical, honest account of what rebuilding actually looks like when you have no cushion, no safety net, and no choice but to start over.
               </p>
               <p className="text-gray-600">
-                Because chances are, at some point, you'll face your own "dust" moment. And when you do, this book will be your guide.
+                Written for anyone who has been there, or is there right now.
               </p>
             </div>
             <div className="bg-brand-cream rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
@@ -166,14 +132,14 @@ const Book = () => {
                   alt="Billeddy Saliu"
                   className="w-full h-full object-cover object-top"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-cream via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-brand-cream via-transparent to-transparent"></div>
               </div>
               
               {/* Quote Section */}
               <div className="p-8 md:p-10 relative">
                 <div className="text-brand-primary text-5xl md:text-6xl font-serif absolute -top-6 left-8 leading-none">"</div>
                 <p className="text-gray-700 text-lg md:text-xl italic mb-8 pt-6 leading-relaxed">
-                  I didn't write this book because I'm proud of failing. I wrote it because I know someone out there is going through what I went through, and they need to know it's possible to come back stronger.
+                  I wrote this because I know someone out there is going through what I went through, and they need to know it is possible to come back stronger.
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="relative">
@@ -192,7 +158,7 @@ const Book = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900 text-lg">Billeddy Saliu</div>
-                    <div className="text-sm text-gray-500">Author & Business Consultant</div>
+                      <div className="text-sm text-gray-500">Author</div>
                   </div>
                 </div>
               </div>
@@ -206,10 +172,10 @@ const Book = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-              What's Inside the Book
+              What's Inside
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Eight powerful chapters that take you from the depths of failure to the heights of comeback success.
+              The core lessons the book is built around.
             </p>
           </div>
 
@@ -225,57 +191,17 @@ const Book = () => {
         </div>
       </section>
 
-      {/* Who Is This For Section */}
-      <section className="w-full py-20 md:py-28 bg-brand-primary">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
-                This Book Is For You If...
-              </h2>
-              <ul className="space-y-4">
-                {[
-                  "You've experienced a major setback and don't know how to move forward",
-                  "You're building something and want to avoid the mistakes that destroy businesses",
-                  "You need real, practical guidance, not motivational clichés",
-                  "You want to learn from someone who's actually been through it",
-                  "You believe in second chances and the power of resilience",
-                  "You're ready to build something that lasts this time",
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-3 text-white/90">
-                    <span className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center shrink-0 mt-0.5">
-                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="grid grid-cols-1 gap-4">
-              {testimonialQuotes.map((item, index) => (
-                <div key={index} className="bg-white/10 p-6 rounded-sm">
-                  <p className="text-white/90 italic mb-4">"{item.quote}"</p>
-                  <div className="text-white/60 text-sm">{item.author}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Waitlist Section */}
       <section id="waitlist" className="w-full py-20 md:py-28 bg-white">
         <div className="max-w-3xl mx-auto px-6 md:px-12 lg:px-20 text-center">
           <div className="inline-block bg-brand-primary/10 text-brand-primary text-xs font-medium px-4 py-2 rounded-full mb-6">
-            Be the First to Know
+            Join the Waitlist
           </div>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
             Join the Waitlist
           </h2>
           <p className="text-gray-600 text-lg mb-8">
-            Be among the first to get notified when "Building from Dust Again" launches. Waitlist members will receive exclusive early-bird pricing and bonus content not available anywhere else.
+            The book isn't released yet. Join the waitlist to get notified the moment it drops — plus early access before it goes public.
           </p>
 
           {!submitted ? (
@@ -293,11 +219,11 @@ const Book = () => {
                   type="submit"
                   className="inline-flex items-center justify-center gap-2 bg-brand-primary text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-brand-accent transition-colors whitespace-nowrap"
                 >
-                  Join Waitlist
+                  Join the Waitlist
                 </button>
               </div>
               <p className="text-gray-500 text-xs mt-4">
-                No spam. Just updates about the book launch.
+                  No spam. Just one email when it is ready.
               </p>
             </form>
           ) : (
@@ -309,81 +235,10 @@ const Book = () => {
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">You're on the list!</h3>
               <p className="text-gray-600 text-sm">
-                Thank you for joining the waitlist. You'll be among the first to know when the book launches.
+                  Thank you for joining the waitlist. You will be among the first to know when the book launches.
               </p>
             </div>
           )}
-        </div>
-      </section>
-
-      {/* Bonus Section */}
-      <section className="w-full py-20 md:py-28 bg-brand-cream">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-              Waitlist Exclusive Bonuses
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Join the waitlist and get these exclusive bonuses when the book launches.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                icon: '📓',
-                title: 'Companion Workbook',
-                description: 'A practical workbook with exercises to apply the lessons from each chapter to your own situation.',
-              },
-              {
-                icon: '🎧',
-                title: 'Audio Commentary',
-                description: 'Exclusive audio content where I dive deeper into the stories and lessons from the book.',
-              },
-              {
-                icon: '💬',
-                title: 'Private Q&A Session',
-                description: 'Access to a live Q&A session where you can ask me anything about the book and my journey.',
-              },
-            ].map((bonus, index) => (
-              <div key={index} className="bg-white p-8 rounded-sm border border-black/5 text-center">
-                <div className="text-4xl mb-4">{bonus.icon}</div>
-                <h3 className="font-semibold text-gray-900 mb-2">{bonus.title}</h3>
-                <p className="text-gray-600 text-sm">{bonus.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Final CTA */}
-      <section
-        className="w-full py-20 md:py-28"
-        style={{
-          background: 'linear-gradient(135deg, var(--color-brand-primary) 0%, #4A1E23 100%)',
-        }}
-      >
-        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6">
-            Your Comeback Starts Here
-          </h2>
-          <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
-            Whether you're in the dust right now or want to be prepared for when life throws its punches, this book will be your guide. Join thousands of others waiting for the launch.
-          </p>
-          <a
-            href="#waitlist"
-            className="inline-flex items-center gap-3 bg-white text-brand-primary px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
-          >
-            Secure Your Spot on the Waitlist
-            <span className="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center">
-              <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
-          </a>
-          <p className="text-white/50 text-sm mt-6">
-            📖 Launching Second Half of 2026
-          </p>
         </div>
       </section>
     </div>
