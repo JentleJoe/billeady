@@ -51,9 +51,9 @@ const ServicesOverview = () => {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
             }`}
           >
-            <span className="w-8 h-px bg-brand-primary" />
+            <span className="w-8 h-px bg-brand-primary-light" />
             For Business Owners
-            <span className="w-8 h-px bg-brand-primary" />
+            <span className="w-8 h-px bg-brand-primary-light" />
           </div>
           <h2
             className={`text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-4 transition-all duration-700 ${
@@ -92,14 +92,14 @@ const ServicesOverview = () => {
 
         <div className="mt-10 grid lg:grid-cols-2 gap-6">
           <div className="bg-brand-muted border border-white/10 rounded-sm p-8 shadow-sm">
-            <div className="text-xs uppercase tracking-[0.2em] text-brand-primary mb-3">Client Feedback</div>
+            <div className="text-xs uppercase tracking-[0.2em] text-brand-primary-light mb-3">Client Feedback</div>
             <p className="text-gray-200 text-sm leading-relaxed mb-4">
               {proofLine[0]}
             </p>
             <p className="text-gray-400 text-xs uppercase tracking-wider">{proofLine[1]}</p>
           </div>
           <div className="bg-brand-muted border border-white/10 rounded-sm p-8 shadow-sm">
-            <div className="text-xs uppercase tracking-[0.2em] text-brand-primary mb-3">What clients say</div>
+            <div className="text-xs uppercase tracking-[0.2em] text-brand-primary-light mb-3">What clients say</div>
             <p className="text-gray-200 text-sm leading-relaxed mb-4">
               {proofLine[2]}
             </p>

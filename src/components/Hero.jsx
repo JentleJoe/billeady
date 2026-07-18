@@ -26,7 +26,7 @@ const Hero = () => {
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
               }`}
             >
-              <span className="text-brand-primary text-sm animate-pulse">✦</span>
+              <span className="text-brand-primary-light text-sm animate-pulse">✦</span>
               <span className="text-xs text-gray-300">High Ticket Closer | Revenue Partner for Elite Businesses</span>
             </div>
 

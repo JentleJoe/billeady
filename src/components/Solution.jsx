@@ -120,16 +120,16 @@ const Solution = () => {
                   }}
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 border border-brand-primary/40 rounded-sm flex items-center justify-center text-brand-primary group-hover:bg-brand-primary group-hover:text-white group-hover:border-brand-primary transition-all duration-300">
+                    <div className="w-10 h-10 border border-brand-primary-light/40 rounded-sm flex items-center justify-center text-brand-primary-light group-hover:bg-brand-primary-light group-hover:text-white group-hover:border-brand-primary-light transition-all duration-300">
                       {point.icon}
                     </div>
                     <div>
-                      <div className="text-sm font-semibold text-white group-hover:text-brand-primary transition-colors">{point.title}</div>
+                      <div className="text-sm font-semibold text-white group-hover:text-brand-primary-light transition-colors">{point.title}</div>
                       <div className="text-xs text-gray-400 mt-0.5">{point.description}</div>
                     </div>
                   </div>
 
-                  <div className="text-gray-300 group-hover:translate-x-2 group-hover:text-brand-primary transition-all duration-300">
+                  <div className="text-gray-300 group-hover:translate-x-2 group-hover:text-brand-primary-light transition-all duration-300">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>

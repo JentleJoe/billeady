@@ -58,13 +58,13 @@ const HighTicketClosing = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="max-w-3xl">
               <div className="flex items-center gap-2 mb-5">
-                <span className="text-brand-primary text-sm">✦</span>
+                <span className="text-brand-primary-light text-sm">✦</span>
                 <span className="text-xs text-gray-300 uppercase tracking-wider">High Ticket Sales Closing — Done For You</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
                 I Step Into Your Sales
                 <br />
-                <span className="text-brand-primary">Process and Close.</span>
+                <span className="text-brand-primary-light">Process and Close.</span>
               </h1>
               <p className="text-gray-300 text-lg mb-8 max-w-2xl">
                 You have already read the philosophy on the homepage: no retainers, no salaries, commission only. This page is about how it actually works once you bring me in.
@@ -86,7 +86,7 @@ const HighTicketClosing = () => {
                 </a>
                 <Link
                   to="/consulting"
-                  className="inline-flex items-center justify-center gap-2 bg-transparent text-brand-primary px-8 py-4 rounded-full text-sm font-medium border border-brand-primary hover:bg-brand-primary hover:text-white transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-transparent text-brand-primary-light px-8 py-4 rounded-full text-sm font-medium border border-brand-primary-light hover:bg-brand-primary-light hover:text-white transition-colors"
                 >
                   Fix the Process First
                 </Link>
@@ -171,7 +171,7 @@ const HighTicketClosing = () => {
               </p>
               <Link
                 to="/consulting"
-                className="inline-flex items-center gap-2 text-brand-primary font-medium hover:gap-3 transition-all"
+                className="inline-flex items-center gap-2 text-brand-primary-light font-medium hover:gap-3 transition-all"
               >
                 Fix the process first
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -210,7 +210,7 @@ const HighTicketClosing = () => {
             href="https://wa.me/2347069487679?text=Hi%20Billeddy,%20I'm%20interested%20in%20your%20high%20ticket%20closing%20services.%20I%20have%20a%20validated%20offer%20and%20consistent%20lead%20flow."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-white text-brand-primary px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
+            className="inline-flex items-center gap-3 bg-white text-brand-primary-light px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
           >
             Apply for Closing Services
             <span className="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center">
@@ -259,7 +259,7 @@ const HighTicketClosing = () => {
                 ))}
               </ul>
               <p className="mt-6 text-sm text-gray-400">
-                If that is not in place yet, start with <Link to="/consulting" className="text-brand-primary font-medium hover:underline">Consulting</Link> and fix the process first.
+                If that is not in place yet, start with <Link to="/consulting" className="text-brand-primary-light font-medium hover:underline">Consulting</Link> and fix the process first.
               </p>
             </div>
           </div>

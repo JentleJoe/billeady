@@ -1,5 +1,5 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
-import aboutImg from '../assets/aboutImg.jpg'
+import aboutImg from '../assets/newSaliuImg.jpg'
 
 const About = () => {
   const [sectionRef, isVisible] = useScrollAnimation()

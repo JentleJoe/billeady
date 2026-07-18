@@ -99,13 +99,13 @@ const Contact = () => {
         <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-28">
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex items-center justify-center gap-2 mb-5">
-              <span className="text-brand-primary text-sm">✦</span>
+              <span className="text-brand-primary-light text-sm">✦</span>
               <span className="text-xs text-gray-300 uppercase tracking-wider">Get In Touch</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
               Let's Start a
               <br />
-              <span className="text-brand-primary">Conversation</span>
+              <span className="text-brand-primary-light">Conversation</span>
             </h1>
             <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
               Have a question about my programs? Want to explore working together? Or just want to say hi? I'd love to hear from you.
@@ -123,7 +123,7 @@ const Contact = () => {
                 key={index}
                 className="border border-white/10 rounded-lg p-8 hover:border-brand-primary/30 hover:shadow-lg transition-all"
               >
-                <div className="w-14 h-14 bg-brand-primary/10 rounded-xl flex items-center justify-center text-brand-primary mb-6">
+                <div className="w-14 h-14 bg-brand-primary-light/10 rounded-xl flex items-center justify-center text-brand-primary-light mb-6">
                   {method.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-2">{method.title}</h3>
@@ -189,7 +189,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-brand-muted border border-white/10 px-6 py-4 rounded-lg hover:border-brand-primary/30 hover:shadow-md transition-all group"
               >
-                <span className="text-gray-400 group-hover:text-brand-primary transition-colors">
+                <span className="text-gray-400 group-hover:text-brand-primary-light transition-colors">
                   {social.icon}
                 </span>
                 <span className="font-medium text-white">{social.name}</span>
@@ -233,7 +233,7 @@ const Contact = () => {
               href="https://wa.me/2347069487679?text=Hi%20Billeddy,%20I'm%20ready%20to%20start%20closing%20high%20ticket%20clients!"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-white text-brand-primary px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-white text-brand-primary-light px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors"
             >
               Start a Conversation
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

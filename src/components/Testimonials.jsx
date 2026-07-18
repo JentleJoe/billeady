@@ -133,7 +133,7 @@ const Testimonials = () => {
             href="https://wa.me/2347069487679?text=Hi%20Billeddy,%20I'm%20interested%20in%20working%20with%20you%20for%20high%20ticket%20closing%20services."
             target="_blank"
             rel="noopener noreferrer"
-            className={`inline-flex items-center gap-2 bg-brand-primary text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-accent hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 mt-4 md:mt-0 w-fit group ${
+            className={`inline-flex items-center gap-2 bg-brand-primary-light text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-accent hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 mt-4 md:mt-0 w-fit group ${
               isVisible ? 'opacity-100 translate-y-0 delay-200' : 'opacity-0 translate-y-8'
             }`}
           >

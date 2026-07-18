@@ -36,7 +36,7 @@ const Consulting = () => {
         <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-12 md:py-28 lg:px-20">
           <div className="mx-auto max-w-3xl text-center">
             <div className="mb-5 flex items-center justify-center gap-2">
-              <span className="text-brand-primary text-sm">✦</span>
+              <span className="text-brand-primary-light text-sm">✦</span>
               <span className="text-xs uppercase tracking-[0.2em] text-gray-600">
                 Revenue Consulting for Businesses Ready to Scale
               </span>
@@ -44,7 +44,7 @@ const Consulting = () => {
             <h1 className="mb-6 text-4xl font-semibold leading-tight text-white md:text-5xl lg:text-6xl">
               Your Offer Isn't the Problem.
               <br />
-              <span className="text-brand-primary">Your Sales Process Might Be.</span>
+              <span className="text-brand-primary-light">Your Sales Process Might Be.</span>
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-gray-300">
               I sit inside your sales process, find exactly where deals are slipping through, and hand
@@ -78,7 +78,7 @@ const Consulting = () => {
               >
                 <div className="flex items-center justify-between gap-4">
                   <div>
-                    <p className={`text-xs uppercase tracking-[0.2em] ${item.featured ? 'text-white/70' : 'text-brand-primary'}`}>
+                    <p className={`text-xs uppercase tracking-[0.2em] ${item.featured ? 'text-white/70' : 'text-brand-primary-light'}`}>
                       {item.title}
                     </p>
                     <h3 className={`mt-2 text-2xl font-semibold ${item.featured ? 'text-white' : 'text-white'}`}>
@@ -86,7 +86,7 @@ const Consulting = () => {
                     </h3>
                   </div>
                   {item.featured && (
-                    <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-brand-primary">
+                    <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-brand-primary-light">
                       Best Value
                     </span>
                   )}
@@ -118,7 +118,7 @@ const Consulting = () => {
               <ul className="space-y-4">
                 {workWithItems.map((item) => (
                   <li key={item} className="flex items-start gap-3 text-white/85">
-                    <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white text-brand-primary">
+                    <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white text-brand-primary-light">
                       <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
