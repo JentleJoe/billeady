@@ -73,15 +73,17 @@ const HighTicketClosing = () => {
                 I take your booked calls inbound or outbound and run them from discovery to payment. Your leads, your offer, your brand. My job is the conversation that turns a maybe into a signed client.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  to="/calls-to-revenue"
+                <a
+                  href="https://wa.me/2347069487679?text=Hi%20Billeddy,%20I'm%20interested%20in%20your%20high%20ticket%20closing%20services.%20I%20have%20a%20validated%20offer%20and%20consistent%20lead%20flow."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-brand-primary text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-brand-accent transition-colors"
                 >
                   Apply for Closing Services
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </Link>
+                </a>
                 <Link
                   to="/consulting"
                   className="inline-flex items-center justify-center gap-2 bg-transparent text-brand-primary px-8 py-4 rounded-full text-sm font-medium border border-brand-primary hover:bg-brand-primary hover:text-white transition-colors"
@@ -204,8 +206,10 @@ const HighTicketClosing = () => {
           <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
             I do not take on every business that reaches out. I take on businesses I know I can close for, offers I believe in, leads that are actually qualified, and owners who are ready to hand over the conversation and let me work.
           </p>
-          <Link
-            to="/calls-to-revenue"
+          <a
+            href="https://wa.me/2347069487679?text=Hi%20Billeddy,%20I'm%20interested%20in%20your%20high%20ticket%20closing%20services.%20I%20have%20a%20validated%20offer%20and%20consistent%20lead%20flow."
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-brand-primary px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
           >
             Apply for Closing Services
@@ -214,7 +218,7 @@ const HighTicketClosing = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </span>
-          </Link>
+          </a>
         </div>
       </section>
 

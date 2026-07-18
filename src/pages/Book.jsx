@@ -57,7 +57,9 @@ const Book = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="#waitlist"
+                  href="https://wa.me/2347069487679?text=Hi%20Billeddy,%20I'd%20like%20to%20join%20the%20waitlist%20for%20your%20book%20'Building%20From%20Dust%20Again'."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 bg-white text-brand-primary px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
                 >
                   Join the Waitlist
@@ -198,41 +200,20 @@ const Book = () => {
             The book isn't released yet. Join the waitlist to get notified the moment it drops — plus early access before it goes public.
           </p>
 
-          {!submitted ? (
-            <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-              <div className="flex flex-col sm:flex-row gap-3">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email address"
-                  required
-                  className="flex-1 px-5 py-4 border border-white/20 bg-brand-muted rounded-full text-sm text-white focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary placeholder:text-gray-400"
-                />
-                <button
-                  type="submit"
-                  className="inline-flex items-center justify-center gap-2 bg-brand-primary text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-brand-accent transition-colors whitespace-nowrap"
-                >
-                  Join the Waitlist
-                </button>
-              </div>
-              <p className="text-gray-400 text-xs mt-4">
-                  No spam. Just one email when it is ready.
-              </p>
-            </form>
-          ) : (
-            <div className="bg-brand-muted border border-brand-primary/20 rounded-lg p-6 max-w-md mx-auto">
-              <div className="w-12 h-12 bg-brand-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <h3 className="font-semibold text-white mb-2">You're on the list!</h3>
-              <p className="text-gray-300 text-sm">
-                  Thank you for joining the waitlist. You will be among the first to know when the book launches.
-              </p>
-            </div>
-          )}
+          <a
+            href="https://wa.me/2347069487679?text=Hi%20Billeddy,%20I'd%20like%20to%20join%20the%20waitlist%20for%20your%20book%20'Building%20From%20Dust%20Again'."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-brand-primary text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-brand-accent transition-colors"
+          >
+            Join the Waitlist via WhatsApp
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+          <p className="text-gray-400 text-xs mt-4">
+              Click to join via WhatsApp. No spam. Just one message when it is ready.
+          </p>
         </div>
       </section>
     </div>

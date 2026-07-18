@@ -18,7 +18,7 @@ const Podcast = () => {
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href={applyLink}
+            href="https://wa.me/2347069487679?text=Hi%20Billeddy,%20I%20have%20a%20validated%20offer,%20real%20lead%20flow,%20and%20I'm%20ready%20to%20hand%20my%20sales%20conversations%20to%20someone%20who%20closes%20for%20a%20living."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-white text-brand-primary px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors"

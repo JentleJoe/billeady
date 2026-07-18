@@ -107,9 +107,11 @@ const Solution = () => {
 
             <div className="mt-9 space-y-4">
               {modelPoints.map((point, index) => (
-                <Link
+                <a
                   key={index}
-                  to={point.link}
+                  href="https://wa.me/2347069487679?text=Hi%20Billeddy,%20I'm%20interested%20in%20your%20performance-based%20closing%20services.%20I%20understand%20it's%20commission%20only%20with%20no%20retainers."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`bg-brand-muted border border-white/10 rounded-sm px-5 py-4 flex items-center justify-between hover:border-brand-primary/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group ${
                     isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
                   }`}
@@ -132,7 +134,7 @@ const Solution = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                   </div>
-                </Link>
+                </a>
               ))}
             </div>
           </div>

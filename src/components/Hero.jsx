@@ -52,8 +52,10 @@ const Hero = () => {
             </p>
 
             {/* CTA Button */}
-            <Link
-              to="/calls-to-revenue"
+            <a
+              href="https://wa.me/2347069487679?text=Hi%20Billeddy,%20I'm%20interested%20in%20your%20high%20ticket%20closing%20services.%20I%20have%20a%20validated%20offer%20and%20consistent%20lead%20flow."
+              target="_blank"
+              rel="noopener noreferrer"
               className={`inline-flex items-center gap-2 bg-brand-primary text-white pl-5 pr-1.5 py-1.5 rounded-full text-sm font-medium hover:bg-brand-accent hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 mb-8 lg:mb-24 group delay-300 ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
@@ -74,7 +76,7 @@ const Hero = () => {
                   />
                 </svg>
               </span>
-            </Link>
+            </a>
 
             {/* Trust Badge */}
             <div 

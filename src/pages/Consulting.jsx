@@ -167,21 +167,25 @@ const Consulting = () => {
             deeper rebuild, apply for full consulting.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <Link
-              to="/calls-to-revenue"
+            <a
+              href="https://wa.me/2347069487679?text=Hi%20Billeddy,%20I'm%20interested%20in%20booking%20a%20Strategy%20Session%20for%20$1,800."
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-primary px-8 py-4 text-sm font-medium text-white transition-colors hover:bg-brand-accent"
             >
               Book a Strategy Session — $1,800
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </Link>
-            <Link
-              to="/calls-to-revenue"
+            </a>
+            <a
+              href="https://wa.me/2347069487679?text=Hi%20Billeddy,%20I'm%20interested%20in%20Full%20Revenue%20Consulting%20for%20$4,500."
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-primary px-8 py-4 text-sm font-medium text-brand-primary transition-colors hover:bg-brand-primary hover:text-white"
             >
               Apply for Full Consulting — $4,500
-            </Link>
+            </a>
           </div>
         </div>
       </section>
