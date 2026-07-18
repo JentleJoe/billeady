@@ -46,6 +46,12 @@ const notFitItems = [
   'You are looking for theory, not a system you can use this week',
 ]
 
+const heroStats = [
+  { value: '5 Years', label: 'in high ticket sales' },
+  { value: '$2.1M+', label: 'in client profits' },
+  { value: 'US | UK | Canada', label: 'remote-first closing markets' },
+]
+
 const Coaching = () => {
   return (
     <main className="w-full bg-[linear-gradient(180deg,rgba(181,36,26,0.08),rgba(255,255,255,0))] text-black">
@@ -59,48 +65,59 @@ const Coaching = () => {
         />
 
         <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-12 md:py-28 lg:px-20">
-          <div className="max-w-3xl">
-            <div className="flex items-center gap-2 mb-5">
-              <span className="text-brand-primary text-sm">✦</span>
-              <span className="text-xs uppercase tracking-[0.2em] text-gray-600">
-                High Ticket Sales Closing &amp; Appointment Setting
-              </span>
+          <div className="grid gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)] lg:items-center">
+            <div className="max-w-3xl">
+              <div className="flex items-center gap-2 mb-5">
+                <span className="text-brand-primary text-sm">✦</span>
+                <span className="text-xs uppercase tracking-[0.2em] text-gray-600">
+                  High Ticket Sales Closing &amp; Appointment Setting
+                </span>
+              </div>
+
+              <h1 className="text-4xl font-semibold leading-tight text-gray-900 md:text-5xl lg:text-6xl">
+                You Do Not Need Another
+                <br />
+                Sales Course.
+              </h1>
+
+              <p className="mt-6 text-lg leading-relaxed text-gray-600 max-w-2xl">
+                Most sales training teaches theory. Scripts you will never say the way they are written.
+                Frameworks that fall apart the second a prospect pushes back.
+              </p>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600 max-w-2xl">
+                This is not that. This is the exact system I use to close high ticket deals on commission.
+                No base pay, no safety net, no room for almost. If it does not work in a real conversation
+                with real money on the line, it does not make it into this program.
+              </p>
+
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <a
+                  href="#paths"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-primary px-8 py-4 text-sm font-medium text-white transition-colors hover:bg-brand-accent"
+                >
+                  Choose Your Path
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+                <a
+                  href={oneOnOneLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-primary px-8 py-4 text-sm font-medium text-brand-primary transition-colors hover:bg-brand-primary hover:text-white"
+                >
+                  Apply for One-on-One
+                </a>
+              </div>
             </div>
 
-            <h1 className="text-4xl font-semibold leading-tight text-gray-900 md:text-5xl lg:text-6xl">
-              You Do Not Need Another
-              <br />
-              Sales Course.
-            </h1>
-
-            <p className="mt-6 text-lg leading-relaxed text-gray-600 max-w-2xl">
-              Most sales training teaches theory. Scripts you will never say the way they are written.
-              Frameworks that fall apart the second a prospect pushes back.
-            </p>
-            <p className="mt-4 text-lg leading-relaxed text-gray-600 max-w-2xl">
-              This is not that. This is the exact system I use to close high ticket deals on commission.
-              No base pay, no safety net, no room for almost. If it does not work in a real conversation
-              with real money on the line, it does not make it into this program.
-            </p>
-
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <a
-                href="#paths"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-primary px-8 py-4 text-sm font-medium text-white transition-colors hover:bg-brand-accent"
-              >
-                Choose Your Path
-                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-              <a
-                href={oneOnOneLink}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-primary px-8 py-4 text-sm font-medium text-brand-primary transition-colors hover:bg-brand-primary hover:text-white"
-              >
-                Apply for One-on-One
-              </a>
+            <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+              {heroStats.map((stat) => (
+                <div key={stat.label} className="rounded-sm border border-black/10 bg-white/80 p-5 shadow-sm backdrop-blur-sm">
+                  <div className="text-2xl font-semibold text-gray-900">{stat.value}</div>
+                  <div className="mt-1 text-xs uppercase tracking-[0.2em] text-gray-500">{stat.label}</div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

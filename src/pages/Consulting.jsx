@@ -1,101 +1,37 @@
 import { Link } from 'react-router-dom'
 
+const engagements = [
+  {
+    title: 'Strategy Session',
+    price: '$1,800',
+    description:
+      'A focused 2–3 hour session where we go deep on your current sales process, your script, your objection handling, your funnel from lead to close. You walk away with a clear breakdown of what is costing you deals and exactly what to fix first.',
+    bestFor:
+      'Businesses that need clarity fast, a second set of eyes on a process that is not converting the way it should.',
+    featured: false,
+  },
+  {
+    title: 'Full Revenue Consulting',
+    price: '$4,500',
+    description:
+      '30–90 days working directly with you to rebuild your sales process end to end, scripts, objection frameworks, close structure, and hands on adjustments as real calls happen. This is sustained, in the trenches optimization, not a one time audit.',
+    bestFor:
+      'Businesses ready to commit to a real overhaul and see it through to results.',
+    featured: true,
+  },
+]
+
+const workWithItems = [
+  'Coaches, consultants, agency owners, real estate developers, financial and insurance firms',
+  'A validated offer at $2,000+',
+  'Consistent lead flow already in place',
+  'Real intent to fix the close, not just talk about it',
+]
+
 const Consulting = () => {
-  const services = [
-    {
-      title: 'Sales Strategy Development',
-      description: 'Build a comprehensive sales strategy tailored to your business model, target market, and growth objectives.',
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-        </svg>
-      ),
-    },
-    {
-      title: 'Revenue Optimization',
-      description: 'Identify revenue leaks, optimize pricing strategies, and implement systems to maximize profitability.',
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
-    },
-    {
-      title: 'Team Performance',
-      description: 'Train and develop your sales team to perform at their peak, with proven methodologies and accountability systems.',
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>
-      ),
-    },
-    {
-      title: 'Business Systems & Processes',
-      description: 'Implement scalable systems and processes that allow your business to grow without burning out.',
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      ),
-    },
-    {
-      title: 'Market Positioning',
-      description: 'Define your unique value proposition and position your business to stand out in competitive markets.',
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-      ),
-    },
-    {
-      title: 'Growth Planning',
-      description: 'Develop actionable roadmaps for scaling your business with clear milestones and KPIs.',
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-        </svg>
-      ),
-    },
-  ]
-
-  const industries = [
-    'Coaching & Consulting',
-    'Real Estate',
-    'E-commerce',
-    'SaaS & Tech',
-    'Professional Services',
-    'Health & Wellness',
-  ]
-
-  const engagementTypes = [
-    {
-      title: 'Strategy Session',
-      duration: '2-3 Hours',
-      description: 'A focused deep-dive into a specific challenge or opportunity in your business.',
-      features: ['Problem diagnosis', 'Action plan creation', 'Follow-up resources'],
-      price: 'Starting at ₦250,000',
-    },
-    {
-      title: 'Monthly Retainer',
-      duration: 'Ongoing',
-      description: 'Continuous strategic guidance with regular check-ins and unlimited support.',
-      features: ['Weekly strategy calls', 'Unlimited messaging access', 'Team training sessions', 'Performance reviews'],
-      price: 'Custom Pricing',
-    },
-    {
-      title: 'Intensive Sprint',
-      duration: '30-90 Days',
-      description: 'A focused engagement to solve a major business challenge or implement a key initiative.',
-      features: ['Deep business audit', 'Strategy development', 'Implementation support', 'Team alignment'],
-      price: 'Starting at ₦1,500,000',
-    },
-  ]
-
   return (
-    <div>
-      {/* Hero Section */}
-      <section className="relative w-full overflow-hidden">
+    <main className="w-full bg-[linear-gradient(180deg,rgba(181,36,26,0.08),rgba(255,255,255,0))] text-black">
+      <section className="relative overflow-hidden">
         <div
           className="absolute inset-0"
           style={{
@@ -103,144 +39,122 @@ const Consulting = () => {
               'radial-gradient(ellipse 80% 50% at 50% 50%, rgba(109,30,23,0.12) 0%, transparent 70%), linear-gradient(135deg, var(--color-brand-cream) 0%, #FDEBD6 40%, #FDF3E8 100%)',
           }}
         />
-        <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-28">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="flex items-center justify-center gap-2 mb-5">
+        <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-12 md:py-28 lg:px-20">
+          <div className="mx-auto max-w-3xl text-center">
+            <div className="mb-5 flex items-center justify-center gap-2">
               <span className="text-brand-primary text-sm">✦</span>
-              <span className="text-xs text-gray-600 uppercase tracking-wider">Business Consulting</span>
+              <span className="text-xs uppercase tracking-[0.2em] text-gray-600">
+                Revenue Consulting for Businesses Ready to Scale
+              </span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-6">
-              Strategic Guidance for
+            <h1 className="mb-6 text-4xl font-semibold leading-tight text-gray-900 md:text-5xl lg:text-6xl">
+              Your Offer Isn't the Problem.
               <br />
-              <span className="text-brand-primary">Business Growth</span>
+              <span className="text-brand-primary">Your Sales Process Might Be.</span>
             </h1>
-            <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
-              Partner with someone who's built, lost, and rebuilt. My consulting approach combines real-world experience with proven frameworks to help you scale sustainably.
+            <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-gray-600">
+              I sit inside your sales process, find exactly where deals are slipping through, and hand
+              you a clear plan to fix it, built from five years of closing high ticket deals for real
+              businesses, not theory from a business book.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-brand-primary text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-brand-accent transition-colors"
-              >
-                Schedule Consultation
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
+            <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-gray-600">
+              This is not generic advice. It is a diagnosis and a plan, specific to your offer, your
+              leads, and your close.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* My Story Section */}
-      <section className="w-full py-20 md:py-28 bg-brand-primary">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
-                Built on Real-World Results
-              </h2>
-              <p className="text-white/80 mb-6">
-                Billeddy Saliu is a results-driven sales and marketing strategist specializing in high-ticket closing and business consulting. This work exists to help entrepreneurs and teams turn attention into revenue with clear, repeatable systems.
-              </p>
-              <p className="text-white/80 mb-6">
-                With years of hands-on experience, Billeddy helps businesses fix weak sales processes, refine brand positioning, and build consistent demand. Every engagement is designed for measurable growth.
-              </p>
-              <p className="text-white/80">
-                At the core are trust, integrity, and competence. You get practical, real-world guidance that creates clarity, structure, and confidence as you scale.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white/10 p-6 rounded-sm">
-                <div className="text-3xl font-bold text-white mb-2">50+</div>
-                <div className="text-white/60 text-sm">Businesses Consulted</div>
-              </div>
-              <div className="bg-white/10 p-6 rounded-sm">
-                <div className="text-3xl font-bold text-white mb-2">₦500M+</div>
-                <div className="text-white/60 text-sm">Client Revenue Generated</div>
-              </div>
-              <div className="bg-white/10 p-6 rounded-sm">
-                <div className="text-3xl font-bold text-white mb-2">8+</div>
-                <div className="text-white/60 text-sm">Years Experience</div>
-              </div>
-              <div className="bg-white/10 p-6 rounded-sm">
-                <div className="text-3xl font-bold text-white mb-2">6</div>
-                <div className="text-white/60 text-sm">Industries Served</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="w-full py-20 md:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+      <section className="w-full bg-white py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-              How I Help Businesses Grow
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Strategic consulting services designed to identify opportunities, solve problems, and accelerate growth.
+            <h2 className="mb-4 text-3xl font-semibold text-gray-900 md:text-4xl">Choose Your Engagement</h2>
+            <p className="mx-auto max-w-2xl text-gray-600">
+              Pick the level of support that matches the size of the problem you want solved.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service, index) => (
+          <div className="grid gap-6 lg:grid-cols-2">
+            {engagements.map((item) => (
               <div
-                key={index}
-                className="bg-brand-cream p-6 rounded-sm border border-black/5 hover:shadow-lg transition-shadow"
+                key={item.title}
+                className={`rounded-sm border p-8 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-xl ${
+                  item.featured ? 'border-brand-primary bg-brand-primary text-white' : 'border-black/10 bg-brand-cream'
+                }`}
               >
-                <div className="w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center text-white mb-5">
-                  {service.icon}
+                <div className="flex items-center justify-between gap-4">
+                  <div>
+                    <p className={`text-xs uppercase tracking-[0.2em] ${item.featured ? 'text-white/70' : 'text-brand-primary'}`}>
+                      {item.title}
+                    </p>
+                    <h3 className={`mt-2 text-2xl font-semibold ${item.featured ? 'text-white' : 'text-gray-900'}`}>
+                      {item.price}
+                    </h3>
+                  </div>
+                  {item.featured && (
+                    <span className="rounded-full bg-white px-3 py-1 text-xs font-medium text-brand-primary">
+                      Best Value
+                    </span>
+                  )}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
+
+                <p className={`mt-5 text-sm leading-relaxed ${item.featured ? 'text-white/80' : 'text-gray-600'}`}>
+                  {item.description}
+                </p>
+
+                <div className={`mt-6 rounded-sm p-4 ${item.featured ? 'bg-white/10' : 'bg-white'}`}>
+                  <p className={`text-sm font-semibold ${item.featured ? 'text-white' : 'text-gray-900'}`}>
+                    Best for:
+                  </p>
+                  <p className={`mt-2 text-sm leading-relaxed ${item.featured ? 'text-white/75' : 'text-gray-600'}`}>
+                    {item.bestFor}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Industries Section */}
-      <section className="w-full py-20 md:py-28 bg-brand-cream">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="w-full bg-brand-primary py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-20">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
             <div>
-              <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
-                Industries I Work With
-              </h2>
-              <p className="text-gray-600 mb-8">
-                While my frameworks apply across industries, I've developed specialized expertise in these areas through years of hands-on experience.
-              </p>
-              <div className="grid grid-cols-2 gap-4">
-                {industries.map((industry, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <span className="w-2 h-2 bg-brand-primary rounded-full"></span>
-                    <span className="text-gray-700">{industry}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="bg-white p-8 rounded-sm shadow-lg">
-              <h3 className="font-semibold text-gray-900 mb-4">Is Consulting Right For You?</h3>
-              <p className="text-gray-600 text-sm mb-6">
-                My consulting is best suited for businesses that:
-              </p>
-              <ul className="space-y-3">
-                {[
-                  'Have existing revenue but want to scale',
-                  'Feel stuck or plateaued in growth',
-                  'Need strategic direction and clarity',
-                  'Want to optimize their sales process',
-                  'Are ready to invest in expert guidance',
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-3 text-sm">
-                    <span className="w-5 h-5 bg-brand-primary rounded-full flex items-center justify-center shrink-0 mt-0.5">
-                      <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <h2 className="mb-6 text-3xl font-semibold text-white md:text-4xl">Who I Work With</h2>
+              <ul className="space-y-4">
+                {workWithItems.map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-white/85">
+                    <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white text-brand-primary">
+                      <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </span>
-                    <span className="text-gray-700">{item}</span>
+                    <span className="text-sm leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="rounded-sm bg-white p-8 shadow-2xl">
+              <h3 className="mb-4 text-2xl font-semibold text-gray-900">What You Get</h3>
+              <p className="mb-6 text-sm leading-relaxed text-gray-600">
+                A clear diagnosis of where revenue is slipping, what to fix first, and how to tighten
+                the close.
+              </p>
+              <ul className="space-y-3">
+                {[
+                  'A diagnostic look at your sales process',
+                  'Clear next steps for your offer, leads, and close',
+                  'Direct recommendations you can implement immediately',
+                  'A strategy built around your actual business, not generic theory',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-gray-700">
+                    <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-primary text-white">
+                      <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </span>
+                    <span>{item}</span>
                   </li>
                 ))}
               </ul>
@@ -249,80 +163,35 @@ const Consulting = () => {
         </div>
       </section>
 
-      {/* Engagement Types */}
-      <section className="w-full py-20 md:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-              Ways to Work Together
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Choose the engagement style that fits your needs and budget.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {engagementTypes.map((type, index) => (
-              <div
-                key={index}
-                className={`p-8 rounded-sm border ${index === 1 ? 'bg-brand-primary border-brand-primary' : 'bg-white border-black/10'}`}
-              >
-                <div className={`text-xs font-medium mb-2 ${index === 1 ? 'text-white/60' : 'text-brand-primary'}`}>
-                  {type.duration}
-                </div>
-                <h3 className={`text-xl font-semibold mb-3 ${index === 1 ? 'text-white' : 'text-gray-900'}`}>
-                  {type.title}
-                </h3>
-                <p className={`text-sm mb-6 ${index === 1 ? 'text-white/70' : 'text-gray-600'}`}>
-                  {type.description}
-                </p>
-                <ul className="space-y-2 mb-6">
-                  {type.features.map((feature, fIndex) => (
-                    <li key={fIndex} className={`flex items-center gap-2 text-sm ${index === 1 ? 'text-white/80' : 'text-gray-600'}`}>
-                      <svg className={`w-4 h-4 ${index === 1 ? 'text-white' : 'text-brand-primary'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <div className={`font-semibold ${index === 1 ? 'text-white' : 'text-gray-900'}`}>
-                  {type.price}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section
-        className="w-full py-20 md:py-28"
-        style={{
-          background: 'linear-gradient(135deg, var(--color-brand-primary) 0%, #4A1E23 100%)',
-        }}
-      >
-        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6">
-            Ready to Transform Your Business?
+      <section className="w-full bg-white py-20 md:py-28">
+        <div className="mx-auto max-w-4xl px-6 md:px-12 lg:px-20 text-center">
+          <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">
+            Let's Find Where You're Losing Revenue
           </h2>
-          <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
-            Let's have a conversation about where your business is today and where you want it to be. No pressure, just clarity.
+          <p className="mx-auto mt-5 max-w-2xl text-gray-600">
+            If your sales process needs clarity fast, start with the strategy session. If you want a
+            deeper rebuild, apply for full consulting.
           </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-3 bg-white text-brand-primary px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors"
-          >
-            Book Your Free Consultation
-            <span className="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center">
-              <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <Link
+              to="/calls-to-revenue"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-primary px-8 py-4 text-sm font-medium text-white transition-colors hover:bg-brand-accent"
+            >
+              Book a Strategy Session — $1,800
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </span>
-          </Link>
+            </Link>
+            <Link
+              to="/calls-to-revenue"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-primary px-8 py-4 text-sm font-medium text-brand-primary transition-colors hover:bg-brand-primary hover:text-white"
+            >
+              Apply for Full Consulting — $4,500
+            </Link>
+          </div>
         </div>
       </section>
-    </div>
+    </main>
   )
 }
 
