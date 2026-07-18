@@ -2,7 +2,7 @@ const ctaLink = 'https://forms.gle/ng5e5cxNtua6dhDi6'
 
 function CallsToRevenue() {
   return (
-    <main className="min-h-screen bg-[linear-gradient(180deg,rgba(181,36,26,0.08),rgba(255,255,255,0))] text-black">
+    <main className="min-h-screen bg-page-tint text-black">
       <div className="h-1 w-full bg-[var(--color-brand-accent)]" />
       <section className="mx-auto max-w-4xl px-6 py-16 sm:py-20">
         <div className="border border-black/10 bg-white shadow-[0_18px_50px_rgba(109,30,23,0.08)]">
@@ -130,7 +130,7 @@ function CallsToRevenue() {
             <div className="mt-12 border-t border-black/10 pt-10">
               <div className="rounded-md bg-black px-6 py-8 sm:px-8">
                 <div className="flex flex-col gap-3">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-red-500 ">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-accent">
                     Ready to move?
                   </p>
                   <p className="text-base font-semibold text-white">

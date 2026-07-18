@@ -38,14 +38,7 @@ const Solution = () => {
   ]
 
   return (
-    <section
-      ref={sectionRef}
-      className="w-full"
-      style={{
-        background:
-          'radial-gradient(900px circle at 50% 0%, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 55%), linear-gradient(180deg, var(--color-brand-primary) 0%, #4A1E23 100%)',
-      }}
-    >
+    <section ref={sectionRef} className="w-full bg-solution">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-14 md:py-16">
         <h2 
           className={`lg:hidden mb-5 text-[32px] sm:text-4xl md:text-5xl font-semibold text-white leading-tight transition-all duration-700 delay-100 ${

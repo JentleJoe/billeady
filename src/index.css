@@ -3,14 +3,65 @@
 @theme {
   --font-sans: "Rubik", sans-serif;
 
-  --color-brand-cream: #F9F1E6;
+  /* Core brand — red, black, white */
   --color-brand-primary: #6D1E17;
   --color-brand-accent: #B5241A;
+  --color-brand-dark: #4A1E23;
+  --color-brand-darker: #2D1215;
+  --color-brand-black: #000000;
+  --color-brand-white: #FFFFFF;
+  --color-brand-muted: #F5F5F5;
 }
 
 body {
   font-family: "Rubik", sans-serif;
 }
+
+/* Reusable brand gradients */
+.bg-hero-light {
+  background:
+    radial-gradient(ellipse 80% 50% at 70% 50%, rgba(109, 30, 23, 0.08) 0%, transparent 70%),
+    linear-gradient(135deg, var(--color-brand-white) 0%, var(--color-brand-muted) 100%);
+}
+
+.bg-hero-light-center {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 30%, rgba(109, 30, 23, 0.12) 0%, transparent 70%),
+    linear-gradient(135deg, var(--color-brand-white) 0%, var(--color-brand-muted) 100%);
+}
+
+.bg-hero-light-left {
+  background:
+    radial-gradient(ellipse 80% 50% at 30% 50%, rgba(109, 30, 23, 0.12) 0%, transparent 70%),
+    linear-gradient(135deg, var(--color-brand-white) 0%, var(--color-brand-muted) 100%);
+}
+
+.bg-hero-dark {
+  background: linear-gradient(135deg, var(--color-brand-primary) 0%, var(--color-brand-dark) 100%);
+}
+
+.bg-hero-book {
+  background:
+    radial-gradient(ellipse 100% 80% at 50% 100%, rgba(109, 30, 23, 0.3) 0%, transparent 60%),
+    linear-gradient(180deg, var(--color-brand-darker) 0%, var(--color-brand-primary) 50%, var(--color-brand-dark) 100%);
+}
+
+.bg-section-muted {
+  background:
+    radial-gradient(ellipse 70% 40% at 20% 0%, rgba(109, 30, 23, 0.06) 0%, transparent 70%),
+    linear-gradient(180deg, var(--color-brand-muted) 0%, var(--color-brand-white) 100%);
+}
+
+.bg-solution {
+  background:
+    radial-gradient(900px circle at 50% 0%, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 55%),
+    linear-gradient(180deg, var(--color-brand-primary) 0%, var(--color-brand-dark) 100%);
+}
+
+.bg-page-tint {
+  background: linear-gradient(180deg, rgba(181, 36, 26, 0.06), rgba(255, 255, 255, 0));
+}
+
 /* Custom Animations */
 @keyframes float {
   0%, 100% {
@@ -90,7 +141,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--color-brand-muted);
 }
 
 ::-webkit-scrollbar-thumb {

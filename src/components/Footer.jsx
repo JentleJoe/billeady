@@ -40,7 +40,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer ref={footerRef} className="w-full bg-brand-cream">
+    <footer ref={footerRef} className="w-full bg-brand-muted">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">

@@ -39,13 +39,7 @@ const Book = () => {
     <div>
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden min-h-[90vh] flex items-center">
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              'radial-gradient(ellipse 100% 80% at 50% 100%, rgba(109,30,23,0.3) 0%, transparent 60%), linear-gradient(180deg, #2D1215 0%, var(--color-brand-primary) 50%, #4A1E23 100%)',
-          }}
-        />
+        <div className="absolute inset-0 bg-hero-book" />
         <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pt-28 pb-20 md:pt-36 md:pb-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -55,7 +49,7 @@ const Book = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
                 Building From
                 <br />
-                <span className="italic text-[#FDEBD6]">Dust Again</span>
+                <span className="italic text-white/80">Dust Again</span>
               </h1>
               <p className="text-white/80 text-lg mb-8 max-w-xl">
                 A memoir. A rebuild. A blueprint for starting over.<br /><br />
@@ -78,7 +72,7 @@ const Book = () => {
             <div className="relative flex justify-center">
               <div className="relative">
                 {/* Book Cover */}
-                <div className="w-64 md:w-80 bg-linear-to-br from-[#4A1E23] to-[#2D1215] rounded-lg shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                <div className="w-64 md:w-80 bg-linear-to-br from-brand-dark to-brand-darker rounded-lg shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
                   <div className="border border-white/20 rounded p-6 h-96 flex flex-col justify-between">
                     <div>
                       <div className="text-white/60 text-xs uppercase tracking-widest mb-4">Billeddy Saliu</div>
@@ -87,7 +81,7 @@ const Book = () => {
                         <br />
                         from Dust
                         <br />
-                        <span className="italic text-[#FDEBD6]">Again</span>
+                        <span className="italic text-white/80">Again</span>
                       </h2>
                     </div>
                     <div className="text-white/40 text-xs">
@@ -124,7 +118,7 @@ const Book = () => {
                 Written for anyone who has been there, or is there right now.
               </p>
             </div>
-            <div className="bg-brand-cream rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+            <div className="bg-brand-muted rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
               {/* Image Section */}
               <div className="relative h-64 md:h-80 overflow-hidden">
                 <img 
@@ -132,7 +126,7 @@ const Book = () => {
                   alt="Billeddy Saliu"
                   className="w-full h-full object-cover object-top"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-brand-cream via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-brand-muted via-transparent to-transparent"></div>
               </div>
               
               {/* Quote Section */}
@@ -168,7 +162,7 @@ const Book = () => {
       </section>
 
       {/* What's Inside Section */}
-      <section className="w-full py-20 md:py-28 bg-brand-cream">
+      <section className="w-full py-20 md:py-28 bg-brand-muted">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
@@ -227,9 +221,9 @@ const Book = () => {
               </p>
             </form>
           ) : (
-            <div className="bg-green-50 border border-green-200 rounded-lg p-6 max-w-md mx-auto">
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-brand-muted border border-brand-primary/20 rounded-lg p-6 max-w-md mx-auto">
+              <div className="w-12 h-12 bg-brand-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-6 h-6 text-brand-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>

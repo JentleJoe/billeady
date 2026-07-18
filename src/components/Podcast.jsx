@@ -4,7 +4,7 @@ const Podcast = () => {
   const applyLink = 'https://forms.gle/ng5e5cxNtua6dhDi6'
 
   return (
-    <section className="w-full py-20 md:py-28" style={{ background: 'linear-gradient(135deg, var(--color-brand-primary) 0%, #4A1E23 100%)' }}>
+    <section className="w-full py-20 md:py-28 bg-hero-dark">
       <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
         <div className="flex items-center justify-center gap-2 mb-5 text-white/80">
           <span className="text-sm">✦</span>

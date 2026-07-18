@@ -42,11 +42,7 @@ const ServicesOverview = () => {
   return (
     <section
       ref={sectionRef}
-      className="w-full relative overflow-hidden"
-      style={{
-        background:
-          'radial-gradient(ellipse 70% 40% at 20% 0%, rgba(109,30,23,0.08) 0%, transparent 70%), linear-gradient(180deg, #FDF8F5 0%, #FFFFFF 100%)',
-      }}
+      className="w-full relative overflow-hidden bg-section-muted"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-16 md:py-24">
         <div className="text-center max-w-3xl mx-auto mb-12">

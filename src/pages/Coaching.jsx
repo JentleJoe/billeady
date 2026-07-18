@@ -54,15 +54,9 @@ const heroStats = [
 
 const Coaching = () => {
   return (
-    <main className="w-full bg-[linear-gradient(180deg,rgba(181,36,26,0.08),rgba(255,255,255,0))] text-black">
+    <main className="w-full bg-page-tint text-black">
       <section className="relative overflow-hidden">
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              'radial-gradient(ellipse 80% 50% at 30% 50%, rgba(109,30,23,0.14) 0%, transparent 70%), linear-gradient(135deg, var(--color-brand-cream) 0%, #FDEBD6 40%, #FDF3E8 100%)',
-          }}
-        />
+        <div className="absolute inset-0 bg-hero-light-left" />
 
         <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-12 md:py-28 lg:px-20">
           <div className="grid gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)] lg:items-center">
@@ -133,7 +127,7 @@ const Coaching = () => {
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {learnings.map((item) => (
-              <div key={item} className="rounded-sm border border-black/5 bg-brand-cream p-6 shadow-sm">
+              <div key={item} className="rounded-sm border border-black/5 bg-brand-muted p-6 shadow-sm">
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-brand-primary text-white">
                   <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -153,7 +147,7 @@ const Coaching = () => {
         </div>
       </section>
 
-      <section id="paths" className="w-full bg-brand-cream py-20 md:py-28">
+      <section id="paths" className="w-full bg-brand-muted py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-20">
           <div className="text-center">
             <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">Choose Your Path</h2>
@@ -184,7 +178,7 @@ const Coaching = () => {
 
                 <p className="mt-5 text-sm leading-relaxed text-gray-600">{path.description}</p>
 
-                <div className="mt-6 rounded-sm bg-brand-cream p-4">
+                <div className="mt-6 rounded-sm bg-brand-muted p-4">
                   <p className="text-sm font-semibold text-gray-900">Best for:</p>
                   <p className="mt-2 text-sm leading-relaxed text-gray-600">{path.bestFor}</p>
                 </div>

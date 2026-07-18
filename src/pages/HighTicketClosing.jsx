@@ -53,13 +53,7 @@ const HighTicketClosing = () => {
     <div>
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden">
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              'radial-gradient(ellipse 80% 50% at 70% 50%, rgba(109,30,23,0.15) 0%, transparent 70%), linear-gradient(135deg, var(--color-brand-cream) 0%, #FDEBD6 40%, #FDF3E8 100%)',
-          }}
-        />
+        <div className="absolute inset-0 bg-hero-light" />
         <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-28">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="max-w-3xl">
@@ -163,7 +157,7 @@ const HighTicketClosing = () => {
       </section>
 
       {/* Process Section */}
-      <section className="w-full py-20 md:py-28 bg-brand-cream">
+      <section className="w-full py-20 md:py-28 bg-brand-muted">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -202,12 +196,7 @@ const HighTicketClosing = () => {
       </section>
 
       {/* CTA Section */}
-      <section
-        className="w-full py-20 md:py-28"
-        style={{
-          background: 'linear-gradient(135deg, var(--color-brand-primary) 0%, #4A1E23 100%)',
-        }}
-      >
+      <section className="w-full py-20 md:py-28 bg-hero-dark">
         <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6">
             This Only Works If We Are Both Serious
@@ -251,7 +240,7 @@ const HighTicketClosing = () => {
               </ul>
             </div>
 
-            <div className="bg-brand-cream p-8 rounded-sm border border-black/5">
+            <div className="bg-brand-muted p-8 rounded-sm border border-black/5">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">What I Need From You</h3>
               <ul className="space-y-4">
                 {requirements.map((item) => (

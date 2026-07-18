@@ -30,15 +30,9 @@ const workWithItems = [
 
 const Consulting = () => {
   return (
-    <main className="w-full bg-[linear-gradient(180deg,rgba(181,36,26,0.08),rgba(255,255,255,0))] text-black">
+    <main className="w-full bg-page-tint text-black">
       <section className="relative overflow-hidden">
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              'radial-gradient(ellipse 80% 50% at 50% 50%, rgba(109,30,23,0.12) 0%, transparent 70%), linear-gradient(135deg, var(--color-brand-cream) 0%, #FDEBD6 40%, #FDF3E8 100%)',
-          }}
-        />
+        <div className="absolute inset-0 bg-hero-light-center" />
         <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-12 md:py-28 lg:px-20">
           <div className="mx-auto max-w-3xl text-center">
             <div className="mb-5 flex items-center justify-center gap-2">
@@ -79,7 +73,7 @@ const Consulting = () => {
               <div
                 key={item.title}
                 className={`rounded-sm border p-8 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-xl ${
-                  item.featured ? 'border-brand-primary bg-brand-primary text-white' : 'border-black/10 bg-brand-cream'
+                  item.featured ? 'border-brand-primary bg-brand-primary text-white' : 'border-black/10 bg-brand-muted'
                 }`}
               >
                 <div className="flex items-center justify-between gap-4">

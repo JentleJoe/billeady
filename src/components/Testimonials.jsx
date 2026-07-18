@@ -117,7 +117,7 @@ const Testimonials = () => {
   }
 
   return (
-    <section ref={sectionRef} className="w-full py-16 md:py-20 bg-[#FDF8F5]">
+    <section ref={sectionRef} className="w-full py-16 md:py-20 bg-brand-muted">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-10">

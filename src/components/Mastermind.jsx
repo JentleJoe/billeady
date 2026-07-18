@@ -35,7 +35,7 @@ const Mastermind = () => {
 
   return (
     <section ref={sectionRef} className="w-full relative overflow-hidden">
-      {/* Background image + overlay (matches screenshot: photo visible with purple wash + bottom vignette) */}
+      {/* Background image + red brand overlay + bottom vignette */}
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1800&h=900&fit=crop"
