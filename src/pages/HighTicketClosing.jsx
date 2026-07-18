@@ -59,17 +59,17 @@ const HighTicketClosing = () => {
             <div className="max-w-3xl">
               <div className="flex items-center gap-2 mb-5">
                 <span className="text-brand-primary text-sm">✦</span>
-                <span className="text-xs text-gray-600 uppercase tracking-wider">High Ticket Sales Closing — Done For You</span>
+                <span className="text-xs text-gray-300 uppercase tracking-wider">High Ticket Sales Closing — Done For You</span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
                 I Step Into Your Sales
                 <br />
                 <span className="text-brand-primary">Process and Close.</span>
               </h1>
-              <p className="text-gray-600 text-lg mb-8 max-w-2xl">
+              <p className="text-gray-300 text-lg mb-8 max-w-2xl">
                 You have already read the philosophy on the homepage: no retainers, no salaries, commission only. This page is about how it actually works once you bring me in.
               </p>
-              <p className="text-gray-600 text-lg mb-8 max-w-2xl">
+              <p className="text-gray-300 text-lg mb-8 max-w-2xl">
                 I take your booked calls inbound or outbound and run them from discovery to payment. Your leads, your offer, your brand. My job is the conversation that turns a maybe into a signed client.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -134,13 +134,13 @@ const HighTicketClosing = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="w-full py-20 md:py-28 bg-white">
+      <section className="w-full py-20 md:py-28 bg-brand-black">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4">
               How It Works
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-300 max-w-2xl mx-auto">
               Four moving parts. No ambiguity. No black box.
             </p>
           </div>
@@ -148,8 +148,8 @@ const HighTicketClosing = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2">{stat.value}</div>
-                <div className="text-gray-600 text-sm leading-relaxed">{stat.label}</div>
+                <div className="text-2xl md:text-3xl font-semibold text-white mb-2">{stat.value}</div>
+                <div className="text-gray-300 text-sm leading-relaxed">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -161,10 +161,10 @@ const HighTicketClosing = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
                 What I Need From You
               </h2>
-              <p className="text-gray-600 mb-8">
+              <p className="text-gray-300 mb-8">
                 If any of this is not in place yet, start with Consulting first and we will fix the process before we talk about closing.
               </p>
               <Link
@@ -185,8 +185,8 @@ const HighTicketClosing = () => {
                     {item.step}
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">{item.title}</h3>
-                    <p className="text-gray-600 text-sm">{item.description}</p>
+                    <h3 className="font-semibold text-white mb-1">{item.title}</h3>
+                    <p className="text-gray-300 text-sm">{item.description}</p>
                   </div>
                 </div>
               ))}
@@ -219,16 +219,16 @@ const HighTicketClosing = () => {
       </section>
 
       {/* Industries Section */}
-      <section className="w-full py-20 md:py-28 bg-white">
+      <section className="w-full py-20 md:py-28 bg-brand-black">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
                 Industries I Have Closed For
               </h2>
               <ul className="space-y-4">
                 {industries.map((industry) => (
-                  <li key={industry} className="flex items-start gap-3 text-gray-700">
+                  <li key={industry} className="flex items-start gap-3 text-gray-300">
                     <span className="w-5 h-5 rounded-full bg-brand-primary flex items-center justify-center shrink-0 mt-0.5">
                       <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
@@ -240,11 +240,11 @@ const HighTicketClosing = () => {
               </ul>
             </div>
 
-            <div className="bg-brand-muted p-8 rounded-sm border border-black/5">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">What I Need From You</h3>
+            <div className="bg-brand-muted p-8 rounded-sm border border-white/10">
+              <h3 className="text-xl font-semibold text-white mb-4">What I Need From You</h3>
               <ul className="space-y-4">
                 {requirements.map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-gray-700">
+                  <li key={item} className="flex items-start gap-3 text-sm text-gray-300">
                     <span className="w-5 h-5 rounded-full bg-brand-primary flex items-center justify-center shrink-0 mt-0.5">
                       <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
@@ -254,7 +254,7 @@ const HighTicketClosing = () => {
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 text-sm text-gray-600">
+              <p className="mt-6 text-sm text-gray-400">
                 If that is not in place yet, start with <Link to="/consulting" className="text-brand-primary font-medium hover:underline">Consulting</Link> and fix the process first.
               </p>
             </div>

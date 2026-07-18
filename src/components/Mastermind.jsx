@@ -71,16 +71,16 @@ const Mastermind = () => {
             {qualifiers.map((program, index) => (
               <div 
                 key={index} 
-                className={`bg-white rounded-sm border border-black/10 overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2 group ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
+                className={`bg-brand-muted rounded-sm border border-white/10 overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2 group ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
                 style={{ transitionDelay: `${300 + index * 150}ms` }}
               >
                 <div className="px-5 pt-5 pb-4">
-                  <h3 className="text-gray-900 font-semibold sm:text-lg text-sm group-hover:text-brand-primary transition-colors duration-300">{program.title}</h3>
-                  <p className="text-gray-500 text-xs mt-2 leading-relaxed">
+                  <h3 className="text-white font-semibold sm:text-lg text-sm group-hover:text-brand-primary transition-colors duration-300">{program.title}</h3>
+                  <p className="text-gray-400 text-xs mt-2 leading-relaxed">
                     {program.description}
                   </p>
                 </div>
-                <div className="h-px bg-gray-200 group-hover:bg-brand-primary/20 transition-colors duration-300" />
+                <div className="h-px bg-white/10 group-hover:bg-brand-primary/20 transition-colors duration-300" />
 
                 <div className="px-5 py-4">
                   <div className="grid grid-cols-2 gap-x-6 gap-y-3">
@@ -91,7 +91,7 @@ const Mastermind = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                           </svg>
                         </span>
-                        <span className="text-gray-600 text-xs group-hover/item:text-gray-900 transition-colors duration-300">{feature.text}</span>
+                        <span className="text-gray-300 text-xs group-hover/item:text-white transition-colors duration-300">{feature.text}</span>
                       </div>
                     ))}
                   </div>

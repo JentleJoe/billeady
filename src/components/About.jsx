@@ -22,7 +22,7 @@ const About = () => {
     <section id="about" className="w-full" ref={sectionRef}>
       <div className="flex flex-col lg:flex-row">
         {/* Left Side - Image */}
-        <div className={`relative h-100 lg:h-auto bg-gray-100 lg:basis-[45%] lg:flex-none overflow-hidden transition-all duration-1000 ${
+        <div className={`relative h-100 lg:h-auto bg-brand-muted lg:basis-[45%] lg:flex-none overflow-hidden transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'
         }`}>
           <img
@@ -31,7 +31,7 @@ const About = () => {
             className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
           />
           {/* Overlay elements to simulate whiteboard/planning aesthetic */}
-          <div className="absolute inset-0 bg-linear-to-r from-transparent to-white/10" />
+          <div className="absolute inset-0 bg-linear-to-r from-transparent to-black/10" />
         </div>
 
         {/* Right Side - Content */}

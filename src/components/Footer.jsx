@@ -60,7 +60,7 @@ const Footer = () => {
                   href={icon.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:border-brand-primary hover:text-white hover:bg-brand-primary transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+                  className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-gray-400 hover:border-brand-primary hover:text-white hover:bg-brand-primary transition-all duration-300 hover:scale-110 hover:-translate-y-1"
                   style={{ transitionDelay: `${index * 50}ms` }}
                 >
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -78,7 +78,7 @@ const Footer = () => {
                 <li key={link.name} style={{ transitionDelay: `${150 + index * 50}ms` }}>
                   <Link
                     to={link.href}
-                    className="text-gray-600 text-sm hover:text-brand-primary transition-all duration-300 hover:translate-x-1 inline-block"
+                    className="text-gray-300 text-sm hover:text-brand-primary transition-all duration-300 hover:translate-x-1 inline-block"
                   >
                     {link.name}
                   </Link>
@@ -94,7 +94,7 @@ const Footer = () => {
                 <li key={link.name} style={{ transitionDelay: `${200 + index * 50}ms` }}>
                   <Link
                     to={link.href}
-                    className="text-gray-600 text-sm hover:text-brand-primary transition-all duration-300 hover:translate-x-1 inline-block"
+                    className="text-gray-300 text-sm hover:text-brand-primary transition-all duration-300 hover:translate-x-1 inline-block"
                   >
                     {link.name}
                   </Link>
@@ -105,14 +105,14 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div className={`transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <p className="text-gray-900 font-medium text-sm leading-relaxed mb-4">
+            <p className="text-white font-medium text-sm leading-relaxed mb-4">
               Get exclusive insights on<br />closing high ticket clients<br />with confidence.
             </p>
             <form className="flex items-center group">
               <input
                 type="email"
                 placeholder="Enter email"
-                className="flex-1 px-4 py-2.5 border border-gray-300 rounded-l-full text-sm placeholder-gray-400 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/10 bg-white transition-all duration-300"
+                className="flex-1 px-4 py-2.5 border border-white/20 rounded-l-full text-sm placeholder-gray-400 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/10 bg-brand-muted text-white transition-all duration-300"
               />
               <button
                 type="submit"

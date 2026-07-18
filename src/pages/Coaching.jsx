@@ -63,22 +63,22 @@ const Coaching = () => {
             <div className="max-w-3xl">
               <div className="flex items-center gap-2 mb-5">
                 <span className="text-brand-primary text-sm">✦</span>
-                <span className="text-xs uppercase tracking-[0.2em] text-gray-600">
+                <span className="text-xs uppercase tracking-[0.2em] text-gray-300">
                   High Ticket Sales Closing &amp; Appointment Setting
                 </span>
               </div>
 
-              <h1 className="text-4xl font-semibold leading-tight text-gray-900 md:text-5xl lg:text-6xl">
+              <h1 className="text-4xl font-semibold leading-tight text-white md:text-5xl lg:text-6xl">
                 You Do Not Need Another
                 <br />
                 Sales Course.
               </h1>
 
-              <p className="mt-6 text-lg leading-relaxed text-gray-600 max-w-2xl">
+              <p className="mt-6 text-lg leading-relaxed text-gray-300 max-w-2xl">
                 Most sales training teaches theory. Scripts you will never say the way they are written.
                 Frameworks that fall apart the second a prospect pushes back.
               </p>
-              <p className="mt-4 text-lg leading-relaxed text-gray-600 max-w-2xl">
+              <p className="mt-4 text-lg leading-relaxed text-gray-300 max-w-2xl">
                 This is not that. This is the exact system I use to close high ticket deals on commission.
                 No base pay, no safety net, no room for almost. If it does not work in a real conversation
                 with real money on the line, it does not make it into this program.
@@ -107,9 +107,9 @@ const Coaching = () => {
 
             <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
               {heroStats.map((stat) => (
-                <div key={stat.label} className="rounded-sm border border-black/10 bg-white/80 p-5 shadow-sm backdrop-blur-sm">
-                  <div className="text-2xl font-semibold text-gray-900">{stat.value}</div>
-                  <div className="mt-1 text-xs uppercase tracking-[0.2em] text-gray-500">{stat.label}</div>
+                <div key={stat.label} className="rounded-sm border border-white/10 bg-brand-muted/80 p-5 shadow-sm backdrop-blur-sm">
+                  <div className="text-2xl font-semibold text-white">{stat.value}</div>
+                  <div className="mt-1 text-xs uppercase tracking-[0.2em] text-gray-400">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -117,29 +117,29 @@ const Coaching = () => {
         </div>
       </section>
 
-      <section className="w-full bg-white py-20 md:py-28">
+      <section className="w-full bg-brand-black py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-20">
           <div className="text-center">
-            <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">
+            <h2 className="text-3xl font-semibold text-white md:text-4xl">
               What You Will Learn
             </h2>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {learnings.map((item) => (
-              <div key={item} className="rounded-sm border border-black/5 bg-brand-muted p-6 shadow-sm">
+              <div key={item} className="rounded-sm border border-white/10 bg-brand-muted p-6 shadow-sm">
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-brand-primary text-white">
                   <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <p className="text-sm leading-relaxed text-gray-700">{item}</p>
+                <p className="text-sm leading-relaxed text-gray-300">{item}</p>
               </div>
             ))}
           </div>
 
-          <div className="mt-12 rounded-sm border border-black/10 bg-white p-8 shadow-sm md:p-10">
-            <p className="text-lg leading-relaxed text-gray-700">
+          <div className="mt-12 rounded-sm border border-white/10 bg-brand-muted p-8 shadow-sm md:p-10">
+            <p className="text-lg leading-relaxed text-gray-200">
               By the end, you are not someone who took a course. You are someone who can get on a call
               with a stranger and walk away with a signed client.
             </p>
@@ -150,8 +150,8 @@ const Coaching = () => {
       <section id="paths" className="w-full bg-brand-muted py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-20">
           <div className="text-center">
-            <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">Choose Your Path</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-gray-600">
+            <h2 className="text-3xl font-semibold text-white md:text-4xl">Choose Your Path</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-gray-300">
               Pick the training path that fits your current stage and how directly you want me involved.
             </p>
           </div>
@@ -160,14 +160,14 @@ const Coaching = () => {
             {paths.map((path) => (
               <div
                 key={path.name}
-                className={`rounded-sm border bg-white p-8 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-xl ${
-                  path.highlight ? 'border-brand-primary' : 'border-black/10'
+                className={`rounded-sm border bg-brand-muted p-8 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-xl ${
+                  path.highlight ? 'border-brand-primary' : 'border-white/10'
                 }`}
               >
                 <div className="flex items-center justify-between gap-4">
                   <div>
                     <p className="text-xs uppercase tracking-[0.2em] text-brand-primary">{path.name}</p>
-                    <h3 className="mt-2 text-2xl font-semibold text-gray-900">{path.price}</h3>
+                    <h3 className="mt-2 text-2xl font-semibold text-white">{path.price}</h3>
                   </div>
                   {path.highlight && (
                     <span className="rounded-full bg-brand-primary px-3 py-1 text-xs font-medium text-white">
@@ -176,11 +176,11 @@ const Coaching = () => {
                   )}
                 </div>
 
-                <p className="mt-5 text-sm leading-relaxed text-gray-600">{path.description}</p>
+                <p className="mt-5 text-sm leading-relaxed text-gray-300">{path.description}</p>
 
-                <div className="mt-6 rounded-sm bg-brand-muted p-4">
-                  <p className="text-sm font-semibold text-gray-900">Best for:</p>
-                  <p className="mt-2 text-sm leading-relaxed text-gray-600">{path.bestFor}</p>
+                <div className="mt-6 rounded-sm bg-brand-black p-4">
+                  <p className="text-sm font-semibold text-white">Best for:</p>
+                  <p className="mt-2 text-sm leading-relaxed text-gray-300">{path.bestFor}</p>
                 </div>
 
                 <a
@@ -204,14 +204,14 @@ const Coaching = () => {
         </div>
       </section>
 
-      <section className="w-full bg-white py-20 md:py-28">
+      <section className="w-full bg-brand-black py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-20">
           <div className="grid gap-10 lg:grid-cols-2">
             <div>
-              <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">Who This Is For</h2>
+              <h2 className="text-3xl font-semibold text-white md:text-4xl">Who This Is For</h2>
               <ul className="mt-6 space-y-4">
                 {fitItems.map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-gray-700">
+                  <li key={item} className="flex items-start gap-3 text-gray-300">
                     <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-primary text-white">
                       <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
@@ -224,10 +224,10 @@ const Coaching = () => {
             </div>
 
             <div>
-              <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">Who This Is Not For</h2>
+              <h2 className="text-3xl font-semibold text-white md:text-4xl">Who This Is Not For</h2>
               <ul className="mt-6 space-y-4">
                 {notFitItems.map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-gray-700">
+                  <li key={item} className="flex items-start gap-3 text-gray-300">
                     <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gray-200 text-gray-700">
                       <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />

@@ -27,12 +27,12 @@ const Hero = () => {
               }`}
             >
               <span className="text-brand-primary text-sm animate-pulse">✦</span>
-              <span className="text-xs text-gray-600">High Ticket Closer | Revenue Partner for Elite Businesses</span>
+              <span className="text-xs text-gray-300">High Ticket Closer | Revenue Partner for Elite Businesses</span>
             </div>
 
             {/* Main Headline */}
             <h1 
-              className={`text-4xl md:text-5xl lg:text-[3.25rem] font-semibold text-gray-900 leading-[1.15] mb-5 transition-all duration-700 delay-100 ${
+              className={`text-4xl md:text-5xl lg:text-[3.25rem] font-semibold text-white leading-[1.15] mb-5 transition-all duration-700 delay-100 ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
             >
@@ -44,7 +44,7 @@ const Hero = () => {
 
             {/* Subtext */}
             <p 
-              className={`text-gray-500 text-sm mb-7 max-w-md transition-all duration-700 delay-200 ${
+              className={`text-gray-300 text-sm mb-7 max-w-md transition-all duration-700 delay-200 ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}
             >
@@ -125,9 +125,9 @@ const Hero = () => {
                   >
                     <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                   </svg>
-                  <span className="text-sm text-gray-800 ml-1.5 font-medium">US | UK | Canada</span>
+                  <span className="text-sm text-white ml-1.5 font-medium">US | UK | Canada</span>
                 </div>
-                <p className="text-xs text-gray-500 mt-0.5">
+                <p className="text-xs text-gray-400 mt-0.5">
                   Remote first. Time zone aware. Culture aware.
                 </p>
               </div>

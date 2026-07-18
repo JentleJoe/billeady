@@ -41,17 +41,17 @@ const Consulting = () => {
                 Revenue Consulting for Businesses Ready to Scale
               </span>
             </div>
-            <h1 className="mb-6 text-4xl font-semibold leading-tight text-gray-900 md:text-5xl lg:text-6xl">
+            <h1 className="mb-6 text-4xl font-semibold leading-tight text-white md:text-5xl lg:text-6xl">
               Your Offer Isn't the Problem.
               <br />
               <span className="text-brand-primary">Your Sales Process Might Be.</span>
             </h1>
-            <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-gray-600">
+            <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-gray-300">
               I sit inside your sales process, find exactly where deals are slipping through, and hand
               you a clear plan to fix it, built from five years of closing high ticket deals for real
               businesses, not theory from a business book.
             </p>
-            <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-gray-600">
+            <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-gray-300">
               This is not generic advice. It is a diagnosis and a plan, specific to your offer, your
               leads, and your close.
             </p>
@@ -59,11 +59,11 @@ const Consulting = () => {
         </div>
       </section>
 
-      <section className="w-full bg-white py-20 md:py-28">
+      <section className="w-full bg-brand-black py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
-            <h2 className="mb-4 text-3xl font-semibold text-gray-900 md:text-4xl">Choose Your Engagement</h2>
-            <p className="mx-auto max-w-2xl text-gray-600">
+            <h2 className="mb-4 text-3xl font-semibold text-white md:text-4xl">Choose Your Engagement</h2>
+            <p className="mx-auto max-w-2xl text-gray-300">
               Pick the level of support that matches the size of the problem you want solved.
             </p>
           </div>
@@ -73,7 +73,7 @@ const Consulting = () => {
               <div
                 key={item.title}
                 className={`rounded-sm border p-8 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-xl ${
-                  item.featured ? 'border-brand-primary bg-brand-primary text-white' : 'border-black/10 bg-brand-muted'
+                  item.featured ? 'border-brand-primary bg-brand-primary text-white' : 'border-white/10 bg-brand-muted'
                 }`}
               >
                 <div className="flex items-center justify-between gap-4">
@@ -81,7 +81,7 @@ const Consulting = () => {
                     <p className={`text-xs uppercase tracking-[0.2em] ${item.featured ? 'text-white/70' : 'text-brand-primary'}`}>
                       {item.title}
                     </p>
-                    <h3 className={`mt-2 text-2xl font-semibold ${item.featured ? 'text-white' : 'text-gray-900'}`}>
+                    <h3 className={`mt-2 text-2xl font-semibold ${item.featured ? 'text-white' : 'text-white'}`}>
                       {item.price}
                     </h3>
                   </div>
@@ -92,15 +92,15 @@ const Consulting = () => {
                   )}
                 </div>
 
-                <p className={`mt-5 text-sm leading-relaxed ${item.featured ? 'text-white/80' : 'text-gray-600'}`}>
+                <p className={`mt-5 text-sm leading-relaxed ${item.featured ? 'text-white/80' : 'text-gray-300'}`}>
                   {item.description}
                 </p>
 
-                <div className={`mt-6 rounded-sm p-4 ${item.featured ? 'bg-white/10' : 'bg-white'}`}>
-                  <p className={`text-sm font-semibold ${item.featured ? 'text-white' : 'text-gray-900'}`}>
+                <div className={`mt-6 rounded-sm p-4 ${item.featured ? 'bg-white/10' : 'bg-brand-black'}`}>
+                  <p className={`text-sm font-semibold ${item.featured ? 'text-white' : 'text-white'}`}>
                     Best for:
                   </p>
-                  <p className={`mt-2 text-sm leading-relaxed ${item.featured ? 'text-white/75' : 'text-gray-600'}`}>
+                  <p className={`mt-2 text-sm leading-relaxed ${item.featured ? 'text-white/75' : 'text-gray-300'}`}>
                     {item.bestFor}
                   </p>
                 </div>
@@ -129,9 +129,9 @@ const Consulting = () => {
               </ul>
             </div>
 
-            <div className="rounded-sm bg-white p-8 shadow-2xl">
-              <h3 className="mb-4 text-2xl font-semibold text-gray-900">What You Get</h3>
-              <p className="mb-6 text-sm leading-relaxed text-gray-600">
+            <div className="rounded-sm bg-brand-muted p-8 shadow-2xl">
+              <h3 className="mb-4 text-2xl font-semibold text-white">What You Get</h3>
+              <p className="mb-6 text-sm leading-relaxed text-gray-300">
                 A clear diagnosis of where revenue is slipping, what to fix first, and how to tighten
                 the close.
               </p>
@@ -142,7 +142,7 @@ const Consulting = () => {
                   'Direct recommendations you can implement immediately',
                   'A strategy built around your actual business, not generic theory',
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-gray-700">
+                  <li key={item} className="flex items-start gap-3 text-sm text-gray-300">
                     <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-primary text-white">
                       <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
@@ -157,12 +157,12 @@ const Consulting = () => {
         </div>
       </section>
 
-      <section className="w-full bg-white py-20 md:py-28">
+      <section className="w-full bg-brand-black py-20 md:py-28">
         <div className="mx-auto max-w-4xl px-6 md:px-12 lg:px-20 text-center">
-          <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl">
+          <h2 className="text-3xl font-semibold text-white md:text-4xl">
             Let's Find Where You're Losing Revenue
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-gray-600">
+          <p className="mx-auto mt-5 max-w-2xl text-gray-300">
             If your sales process needs clarity fast, start with the strategy session. If you want a
             deeper rebuild, apply for full consulting.
           </p>

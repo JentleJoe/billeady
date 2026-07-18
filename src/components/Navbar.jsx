@@ -34,8 +34,8 @@ const Navbar = () => {
   return (
     <nav className={`sticky top-0 z-50 py-3 px-6 md:px-12 lg:px-20 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-white/95 backdrop-blur-md shadow-lg py-2' 
-        : 'bg-white shadow-sm'
+        ? 'bg-brand-black/95 backdrop-blur-md shadow-lg py-2' 
+        : 'bg-brand-black shadow-sm'
     }`}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
@@ -56,7 +56,7 @@ const Navbar = () => {
               className={`text-sm font-medium transition-colors ${
                 isActive(link.href)
                   ? 'text-brand-primary border-b-2 border-brand-primary pb-1'
-                  : 'text-gray-700 hover:text-brand-primary'
+                  : 'text-gray-300 hover:text-brand-primary'
               }`}
             >
               {link.name}
@@ -89,7 +89,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden text-gray-900"
+          className="lg:hidden text-white"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg
@@ -119,7 +119,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden mt-4 pb-4 bg-white">
+        <div className="lg:hidden mt-4 pb-4 bg-brand-black">
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <Link
@@ -127,7 +127,7 @@ const Navbar = () => {
                 to={link.href}
                 onClick={() => setIsMenuOpen(false)}
                 className={`text-sm font-medium ${
-                  isActive(link.href) ? 'text-brand-primary' : 'text-gray-700'
+                  isActive(link.href) ? 'text-brand-primary' : 'text-gray-300'
                 }`}
               >
                 {link.name}

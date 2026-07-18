@@ -47,7 +47,7 @@ const ServicesOverview = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-16 md:py-24">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div
-            className={`flex items-center justify-center gap-2 text-xs uppercase tracking-[0.2em] text-gray-500 mb-4 transition-all duration-700 ${
+            className={`flex items-center justify-center gap-2 text-xs uppercase tracking-[0.2em] text-gray-400 mb-4 transition-all duration-700 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
             }`}
           >
@@ -56,14 +56,14 @@ const ServicesOverview = () => {
             <span className="w-8 h-px bg-brand-primary" />
           </div>
           <h2
-            className={`text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4 transition-all duration-700 ${
+            className={`text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-4 transition-all duration-700 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}
           >
             Results Speak
           </h2>
           <p
-            className={`text-gray-600 text-sm md:text-base transition-all duration-700 delay-150 ${
+            className={`text-gray-300 text-sm md:text-base transition-all duration-700 delay-150 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
             }`}
           >
@@ -75,15 +75,15 @@ const ServicesOverview = () => {
           {results.map((service, index) => (
             <div
               key={service.title}
-              className={`bg-white border border-black/10 rounded-sm p-8 md:p-9 shadow-sm hover:shadow-xl transition-all duration-500 ${
+              className={`bg-brand-muted border border-white/10 rounded-sm p-8 md:p-9 shadow-sm hover:shadow-xl transition-all duration-500 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: `${200 + index * 120}ms` }}
             >
-              <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl md:text-2xl font-semibold text-white mb-3">
                 {service.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-300 text-sm leading-relaxed">
                 {service.description}
               </p>
             </div>
@@ -91,19 +91,19 @@ const ServicesOverview = () => {
         </div>
 
         <div className="mt-10 grid lg:grid-cols-2 gap-6">
-          <div className="bg-white border border-black/10 rounded-sm p-8 shadow-sm">
+          <div className="bg-brand-muted border border-white/10 rounded-sm p-8 shadow-sm">
             <div className="text-xs uppercase tracking-[0.2em] text-brand-primary mb-3">Client Feedback</div>
-            <p className="text-gray-700 text-sm leading-relaxed mb-4">
+            <p className="text-gray-200 text-sm leading-relaxed mb-4">
               {proofLine[0]}
             </p>
-            <p className="text-gray-500 text-xs uppercase tracking-wider">{proofLine[1]}</p>
+            <p className="text-gray-400 text-xs uppercase tracking-wider">{proofLine[1]}</p>
           </div>
-          <div className="bg-white border border-black/10 rounded-sm p-8 shadow-sm">
+          <div className="bg-brand-muted border border-white/10 rounded-sm p-8 shadow-sm">
             <div className="text-xs uppercase tracking-[0.2em] text-brand-primary mb-3">What clients say</div>
-            <p className="text-gray-700 text-sm leading-relaxed mb-4">
+            <p className="text-gray-200 text-sm leading-relaxed mb-4">
               {proofLine[2]}
             </p>
-            <p className="text-gray-500 text-xs uppercase tracking-wider">{proofLine[3]}</p>
+            <p className="text-gray-400 text-xs uppercase tracking-wider">{proofLine[3]}</p>
           </div>
         </div>
       </div>

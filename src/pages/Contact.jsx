@@ -100,14 +100,14 @@ const Contact = () => {
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex items-center justify-center gap-2 mb-5">
               <span className="text-brand-primary text-sm">✦</span>
-              <span className="text-xs text-gray-600 uppercase tracking-wider">Get In Touch</span>
+              <span className="text-xs text-gray-300 uppercase tracking-wider">Get In Touch</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
               Let's Start a
               <br />
               <span className="text-brand-primary">Conversation</span>
             </h1>
-            <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
               Have a question about my programs? Want to explore working together? Or just want to say hi? I'd love to hear from you.
             </p>
           </div>
@@ -115,19 +115,19 @@ const Contact = () => {
       </section>
 
       {/* Contact Methods */}
-      <section className="w-full py-16 md:py-20 bg-white">
+      <section className="w-full py-16 md:py-20 bg-brand-black">
         <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid md:grid-cols-2 gap-6">
             {contactMethods.map((method, index) => (
               <div
                 key={index}
-                className="border border-black/10 rounded-lg p-8 hover:border-brand-primary/30 hover:shadow-lg transition-all"
+                className="border border-white/10 rounded-lg p-8 hover:border-brand-primary/30 hover:shadow-lg transition-all"
               >
                 <div className="w-14 h-14 bg-brand-primary/10 rounded-xl flex items-center justify-center text-brand-primary mb-6">
                   {method.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{method.title}</h3>
-                <p className="text-gray-600 text-sm mb-6">{method.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-2">{method.title}</h3>
+                <p className="text-gray-300 text-sm mb-6">{method.description}</p>
                 <a
                   href={method.href}
                   target="_blank"
@@ -172,10 +172,10 @@ const Contact = () => {
       <section className="w-full py-16 md:py-20 bg-brand-muted">
         <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+            <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4">
               Connect on Social Media
             </h2>
-            <p className="text-gray-600 max-w-xl mx-auto">
+            <p className="text-gray-300 max-w-xl mx-auto">
               Follow me for daily tips on closing, cold DMs, and building a profitable business.
             </p>
           </div>
@@ -187,12 +187,12 @@ const Contact = () => {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 bg-white border border-black/10 px-6 py-4 rounded-lg hover:border-brand-primary/30 hover:shadow-md transition-all group"
+                className="flex items-center gap-3 bg-brand-muted border border-white/10 px-6 py-4 rounded-lg hover:border-brand-primary/30 hover:shadow-md transition-all group"
               >
-                <span className="text-gray-600 group-hover:text-brand-primary transition-colors">
+                <span className="text-gray-400 group-hover:text-brand-primary transition-colors">
                   {social.icon}
                 </span>
-                <span className="font-medium text-gray-900">{social.name}</span>
+                <span className="font-medium text-white">{social.name}</span>
               </a>
             ))}
           </div>
@@ -200,10 +200,10 @@ const Contact = () => {
       </section>
 
       {/* FAQs */}
-      <section className="w-full py-16 md:py-20 bg-white">
+      <section className="w-full py-16 md:py-20 bg-brand-black">
         <div className="max-w-3xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+            <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4">
               Common Questions
             </h2>
           </div>
@@ -211,8 +211,8 @@ const Contact = () => {
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div key={index} className="bg-brand-muted p-6 rounded-lg">
-                <h3 className="font-semibold text-gray-900 mb-2">{faq.question}</h3>
-                <p className="text-gray-600 text-sm">{faq.answer}</p>
+                <h3 className="font-semibold text-white mb-2">{faq.question}</h3>
+                <p className="text-gray-300 text-sm">{faq.answer}</p>
               </div>
             ))}
           </div>

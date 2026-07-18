@@ -98,23 +98,23 @@ const Book = () => {
       </section>
 
       {/* The Story Section */}
-      <section className="w-full py-20 md:py-28 bg-white">
+      <section className="w-full py-20 md:py-28 bg-brand-black">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
                 I Lost Over ₦50 Million.
               </h2>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-300 mb-6">
                 Not slowly. Not in a way I saw coming. The kind of loss that does not leave room for a graceful landing, just the floor, and the question of what happens next.
               </p>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-300 mb-6">
                 <strong>Building From Dust Again</strong> is the raw, unfiltered account of that collapse and everything that came after: the version of rock bottom nobody posts about, and the exact rebuild that took me from nothing back to a business that actually works.
               </p>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-300 mb-6">
                 This is not motivational fluff. There is no chapter that ends with and then I manifested my way back. It is a practical, honest account of what rebuilding actually looks like when you have no cushion, no safety net, and no choice but to start over.
               </p>
-              <p className="text-gray-600">
+              <p className="text-gray-300">
                 Written for anyone who has been there, or is there right now.
               </p>
             </div>
@@ -132,7 +132,7 @@ const Book = () => {
               {/* Quote Section */}
               <div className="p-8 md:p-10 relative">
                 <div className="text-brand-primary text-5xl md:text-6xl font-serif absolute -top-6 left-8 leading-none">"</div>
-                <p className="text-gray-700 text-lg md:text-xl italic mb-8 pt-6 leading-relaxed">
+                <p className="text-gray-200 text-lg md:text-xl italic mb-8 pt-6 leading-relaxed">
                   I wrote this because I know someone out there is going through what I went through, and they need to know it is possible to come back stronger.
                 </p>
                 <div className="flex items-center gap-4">
@@ -151,8 +151,8 @@ const Book = () => {
                     </div>
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900 text-lg">Billeddy Saliu</div>
-                      <div className="text-sm text-gray-500">Author</div>
+                    <div className="font-semibold text-white text-lg">Billeddy Saliu</div>
+                      <div className="text-sm text-gray-400">Author</div>
                   </div>
                 </div>
               </div>
@@ -165,20 +165,20 @@ const Book = () => {
       <section className="w-full py-20 md:py-28 bg-brand-muted">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4">
               What's Inside
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-300 max-w-2xl mx-auto">
               The core lessons the book is built around.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {chapters.map((chapter, index) => (
-              <div key={index} className="bg-white p-6 rounded-sm border border-black/5 hover:shadow-lg transition-shadow">
+              <div key={index} className="bg-brand-muted p-6 rounded-sm border border-white/10 hover:shadow-lg transition-shadow">
                 <div className="text-brand-primary text-3xl font-bold mb-3">{chapter.number}</div>
-                <h3 className="font-semibold text-gray-900 mb-2">{chapter.title}</h3>
-                <p className="text-gray-600 text-sm">{chapter.description}</p>
+                <h3 className="font-semibold text-white mb-2">{chapter.title}</h3>
+                <p className="text-gray-300 text-sm">{chapter.description}</p>
               </div>
             ))}
           </div>
@@ -186,15 +186,15 @@ const Book = () => {
       </section>
 
       {/* Waitlist Section */}
-      <section id="waitlist" className="w-full py-20 md:py-28 bg-white">
+      <section id="waitlist" className="w-full py-20 md:py-28 bg-brand-black">
         <div className="max-w-3xl mx-auto px-6 md:px-12 lg:px-20 text-center">
           <div className="inline-block bg-brand-primary/10 text-brand-primary text-xs font-medium px-4 py-2 rounded-full mb-6">
             Join the Waitlist
           </div>
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
             Join the Waitlist
           </h2>
-          <p className="text-gray-600 text-lg mb-8">
+          <p className="text-gray-300 text-lg mb-8">
             The book isn't released yet. Join the waitlist to get notified the moment it drops — plus early access before it goes public.
           </p>
 
@@ -207,7 +207,7 @@ const Book = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email address"
                   required
-                  className="flex-1 px-5 py-4 border border-gray-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary"
+                  className="flex-1 px-5 py-4 border border-white/20 bg-brand-muted rounded-full text-sm text-white focus:outline-none focus:ring-2 focus:ring-brand-primary/20 focus:border-brand-primary placeholder:text-gray-400"
                 />
                 <button
                   type="submit"
@@ -216,7 +216,7 @@ const Book = () => {
                   Join the Waitlist
                 </button>
               </div>
-              <p className="text-gray-500 text-xs mt-4">
+              <p className="text-gray-400 text-xs mt-4">
                   No spam. Just one email when it is ready.
               </p>
             </form>
@@ -227,8 +227,8 @@ const Book = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">You're on the list!</h3>
-              <p className="text-gray-600 text-sm">
+              <h3 className="font-semibold text-white mb-2">You're on the list!</h3>
+              <p className="text-gray-300 text-sm">
                   Thank you for joining the waitlist. You will be among the first to know when the book launches.
               </p>
             </div>

@@ -5,7 +5,7 @@ const TestimonialCard = ({ testimonial, delay = 0 }) => {
   if (testimonial.layout === 'image-top') {
     return (
       <div 
-        className="bg-white rounded-xl p-5 shadow-sm min-w-65 max-w-65 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+        className="bg-brand-muted rounded-xl p-5 shadow-sm min-w-65 max-w-65 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer"
         style={{ transitionDelay: `${delay}ms` }}
       >
         {/* Image and Name at Top */}
@@ -16,12 +16,12 @@ const TestimonialCard = ({ testimonial, delay = 0 }) => {
             className="w-10 h-10 rounded-full object-cover ring-2 ring-transparent hover:ring-brand-primary transition-all"
           />
           <div>
-            <h4 className="font-semibold text-gray-900 text-sm">{testimonial.name}</h4>
-            <p className="text-gray-500 text-xs">{testimonial.role}</p>
+            <h4 className="font-semibold text-white text-sm">{testimonial.name}</h4>
+            <p className="text-gray-400 text-xs">{testimonial.role}</p>
           </div>
         </div>
         {/* Quote */}
-        <p className="text-gray-700 text-sm leading-relaxed">{testimonial.quote}</p>
+        <p className="text-gray-200 text-sm leading-relaxed">{testimonial.quote}</p>
       </div>
     )
   }
@@ -29,13 +29,13 @@ const TestimonialCard = ({ testimonial, delay = 0 }) => {
   // quote-top layout
   return (
     <div 
-      className="bg-white rounded-xl p-5 shadow-sm min-w-65 max-w-65 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+      className="bg-brand-muted rounded-xl p-5 shadow-sm min-w-65 max-w-65 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer"
       style={{ transitionDelay: `${delay}ms` }}
     >
       {/* Name at Top */}
       <div className="mb-3">
-        <h4 className="font-semibold text-gray-900 text-sm">{testimonial.name}</h4>
-        <p className="text-gray-500 text-xs">{testimonial.role}</p>
+        <h4 className="font-semibold text-white text-sm">{testimonial.name}</h4>
+        <p className="text-gray-400 text-xs">{testimonial.role}</p>
       </div>
       {/* Image */}
       <div className="mb-3">
@@ -46,7 +46,7 @@ const TestimonialCard = ({ testimonial, delay = 0 }) => {
         />
       </div>
       {/* Quote */}
-      <p className="text-gray-700 text-sm leading-relaxed">{testimonial.quote}</p>
+      <p className="text-gray-200 text-sm leading-relaxed">{testimonial.quote}</p>
     </div>
   )
 }
@@ -122,10 +122,10 @@ const Testimonials = () => {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-10">
           <div className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-2">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-2">
               Proof From the Field
             </h2>
-            <p className="text-gray-500 text-sm">
+            <p className="text-gray-400 text-sm">
               Outcomes from clients across coaching, real estate, agencies, and consulting.
             </p>
           </div>
@@ -159,17 +159,17 @@ const Testimonials = () => {
           {/* Scroll Buttons */}
           <button
             onClick={() => scroll('left')}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-white rounded-full shadow-lg hidden md:flex items-center justify-center hover:bg-gray-50 hover:scale-110 active:scale-95 transition-all duration-200"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-brand-muted rounded-full shadow-lg hidden md:flex items-center justify-center hover:bg-white/10 hover:scale-110 active:scale-95 transition-all duration-200"
           >
-            <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
           <button
             onClick={() => scroll('right')}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-white rounded-full shadow-lg hidden md:flex items-center justify-center hover:bg-gray-50 hover:scale-110 active:scale-95 transition-all duration-200"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-brand-muted rounded-full shadow-lg hidden md:flex items-center justify-center hover:bg-white/10 hover:scale-110 active:scale-95 transition-all duration-200"
           >
-            <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>

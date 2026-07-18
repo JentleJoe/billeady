@@ -10,7 +10,7 @@
   --color-brand-darker: #2D1215;
   --color-brand-black: #000000;
   --color-brand-white: #FFFFFF;
-  --color-brand-muted: #F5F5F5;
+  --color-brand-muted: #1A1A1A;
 }
 
 body {
@@ -20,20 +20,20 @@ body {
 /* Reusable brand gradients */
 .bg-hero-light {
   background:
-    radial-gradient(ellipse 80% 50% at 70% 50%, rgba(109, 30, 23, 0.08) 0%, transparent 70%),
-    linear-gradient(135deg, var(--color-brand-white) 0%, var(--color-brand-muted) 100%);
+    radial-gradient(ellipse 80% 50% at 70% 50%, rgba(109, 30, 23, 0.15) 0%, transparent 70%),
+    linear-gradient(135deg, var(--color-brand-black) 0%, var(--color-brand-muted) 100%);
 }
 
 .bg-hero-light-center {
   background:
-    radial-gradient(ellipse 80% 50% at 50% 30%, rgba(109, 30, 23, 0.12) 0%, transparent 70%),
-    linear-gradient(135deg, var(--color-brand-white) 0%, var(--color-brand-muted) 100%);
+    radial-gradient(ellipse 80% 50% at 50% 30%, rgba(109, 30, 23, 0.2) 0%, transparent 70%),
+    linear-gradient(135deg, var(--color-brand-black) 0%, var(--color-brand-muted) 100%);
 }
 
 .bg-hero-light-left {
   background:
-    radial-gradient(ellipse 80% 50% at 30% 50%, rgba(109, 30, 23, 0.12) 0%, transparent 70%),
-    linear-gradient(135deg, var(--color-brand-white) 0%, var(--color-brand-muted) 100%);
+    radial-gradient(ellipse 80% 50% at 30% 50%, rgba(109, 30, 23, 0.2) 0%, transparent 70%),
+    linear-gradient(135deg, var(--color-brand-black) 0%, var(--color-brand-muted) 100%);
 }
 
 .bg-hero-dark {
@@ -48,8 +48,8 @@ body {
 
 .bg-section-muted {
   background:
-    radial-gradient(ellipse 70% 40% at 20% 0%, rgba(109, 30, 23, 0.06) 0%, transparent 70%),
-    linear-gradient(180deg, var(--color-brand-muted) 0%, var(--color-brand-white) 100%);
+    radial-gradient(ellipse 70% 40% at 20% 0%, rgba(109, 30, 23, 0.15) 0%, transparent 70%),
+    linear-gradient(180deg, var(--color-brand-muted) 0%, var(--color-brand-black) 100%);
 }
 
 .bg-solution {
