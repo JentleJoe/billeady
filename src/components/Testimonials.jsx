@@ -2,55 +2,40 @@ import { useRef } from 'react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const TestimonialCard = ({ testimonial, delay = 0 }) => {
-  if (testimonial.layout === 'image-top') {
-    return (
-      <div 
-        className="bg-brand-muted rounded-xl p-5 shadow-sm min-w-65 max-w-65 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer"
-        style={{ transitionDelay: `${delay}ms` }}
-      >
-        {/* Image and Name at Top */}
-        <div className="flex items-center gap-3 mb-4">
-          <img
-            src={testimonial.image}
-            alt={testimonial.name}
-            className="w-10 h-10 rounded-full object-cover ring-2 ring-transparent hover:ring-brand-primary transition-all"
-          />
-          <div>
-            <h4 className="font-semibold text-white text-sm">{testimonial.name}</h4>
-            <p className="text-gray-400 text-xs">{testimonial.role}</p>
-          </div>
-        </div>
-        {/* Quote */}
-        <p className="text-gray-200 text-sm leading-relaxed">{testimonial.quote}</p>
-      </div>
-    )
-  }
-
-  // quote-top layout
   return (
-    <div 
-      className="bg-brand-muted rounded-xl p-5 shadow-sm min-w-65 max-w-65 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+    <div
+      className="bg-brand-muted border border-white/10 rounded-2xl p-6 min-w-[320px] max-w-[320px] flex flex-col justify-between hover:border-[#6d1e17]/40 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
       style={{ transitionDelay: `${delay}ms` }}
     >
-      {/* Name at Top */}
-      <div className="mb-3">
-        <h4 className="font-semibold text-white text-sm">{testimonial.name}</h4>
-        <p className="text-gray-400 text-xs">{testimonial.role}</p>
+      {/* Quote Icon */}
+      <div className="mb-5">
+        <svg
+          className="w-9 h-9 text-[#6d1e17]"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M7.17 6A5.001 5.001 0 002 11v7h8v-7H6.09A3.001 3.001 0 019 8V6H7.17zm10 0A5.001 5.001 0 0012 11v7h8v-7h-3.91A3.001 3.001 0 0119 8V6h-1.83z" />
+        </svg>
       </div>
-      {/* Image */}
-      <div className="mb-3">
-        <img
-          src={testimonial.image}
-          alt={testimonial.name}
-          className="w-12 h-14 rounded-sm object-cover hover:scale-105 transition-transform"
-        />
-      </div>
+
       {/* Quote */}
-      <p className="text-gray-200 text-sm leading-relaxed">{testimonial.quote}</p>
+      <p className="text-gray-200 leading-relaxed text-[15px] flex-1">
+        "{testimonial.quote}"
+      </p>
+
+      {/* Footer */}
+      <div className="mt-6 pt-4 border-t border-white/10">
+        <h4 className="font-semibold text-white text-sm">
+          {testimonial.name}
+        </h4>
+
+        <p className="text-gray-400 text-sm mt-1">
+          {testimonial.role}
+        </p>
+      </div>
     </div>
   )
 }
-
 const Testimonials = () => {
   const scrollRef = useRef(null)
   const [sectionRef, isVisible] = useScrollAnimation()
@@ -133,14 +118,14 @@ const Testimonials = () => {
             href="https://wa.me/2347069487679?text=Hi%20Billeddy,%20I'm%20interested%20in%20working%20with%20you%20for%20high%20ticket%20closing%20services."
             target="_blank"
             rel="noopener noreferrer"
-            className={`inline-flex items-center gap-2 bg-brand-primary-light text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-accent hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 mt-4 md:mt-0 w-fit group ${
+            className={`inline-flex items-center gap-2 bg-[#6d1e17] text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-accent hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 mt-4 md:mt-0 w-fit group ${
               isVisible ? 'opacity-100 translate-y-0 delay-200' : 'opacity-0 translate-y-8'
             }`}
           >
             Apply to Work With Me
             <span className="w-5 h-5 bg-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
               <svg
-                className="w-3 h-3 text-brand-primary group-hover:translate-x-0.5 transition-transform"
+                className="w-3 h-3 text-[#6d1e17] group-hover:translate-x-0.5 transition-transform"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
