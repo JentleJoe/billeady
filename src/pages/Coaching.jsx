@@ -98,7 +98,7 @@ const Coaching = () => {
                   href={oneOnOneLink}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-primary px-8 py-4 text-sm font-medium text-brand-primary transition-colors hover:bg-brand-primary hover:text-white"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-primary px-8 py-4 text-sm font-medium text-brand-accent transition-colors hover:bg-brand-primary hover:text-white"
                 >
                   Apply for One-on-One
                 </a>

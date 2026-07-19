@@ -44,7 +44,7 @@ const Consulting = () => {
             <h1 className="mb-6 text-4xl font-semibold leading-tight text-white md:text-5xl lg:text-6xl">
               Your Offer Isn't the Problem.
               <br />
-              <span className="text-brand-primary-light">Your Sales Process Might Be.</span>
+              <span className="text-brand-accent">Your Sales Process Might Be.</span>
             </h1>
             <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-gray-300">
               I sit inside your sales process, find exactly where deals are slipping through, and hand
@@ -182,7 +182,7 @@ const Consulting = () => {
               href="https://wa.me/2347069487679?text=Hi%20Billeddy,%20I'm%20interested%20in%20Full%20Revenue%20Consulting%20for%20$4,500."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-primary px-8 py-4 text-sm font-medium text-brand-primary transition-colors hover:bg-brand-primary hover:text-white"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-brand-primary px-8 py-4 text-sm font-medium text-brand-accent transition-colors hover:bg-brand-primary hover:text-white"
             >
               Apply for Full Consulting — $4,500
             </a>

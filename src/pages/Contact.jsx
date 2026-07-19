@@ -105,7 +105,7 @@ const Contact = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
               Let's Start a
               <br />
-              <span className="text-brand-primary-light">Conversation</span>
+              <span className="text-brand-accent">Conversation</span>
             </h1>
             <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
               Have a question about my programs? Want to explore working together? Or just want to say hi? I'd love to hear from you.
@@ -233,7 +233,7 @@ const Contact = () => {
               href="https://wa.me/2347069487679?text=Hi%20Billeddy,%20I'm%20ready%20to%20start%20closing%20high%20ticket%20clients!"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-white text-brand-primary-light px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-white text-brand-primary px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors"
             >
               Start a Conversation
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

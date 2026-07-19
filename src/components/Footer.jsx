@@ -138,7 +138,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar (Copyright + Policies + Credit) */}
-      <div className="bg-brand-primary border-t border-white/10">
+      <div className="bg-brand-muted border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-4">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-xs text-white/80">
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-6 gap-y-2">

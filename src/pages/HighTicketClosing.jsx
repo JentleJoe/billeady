@@ -64,7 +64,7 @@ const HighTicketClosing = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
                 I Step Into Your Sales
                 <br />
-                <span className="text-brand-primary-light">Process and Close.</span>
+                <span className="text-brand-accent">Process and Close.</span>
               </h1>
               <p className="text-gray-300 text-lg mb-8 max-w-2xl">
                 You have already read the philosophy on the homepage: no retainers, no salaries, commission only. This page is about how it actually works once you bring me in.
@@ -86,7 +86,7 @@ const HighTicketClosing = () => {
                 </a>
                 <Link
                   to="/consulting"
-                  className="inline-flex items-center justify-center gap-2 bg-transparent text-brand-primary-light px-8 py-4 rounded-full text-sm font-medium border border-brand-primary-light hover:bg-brand-primary-light hover:text-white transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-transparent text-brand-accent px-8 py-4 rounded-full text-sm font-medium border border-brand-primary hover:bg-brand-primary hover:text-white transition-colors"
                 >
                   Fix the Process First
                 </Link>
