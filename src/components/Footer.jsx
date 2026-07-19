@@ -4,7 +4,7 @@ import redLogo from '../assets/redLogo.png'
 
 const Footer = () => {
   const [footerRef, isVisible] = useScrollAnimation()
-  
+
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Closing Services', href: '/high-ticket-closing' },
@@ -30,7 +30,7 @@ const Footer = () => {
     {
       name: 'TikTok',
       href: 'https://www.tiktok.com/@billeddysaliu?_r=1&_t=ZS-92eZTem2xYy',
-      path: 'M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.1 1.82 2.9 2.9 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.26 6.26 0 0 0-1-.1 6.27 6.27 0 1 0 10.25 5.16V9.01a8.04 8.04 0 0 0 4.57 1.18v-3.45a4.7 4.7 0 0 1-.57-.05z',
+      path: 'M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z',
     },
     {
       name: 'YouTube',
@@ -42,10 +42,14 @@ const Footer = () => {
   return (
     <footer ref={footerRef} className="w-full bg-brand-muted">
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
-          {/* Logo & Social */}
-          <div className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-14 md:py-18">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-12 md:gap-8">
+          {/* Logo, Tagline & Social */}
+          <div
+            className={`max-w-sm transition-all duration-700 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
+          >
             <Link
               to="/"
               className="mb-4 inline-block transition-transform duration-200 hover:scale-105"
@@ -53,14 +57,18 @@ const Footer = () => {
             >
               <img src={redLogo} alt="Billeddy Saliu" className="h-12 md:h-14 w-auto" />
             </Link>
-            <div className="flex items-center gap-3 mt-4">
+            <p className="text-gray-400 text-sm leading-relaxed mt-1 mb-5">
+              High ticket closing and revenue partnership for businesses that already have the offer and the leads dialed in.
+            </p>
+            <div className="flex items-center gap-3">
               {socialIcons.map((icon, index) => (
                 <a
                   key={icon.name}
                   href={icon.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center text-gray-400 hover:border-brand-primary hover:text-white hover:bg-brand-primary transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+                  aria-label={icon.name}
+                  className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-gray-400 hover:border-brand-primary hover:text-white hover:bg-brand-primary transition-all duration-300 hover:scale-110 hover:-translate-y-1"
                   style={{ transitionDelay: `${index * 50}ms` }}
                 >
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -71,68 +79,49 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Nav Links Column 1 */}
-          <div className={`transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <ul className="space-y-3">
-              {navLinks.map((link, index) => (
-                <li key={link.name} style={{ transitionDelay: `${150 + index * 50}ms` }}>
-                  <Link
-                    to={link.href}
-                    className="text-gray-300 text-sm hover:text-brand-primary transition-all duration-300 hover:translate-x-1 inline-block"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Nav Link Columns */}
+          <div className="flex gap-16 lg:gap-24">
+            {/* Nav Links Column 1 */}
+            <div
+              className={`transition-all duration-700 delay-100 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+            >
+              <p className="text-white text-xs font-semibold tracking-wide uppercase mb-4">Explore</p>
+              <ul className="space-y-3">
+                {navLinks.map((link, index) => (
+                  <li key={link.name} style={{ transitionDelay: `${150 + index * 50}ms` }}>
+                    <Link
+                      to={link.href}
+                      className="text-gray-300 text-sm hover:text-brand-primary-light transition-all duration-300 hover:translate-x-1 inline-block"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          {/* Nav Links Column 2 */}
-          <div className={`transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <ul className="space-y-3">
-              {navLinks2.map((link, index) => (
-                <li key={link.name} style={{ transitionDelay: `${200 + index * 50}ms` }}>
-                  <Link
-                    to={link.href}
-                    className="text-gray-300 text-sm hover:text-brand-primary transition-all duration-300 hover:translate-x-1 inline-block"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Newsletter */}
-          <div className={`transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <p className="text-white font-medium text-sm leading-relaxed mb-4">
-              Get exclusive insights on<br />closing high ticket clients<br />with confidence.
-            </p>
-            <form className="flex items-center group">
-              <input
-                type="email"
-                placeholder="Enter email"
-                className="flex-1 px-4 py-2.5 border border-white/20 rounded-l-full text-sm placeholder-gray-400 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/10 bg-brand-muted text-white transition-all duration-300"
-              />
-              <button
-                type="submit"
-                className="w-10 h-10 bg-brand-primary rounded-full flex items-center justify-center -ml-1 hover:bg-brand-accent hover:scale-110 active:scale-95 transition-all duration-300 group"
-              >
-                <svg
-                  className="w-4 h-4 text-white group-hover:translate-x-0.5 transition-transform duration-300"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </button>
-            </form>
+            {/* Nav Links Column 2 */}
+            <div
+              className={`transition-all duration-700 delay-200 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+            >
+              <p className="text-white text-xs font-semibold tracking-wide uppercase mb-4">Resources</p>
+              <ul className="space-y-3">
+                {navLinks2.map((link, index) => (
+                  <li key={link.name} style={{ transitionDelay: `${200 + index * 50}ms` }}>
+                    <Link
+                      to={link.href}
+                      className="text-gray-300 text-sm hover:text-brand-primary-light transition-all duration-300 hover:translate-x-1 inline-block"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
