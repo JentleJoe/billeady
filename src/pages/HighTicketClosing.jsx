@@ -54,13 +54,39 @@ const HighTicketClosing = () => {
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden">
         <div className="absolute inset-0 bg-hero-light" />
-        <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-28">
+        <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pt-10 pb-20 md:pt-16 md:pb-28">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="max-w-3xl">
               <div className="flex items-center gap-2 mb-5">
                 <span className="text-brand-primary-light text-sm">✦</span>
                 <span className="text-xs text-gray-300 uppercase tracking-wider">High Ticket Sales Closing — Done For You</span>
               </div>
+
+              {/* Mobile Flyer - shown between tag and headline on mobile only */}
+              <div className="relative flex justify-center lg:hidden mb-8">
+                <div className="relative w-full max-w-sm">
+                  {/* Decorative "tape" */}
+                  <div className="absolute -top-3 left-10 w-24 h-8 bg-white/70 -rotate-12 rounded-sm shadow-sm ring-1 ring-black/5" />
+                  <div className="absolute -top-2 right-8 w-20 h-7 bg-white/60 rotate-12 rounded-sm shadow-sm ring-1 ring-black/5" />
+
+                  <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-3 shadow-2xl ring-1 ring-black/10 transform rotate-1 hover:rotate-0 transition-transform duration-500">
+                    <div className="overflow-hidden rounded-lg bg-white">
+                      <picture>
+                        <source srcSet={salesFlierAvif} type="image/avif" />
+                        <source srcSet={salesFlierWebp} type="image/webp" />
+                        <img
+                          src={salesFlierJpg}
+                          alt="Sales flyer for high ticket sales closing"
+                          className="w-full h-auto block"
+                          loading="eager"
+                          decoding="async"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
                 I Step Into Your Sales
                 <br />
@@ -93,8 +119,8 @@ const HighTicketClosing = () => {
               </div>
             </div>
 
-            {/* Flyer */}
-            <div className="relative flex justify-center lg:justify-end">
+            {/* Flyer - desktop only, unchanged positioning/markup */}
+            <div className="relative hidden lg:flex justify-center lg:justify-end">
               <div className="relative w-full max-w-sm md:max-w-md">
                 {/* Decorative "tape" */}
                 <div className="absolute -top-3 left-10 w-24 h-8 bg-white/70 -rotate-12 rounded-sm shadow-sm ring-1 ring-black/5" />
