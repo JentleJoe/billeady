@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-hero-light-center" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 h-full">
-        <div className="flex flex-col lg:flex-row lg:items-center min-h-screen lg:h-full pt-20 lg:pt-8 pb-8 lg:pb-0">
+        <div className="flex flex-col lg:flex-row lg:items-center min-h-screen lg:h-full pt-8 lg:pt-8 pb-8 lg:pb-0">
           {/* Left Content */}
           <div className="z-10 lg:pt-0 lg:basis-1/2 lg:pr-8">
             {/* Tag */}
@@ -28,6 +28,25 @@ const Hero = () => {
             >
               <span className="text-brand-primary-light text-sm animate-pulse">✦</span>
               <span className="text-xs tracking-wide text-gray-300">High Ticket Closer &nbsp;|&nbsp; Revenue Partner for Elite Businesses</span>
+            </div>
+
+            {/* Mobile Image - shown between tag and headline on mobile only */}
+            <div
+              className={`relative lg:hidden mt-8 mb-8 flex justify-center transition-all duration-1000 delay-500 ${
+                isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
+              }`}
+            >
+              <div className="relative w-64 sm:w-72">
+                <img
+                  src={heroImg}
+                  alt="Billeddy Saliu"
+                  className="w-full h-auto object-cover object-top rounded-lg hover:scale-[1.02] transition-transform duration-500"
+                  style={{
+                    maskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)',
+                    WebkitMaskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)',
+                  }}
+                />
+              </div>
             </div>
 
             {/* Main Headline */}
@@ -102,26 +121,6 @@ const Hero = () => {
                 <p className="text-white text-lg md:text-xl font-semibold">US / UK / CA</p>
                 <p className="text-xs text-gray-400 mt-0.5">Remote, timezone aware</p>
               </div>
-            </div>
-          </div>
-
-          {/* Right Content - Hero Image */}
-          {/* Mobile Image - Shows in content flow */}
-          <div
-            className={`relative lg:hidden mt-8 flex justify-center transition-all duration-1000 delay-500 ${
-              isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
-            }`}
-          >
-            <div className="relative w-64 sm:w-72">
-              <img
-                src={heroImg}
-                alt="Billeddy Saliu"
-                className="w-full h-auto object-cover object-top rounded-lg hover:scale-[1.02] transition-transform duration-500"
-                style={{
-                  maskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)',
-                  WebkitMaskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)',
-                }}
-              />
             </div>
           </div>
 
