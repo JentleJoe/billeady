@@ -58,10 +58,10 @@ const Coaching = () => {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-hero-light-left" />
 
-        <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-12 md:py-28 lg:px-20">
+        <div className="relative mx-auto max-w-7xl px-6 pt-5 sm:pt-12 lg:pt-20 pb-20 md:px-12 md:pb-28 lg:px-20">
           <div className="grid gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)] lg:items-center">
             <div className="max-w-3xl">
-              <div className="flex items-center gap-2 mb-5">
+              <div className="flex items-center gap-2 mb-8 sm:mb-12">
                 <span className="text-brand-primary text-sm">✦</span>
                 <span className="text-xs uppercase tracking-[0.2em] text-gray-300">
                   High Ticket Sales Closing &amp; Appointment Setting

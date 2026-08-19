@@ -54,10 +54,10 @@ const HighTicketClosing = () => {
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden">
         <div className="absolute inset-0 bg-hero-light" />
-        <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pt-10 pb-20 md:pt-16 md:pb-28">
+        <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pt-5 pb-20 md:pt-16 md:pb-28">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="max-w-3xl">
-              <div className="flex items-center gap-2 mb-5">
+              <div className="flex items-center gap-2 mb-10">
                 <span className="text-brand-primary-light text-sm">✦</span>
                 <span className="text-xs text-gray-300 uppercase tracking-wider">High Ticket Sales Closing — Done For You</span>
               </div>
