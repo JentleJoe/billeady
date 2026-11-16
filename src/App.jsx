@@ -14,6 +14,7 @@ import Terms from './pages/Terms'
 import Htc from './pages/Htc'
 import CallsToRevenue from './pages/CallsToRevenue'
 import Htcap from './pages/Htcap'
+import Training from './pages/Training'
 
 function App() {
   const location = useLocation()
@@ -21,7 +22,8 @@ function App() {
     location.pathname === '/htcas' ||
     location.pathname === '/htc' ||
     location.pathname === '/calls-to-revenue' ||
-    location.pathname === '/htcap'
+    location.pathname === '/htcap' ||
+    location.pathname.toLowerCase() === '/trcc' // has its own header and footer
 
   return (
     <div className="min-h-screen">
@@ -40,6 +42,7 @@ function App() {
         <Route path="/htc" element={<Htc />} />
         <Route path="/calls-to-revenue" element={<CallsToRevenue />} />
         <Route path="/htcap" element={<Htcap />} />
+        <Route path="/TRCC" element={<Training />} />
       </Routes>
       {!hideChrome && <Footer />}
     </div>

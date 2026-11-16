@@ -9,6 +9,14 @@
       "destination": "https://vercel.app*"
     },
     {
+      "source": "/TRCC",
+      "destination": "/trcc.html"
+    },
+    {
+      "source": "/trcc",
+      "destination": "/trcc.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
