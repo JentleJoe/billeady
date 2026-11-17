@@ -1,0 +1,53 @@
+/*
+ * HTRS page styles that Tailwind utilities don't cover.
+ * Every selector is prefixed `htrs-` so nothing leaks into the rest of the Billeddy site.
+ * Brand colours come from the site's @theme variables (src/index.css).
+ */
+
+/* Image placeholders: brand-muted surface, faint maroon glow, fine survey grid */
+.htrs-placeholder {
+  background-color: var(--color-brand-muted);
+  background-image:
+    radial-gradient(ellipse 70% 55% at 50% 40%, rgba(109, 30, 23, 0.28) 0%, transparent 70%),
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 100% 100%, 24px 24px, 24px 24px;
+  background-position: center, -1px -1px, -1px -1px;
+}
+
+/* Horizontal scrollers (testimonial student list on mobile): keep swipe, hide the bar */
+.htrs-scroll-row {
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.htrs-scroll-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* FAQ answers: smooth open/close without measuring heights in JS */
+.htrs-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 300ms ease;
+}
+.htrs-collapse[data-open='true'] {
+  grid-template-rows: 1fr;
+}
+.htrs-collapse > div {
+  overflow: hidden;
+}
+
+/* Respect reduced-motion: show scroll-reveal content immediately, no movement */
+@media (prefers-reduced-motion: reduce) {
+  .htrs-page [style*='transition'] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .htrs-page *,
+  .htrs-page *::before,
+  .htrs-page *::after {
+    animation: none !important;
+    transition-duration: 0ms !important;
+  }
+}
