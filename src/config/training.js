@@ -14,8 +14,8 @@ export const TRAINING_WHATSAPP_URL = 'https://wa.link/ep4exm'
  * like '/images/training/my-image.webp' also works.
  */
 export const TRAINING_IMAGES = {
-  // Hero: payments dashboard screenshot (shown frameless)
-  heroImage: { src: '/images/training/payments-dashboard.webp', width: 1000, height: 1334 },
+  // Hero: crypto wallet balance screenshot (shown frameless)
+  heroImage: { src: '/images/training/crypto-wallet-balance.webp', width: 1000, height: 1233 },
   // About: WhatsApp DM from Carlos (Eco-Resort, Indonesia)
   carlosDm: { src: '/images/training/carlos-dm.webp', width: 900, height: 826 },
   // Program: member portal on MacBook + iPhone
