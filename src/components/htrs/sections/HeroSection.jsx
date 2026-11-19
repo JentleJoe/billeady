@@ -59,7 +59,7 @@ const HeroSection = () => {
 
           {/* One instance for all screens: beside the copy on desktop, after the CTA on mobile */}
           <FadeIn delay={300}>
-            <ImageSlot image={HTRS_IMAGES.heroCommissionPayouts} eager className="w-full max-w-md mx-auto lg:max-w-none" />
+            <ImageSlot image={HTRS_IMAGES.heroWalletBalance} eager className="w-full max-w-md mx-auto lg:max-w-none" />
           </FadeIn>
         </div>
       </Container>

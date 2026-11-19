@@ -30,17 +30,17 @@ export const HTRS_META = {
  * Optional `position` (CSS object-position, e.g. '50% 30%') sets the focal point for cropped photos.
  */
 export const HTRS_IMAGES = {
-  heroCommissionPayouts: {
-    name: 'Commission Payouts Grid',
-    note: 'Clean grid of hard-currency commission payouts',
-    file: '/images/htrs/commission-payouts-grid.webp',
-    recommended: '1200 × 1500',
-    ratio: '3 / 4',
+  heroWalletBalance: {
+    name: 'Crypto Wallet Balance',
+    note: 'Phone screenshot of a crypto wallet balance, shown whole (uncropped)',
+    file: '/images/htrs/crypto-wallet-balance.webp',
+    recommended: '1200 × 1480',
+    ratio: '1200 / 1480',
     fit: 'natural',
-    alt: 'Payments dashboard showing $123,800 total volume, 76 confirmed payments and a live feed of $3,000 payments',
-    src: '/images/htrs/commission-payouts-grid.webp',
+    alt: 'Crypto wallet showing a total balance of $125,446.40, mostly held in USDT',
+    src: '/images/htrs/crypto-wallet-balance.webp',
     width: 1200,
-    height: 1601,
+    height: 1480,
   },
   zoomClosingCall: {
     name: 'Live Zoom Closing Call',
