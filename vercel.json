@@ -17,6 +17,14 @@
       "destination": "/trcc.html"
     },
     {
+      "source": "/HTRS",
+      "destination": "/htrs.html"
+    },
+    {
+      "source": "/htrs",
+      "destination": "/htrs.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
