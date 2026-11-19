@@ -339,12 +339,12 @@ const PinnedCard = ({ image, label, tilt = 'rotate-1', tape = true, size = 'lg',
 }
 
 /**
- * Hero visual: the dashboard screenshot shown directly, with no mockup or frame.
+ * Hero visual: the wallet screenshot shown directly, with no mockup or frame.
  */
 const HeroVisual = () => {
   const image = TRAINING_IMAGES.heroImage
   const img = typeof image === 'string' ? { src: image } : image
-  const label = 'Payments dashboard showing total volume, confirmed payments and a live feed'
+  const label = 'Crypto wallet showing a total balance of $125,446.40, mostly held in USDT'
   if (!img?.src) return <ImageSlot image={null} label={label} aspect="aspect-[3/4]" className="max-w-md mx-auto" />
 
   // The screenshot is shown as-is at its own proportions, with no fade, shadow or tilt.
